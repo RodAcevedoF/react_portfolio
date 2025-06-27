@@ -16,7 +16,7 @@ export const ContactBtn = ({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`text-[2em] sm:text-[2.5em] font-bold transition-all duration-200 ease-in-out font-[Tungsten] text-[var(--primary-color)] no-underline ${hoverColor}`}
+      className={`text-[1.8em] sm:text-[2.5em] font-bold transition-all duration-200 ease-in-out font-[Tungsten] text-[var(--primary-color)] no-underline ${hoverColor}`}
     >
       {name}
       <span className={`${pointColor}`}>.</span>

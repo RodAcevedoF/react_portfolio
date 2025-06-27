@@ -12,11 +12,11 @@ export const Portrait = ({ src, alt }: PortraitProps) => {
       src={src}
       alt={alt}
       className={`
-            w-[400px] absolute top-[-25%] right-[10%]
+            w-[300px] sm:w-[350px] md:w-[400px] absolute top-[-12vh] sm:top-[-14vh] md:top-[-15vh] right-[20%] md:right-[10vw]
             transition-all duration-300
-            mask-[radial-gradient(circle,rgba(0,0,0,1)_50%,rgba(0,0,0,0)_90%)]
             ${scrolled ? "invert" : "filter-none"}
           `}
     />
   );
 };
+/* mask-[radial-gradient(circle,rgba(0,0,0,1)_60%,rgba(0,0,0,0)_99%)] */
