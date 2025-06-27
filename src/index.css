@@ -2,16 +2,28 @@
 
 @font-face {
   font-family: "Tungsten";
-  src: url("./assets/fonts/tungsten_font/tungsten-medium.woff2") format("woff2"),
-    url("./assets//fonts/tungsten_font/tungsten-medium.woff") format("woff");
+  src: url("../public/assets/fonts/tungsten_font/tungsten-medium.woff2")
+      format("woff2"),
+    url("../public/assets/fonts/tungsten_font/tungsten-medium.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Sequel";
-  src: url("./assets/fonts/sequel_regular/Sequel-Regular.woff2") format("woff2"),
-    url("./assets/fonts/sequel_regular/Sequel-Regular.woff") format("woff");
+  src: url("../public/assets/fonts/sequel_regular/Sequel-Regular.woff2")
+      format("woff2"),
+    url("../public/assets/fonts/sequel_regular/Sequel-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lilita";
+  src: url("../public/assets/fonts/LilitaOne/LilitaOne.woff2") format("woff2"),
+    url("../public/assets/fonts/LilitaOne/LilitaOne.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,11 +32,15 @@
   --main-font: "Sequel", system-ui, sans-serif;
   --alt-font: "Tungsten", system-ui, sans-serif;
   --primary-color: #f5f5f5;
+  --clear-primary: rgba(233, 233, 233, 0.15);
   --secondary-color: #1a1a1a;
+  --clear-secondary: rgba(0, 0, 0, 0.53);
   --card-bg: #5a5a5a3b;
   --light-bg: radial-gradient(circle, #f5f5f5 60%, #dcdcdc 100%);
   --dark-bg: radial-gradient(circle, #0a0a0a 60%, #1a1a2e 100%);
   --box-size: border-box;
+  --underline: rgba(123, 123, 123, 0.966);
+  --no-filter: invert(0);
 }
 * {
   @apply box-border;
@@ -38,9 +54,94 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
   background: var(--light-bg);
   color: var(--secondary-color);
+  /*color: rgba(0, 0, 0, 0.53) */
 }
 
 body.scrolled {
   background: var(--dark-bg);
   color: var(--primary-color);
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    width: 0;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    width: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.mask-fade-vertical {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.mask-fade-both {
+  -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+  mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+
+  -webkit-mask-composite: intersect;
+  mask-composite: intersect;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }

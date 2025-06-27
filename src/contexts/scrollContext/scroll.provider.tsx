@@ -8,10 +8,10 @@ const particlesDefaultProps = {
   alphaParticles: true,
   disableRotation: false,
   moveParticlesOnHover: false,
-  particleBaseSize: 50,
+  particleBaseSize: 70,
   particleColors: ["#615fff", "#EEF2FF"],
   particleCount: 2000,
-  particleSpread: 10,
+  particleSpread: 7,
   speed: 0.1,
   className: "fixed w-screen h-screen -z-10"
 };

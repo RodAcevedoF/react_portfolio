@@ -1,1 +1,1 @@
-export * from "./ProjectsGrid/ProjectsGrid";
+export * from "./ProjectsGrid";

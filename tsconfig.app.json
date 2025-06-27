@@ -23,5 +23,10 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "public/assets/images",
+    "public/assets/icons",
+    "public/assets/index.ts"
+  ]
 }
