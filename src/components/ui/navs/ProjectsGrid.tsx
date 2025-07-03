@@ -1,13 +1,9 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { brands } from "../../../data/brands";
-import { useScrollContext } from "../../../contexts";
 import { lightenColor } from "../../../utils/lightenColor";
-
-import { ProjectCard } from "../../../components"; // ruta correcta
+import { ProjectCard } from "../../../components";
 
 export const ExpGrid = () => {
-  const gridRef = useRef<HTMLUListElement>(null);
-  const { scrolled } = useScrollContext();
   const [hoveredColor, setHoveredColor] = useState<string | null>(null);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -25,14 +21,12 @@ export const ExpGrid = () => {
   };
 
   return (
-    <ul
-      ref={gridRef}
-      className="w-full grid auto-rows-[350px] justify-center items-center grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-8 py-4 px-10 transition-colors duration-500"
-    >
+    <ul className="w-full grid auto-rows-[350px] justify-center items-center grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-8 py-4 px-10 transition-colors duration-500">
       {brands.map(({ name, logo, bgImage, color, url }, index) => {
         const isFirst = index === 0;
         const isHovered = activeIndex === index;
         const isDimmed = (hoveredColor && !isHovered) || false;
+
         return (
           <ProjectCard
             key={name}
@@ -46,7 +40,6 @@ export const ExpGrid = () => {
             isHovered={isHovered}
             isDimmed={isDimmed}
             hoveredColor={hoveredColor}
-            scrolled={scrolled}
             onMouseEnter={() => handleMouseEnter(color, index)}
             onMouseLeave={handleMouseLeave}
           />

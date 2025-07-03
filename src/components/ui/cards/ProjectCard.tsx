@@ -1,3 +1,6 @@
+import { useCardContext, useScrollContext } from "../../../contexts";
+import { PixelTransition } from "../../animations";
+
 type ProjectCardProps = {
   name: string;
   logo: string;
@@ -8,88 +11,28 @@ type ProjectCardProps = {
   isHovered: boolean;
   isDimmed: boolean;
   hoveredColor: string | null;
-  scrolled: boolean;
   onMouseEnter: () => void;
   onMouseLeave: () => void;
   index: number;
 };
-
-/* export const ProjectCard = ({
-  name,
-  logo,
-  bgImage,
-  color,
-  url,
-  isFirst,
-  isHovered,
-  isDimmed,
-  hoveredColor,
-  scrolled,
-  onMouseEnter,
-  onMouseLeave
-}: ProjectCardProps) => {
-  let dynamicBg: string | undefined;
-
-  if (!scrolled) {
-    dynamicBg = isFirst ? "var(--secondary-color)" : "transparent";
-  } else {
-    if (!isHovered && isDimmed) {
-      dynamicBg = hoveredColor ?? "var(--card-bg)";
-    } else if (isHovered) {
-      dynamicBg = color;
-    } else if (!isHovered && !isDimmed) {
-      dynamicBg = "var(--card-bg)";
-    }
-  }
-
-  return (
-    <li
-      className="relative group flex justify-center items-center w-full h-full overflow-hidden transition-colors duration-500 p-5"
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-      style={{ backgroundColor: dynamicBg }}
-    >
-      <div
-        className="absolute inset-10 bg-cover bg-center opacity-0 group-hover:opacity-100 z-1 transition-opacity duration-500 overflow-x-hidden"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      />
-      <a
-        href={url}
-        target="_blank"
-        rel="noreferrer"
-        className="grid-link flex justify-center items-center w-full h-full z-10 cursor-pointer"
-      >
-        <img
-          src={logo}
-          alt={`${name} logo`}
-          className={`transition-all duration-300 object-contain z-10
-            ${name === "Brand 1" ? "w-56 filter-none" : ""}
-            ${name === "Brand 2" ? "w-48 filter-none" : ""}
-            ${name === "Brand 3" ? "w-60" : ""}
-            ${!["Brand 1", "Brand 2", "Brand 3"].includes(name) ? "w-48" : ""}
-            hover:w-64 hover:opacity-80
-          `}
-        />
-      </a>
-    </li>
-  );
-};
- */
 
 export const ProjectCard = ({
   name,
   logo,
   bgImage,
   color,
-  url,
   isFirst,
   isHovered,
   isDimmed,
   hoveredColor,
-  scrolled,
   onMouseEnter,
-  onMouseLeave
+  onMouseLeave,
+  index
 }: ProjectCardProps) => {
+  const { activeIndex, setActiveIndex } = useCardContext();
+  const { scrolled } = useScrollContext();
+  const isActive = activeIndex === index;
+
   let dynamicBg: string | undefined;
 
   if (!scrolled) {
@@ -104,39 +47,63 @@ export const ProjectCard = ({
     }
   }
 
-  // Añade esta condición para controlar la opacidad de la imagen
+  const handleClick = (e: React.MouseEvent) => {
+    console.log("[card] click en tarjeta", index);
+    e.stopPropagation(); // 🔐 PREVIENE CIERRE GLOBAL
+    setActiveIndex(isActive ? null : index);
+  };
+
   const logoOpacityClass = !scrolled ? "opacity-0" : "";
 
-  return (
-    <li
-      className="relative group flex justify-center items-center w-full h-full overflow-hidden transition-colors duration-500 p-5"
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+  const firstContent = (
+    <div
+      className="relative w-full h-full flex justify-center items-center overflow-hidden"
       style={{ backgroundColor: dynamicBg }}
     >
       <div
-        className="absolute inset-10 bg-cover bg-center opacity-0 group-hover:opacity-100 z-1 transition-opacity duration-500 overflow-x-hidden"
+        className={`absolute inset-5 bg-cover bg-center opacity-0 z-1 transition-opacity duration-500 overflow-x-hidden ${
+          scrolled ? "group-hover:opacity-100" : ""
+        }`}
         style={{ backgroundImage: `url(${bgImage})` }}
       />
-      <a
-        href={url}
-        target="_blank"
-        rel="noreferrer"
-        className="grid-link flex justify-center items-center w-full h-full z-10 cursor-pointer"
-      >
-        <img
-          src={logo}
-          alt={`${name} logo`}
-          className={`transition-all duration-300 object-contain z-10
-            ${name === "Brand 1" ? "w-56 filter-none" : ""}
-            ${name === "Brand 2" ? "w-48 filter-none" : ""}
-            ${name === "Brand 3" ? "w-60" : ""}
-            ${!["Brand 1", "Brand 2", "Brand 3"].includes(name) ? "w-48" : ""}
-            hover:w-64 hover:opacity-80
-            ${logoOpacityClass}  // Aplica la clase de opacidad aquí
-          `}
-        />
-      </a>
+      <img
+        src={logo}
+        alt={`${name} logo`}
+        className={`transition-all duration-300 object-contain z-10
+          ${name === "Brand 1" ? "w-56 filter-none" : ""}
+          ${name === "Brand 2" ? "w-48 filter-none" : ""}
+          ${name === "Brand 3" ? "w-60" : ""}
+          ${!["Brand 1", "Brand 2", "Brand 3"].includes(name) ? "w-48" : ""}
+          hover:w-64 hover:opacity-80
+          ${logoOpacityClass}
+        `}
+      />
+    </div>
+  );
+
+  const secondContent = (
+    <div className="w-full h-full grid place-items-center bg-black text-white">
+      <p className="text-2xl font-bold">Hello 👋</p>
+    </div>
+  );
+
+  return (
+    <li
+      className={`w-full h-full group cursor-pointer`}
+      onMouseEnter={scrolled ? onMouseEnter : undefined}
+      onMouseLeave={scrolled ? onMouseLeave : undefined}
+      onClick={scrolled ? handleClick : undefined}
+    >
+      <PixelTransition
+        firstContent={firstContent}
+        secondContent={secondContent}
+        active={isActive}
+        gridSize={12}
+        pixelColor="#ffffff"
+        animationStepDuration={0.25}
+        className="w-full h-full"
+        hidden={!scrolled && !isFirst}
+      />
     </li>
   );
 };

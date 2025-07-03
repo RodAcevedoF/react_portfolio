@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { IntroLoader } from "../components";
 
 export const Splash = () => {
   const navigate = useNavigate();
@@ -15,19 +16,20 @@ export const Splash = () => {
 
   return (
     <motion.div
-      className="w-screen h-screen flex justify-center items-center bg-neutral-950 absolute top-0 z-50"
+      className="w-screen h-screen flex flex-col justify-center items-center bg-black absolute top-0 z-50"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
       <motion.h1
-        className="text-white text-5xl font-bold"
+        className="text-white text-5xl font-bold z-10"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        ROD ACEVEDO
+        Loading...
       </motion.h1>
+      <IntroLoader />
     </motion.div>
   );
 };

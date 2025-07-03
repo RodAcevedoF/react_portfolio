@@ -24,7 +24,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="text-[6em] leading-[0.5] text-transparent mb-20 mt-30"
+              className="text-[15vw] leading-[0.5] text-transparent mb-20 mt-30"
               style={{
                 WebkitTextStrokeWidth: "2px",
                 WebkitTextStrokeColor: "var(--primary-color)"

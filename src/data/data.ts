@@ -56,7 +56,8 @@ export const data = {
       position: "Freelance Web Developer",
       company: "Self-employed",
       startDate: "2023",
-      endDate: "Present",
+      endDate: "present",
+      location: "Remote",
       description:
         "At the beginning of my journey as a freelance web developer, I focused on backend development, collaborating on open-source projects. This experience has been invaluable, allowing me to learn and grow while contributing to the development of community solutions."
     },
@@ -64,15 +65,17 @@ export const data = {
       position: "Associate Researcher",
       company: "Freiburg Universität",
       startDate: "2014",
-      endDate: "Present",
+      endDate: "present",
+      location: "Freiburg, DE",
       description:
         "As a key member of the research team, I have contributed to various projects, from designing and conducting experiments to analyzing complex datasets and optimizing research methodologies."
     },
     {
       position: "Orchestra Member",
-      company: "Reutlingen Symphonieorchester",
+      company: "Reutlingen Orchester",
       startDate: "2008",
       endDate: "2014",
+      location: "Reutlingen, DE",
       description:
         "During my time as an orchestral musician, I collaborated with conductors and fellow musicians, performing complex compositions that required seamless coordination and precision to deliver memorable musical experiences."
     }
