@@ -1,1 +1,1 @@
-export * from "./ResumeTypes";
+export * from "./AboutTypes";

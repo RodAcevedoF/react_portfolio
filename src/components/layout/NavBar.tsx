@@ -23,8 +23,8 @@ export const NavBar = () => {
 
   return (
     <nav
-      className={`flex items-center justify-between fixed top-0 w-full min-h-[5rem] z-50 px-4 sm:px-8${
-        scrolled ? " backdrop-blur-md" : ""
+      className={`flex items-center justify-between fixed top-0 w-full min-h-[5rem] z-50 px-4 sm:px-8 ${
+        scrolled ? "backdrop-blur-md" : ""
       }`}
     >
       <HomeBtn parentMethod={handleClickScrollToTop} text="Rod Acevedo" />

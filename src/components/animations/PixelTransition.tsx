@@ -150,7 +150,7 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
   return (
     <div
       ref={containerRef}
-      className={`relative w-full overflow-hidden rounded-sm text-[var(--primary-color)] ${className}`}
+      className={`relative w-full h-full overflow-hidden rounded-sm text-[var(--primary-color)] ${className}`}
       style={{ display: hidden ? "none" : "block", ...style }}
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}

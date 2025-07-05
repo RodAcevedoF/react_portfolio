@@ -10,17 +10,20 @@ export const ExperienceListItem = ({ job }: ExperienceListItemProps) => {
   const firstContent = (
     <div className="flex flex-col p-5 bg-black rounded-sm min-h-[25rem] w-full">
       <div className="flex w-full items-center justify-between mb-5">
-        <p className="font-[Lilita] text-[1em] whitespace-pre-line">
+        <p className=" text-violet-400 font-[Lilita] text-[1em] whitespace-pre-line">
           {job.startDate}
-          <span className="text-violet-400"> - </span>
+          <span className="text-[var(--primary-color)]"> - </span>
           {job.endDate}
         </p>
-        <p className="text-violet-400 flex gap-2 items-center">
+        <p className="text-cyan-300 flex gap-2 items-center">
           {`${job.location}`} <MapPinned size={18} />
         </p>
       </div>
-      <p className="font-[Lilita] text-[1.5rem]">{job.position}</p>
-      <p className="font-[Lilita] text-[1.1em] mb-8 text-black bg-violet-400 w-fit px-2 rounded-sm">{`${job.company}`}</p>
+      <p className="font-[Lilita] text-[1.5rem]">
+        <span className="text-violet-400">{job.position.split(" ")[0]}</span>{" "}
+        {job.position.split(" ").slice(1).join(" ")}
+      </p>
+      <p className="font-[Lilita] text-[1.1em] mb-8 text-black bg-cyan-300 w-fit px-2 rounded-sm">{`${job.company}`}</p>
       <p className="font-[Lilita] text-[1em] mb-[0.5em]">{job.description}</p>
     </div>
   );
@@ -32,7 +35,7 @@ export const ExperienceListItem = ({ job }: ExperienceListItemProps) => {
   );
 
   return (
-    <li className="flex infocard effect relative cursor-pointer border-2 border-[var(--clear-primary)] w-[20rem] h-full p-[0.3rem] rounded-sm overflow-hidden transition-all duration-300 ease-in-out hover:translate-y-[-1rem]">
+    <li className="flex infocard effect relative cursor-pointer border-2 border-[var(--clear-primary)] min-w-[19.5rem] h-full p-[0.3rem] rounded-sm overflow-hidden transition-all duration-300 ease-in-out hover:translate-y-[-1rem]">
       <PixelTransition
         firstContent={firstContent}
         secondContent={secondContent}

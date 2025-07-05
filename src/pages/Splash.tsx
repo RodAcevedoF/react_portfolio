@@ -16,7 +16,8 @@ export const Splash = () => {
 
   return (
     <motion.div
-      className="w-screen h-screen flex flex-col justify-center items-center bg-black absolute top-0 z-50"
+      className="w-screen h-screen flex flex-col justify-center items-center absolute top-0 z-50"
+      style={{ background: "var(--dark-bg)" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

@@ -4,51 +4,63 @@ export const data = {
   email: "raacevedof@gmail.com",
   avatar: "/images/portrait.png",
   aboutMe:
-    "Rodrigo, originally from Chile and educated in Germany, blends a strong background in music, physics, and philosophy with a new focus on web development. A former orchestral musician and current research associate at the University of Freiburg, he brings a unique mix of creativity, discipline, and analytical thinking. Now turning to technology, he aims to build intuitive and innovative digital experiences.",
+    "Hi! I'm Rodrigo, originally from Chile and educated in Germany, I got a strong background in music, physics, and philosophy with a new focus on web development. Former orchestral musician and research associate at the University of Freiburg, I bring into my work a mix of creativity, discipline, and analytical thinking. I enjoy classical music, reading and I'm always in for something sweet :D",
   education: [
     {
       degree: "Associate Degree in Web Development",
       university: "thePower - Prometeo School",
-      graduationYear: 2026,
+      startDate: "2021-01-01",
+      endDate: "2022-06-01",
       honors: "",
       relevantCourses: [
         "Web Development Fundamentals",
         "Data Structures and Algorithms",
         "Database Design"
-      ]
+      ],
+      web: "https://www.google.com",
+      img: "../../public/assets/icons/react.svg"
     },
     {
       degree: "Master-of-Science (M.Sc.) Physics",
       university: "Freiburg Universität",
-      graduationYear: 2018,
+      startDate: "2021-01-01",
+      endDate: "2022-06-01",
       honors: "Abschluss Cum Laude",
       relevantCourses: [
         "Engineering physics",
         "Applied Physics",
         "Fluid mechanics"
-      ]
+      ],
+      web: "https://www.google.com",
+      img: "../../public/assets/icons/react.svg"
     },
     {
       degree: "Bachelor-of-Science (B.Sc.) Physik",
       university: "Freiburg Universität",
-      graduationYear: 2014,
+      startDate: "2021-01-01",
+      endDate: "2022-06-01",
       honors: "Abschluss Cum Laude",
       relevantCourses: [
         "Mathematical physics",
         "Thermodynamics",
         "Laboratory Physics"
-      ]
+      ],
+      web: "https://www.google.com",
+      img: "../../public/assets/icons/react.svg"
     },
     {
       degree: "Bachelor-of-Music (B.Sc.) Musik",
       university: "Musikhochschule Freiburg",
-      graduationYear: 2009,
+      startDate: "2021-01-01",
+      endDate: "2022-06-01",
       honors: "Abschluss Cum Laude",
       relevantCourses: [
         "Music Theory",
         "Musical Analysis",
         "Orchestral Studies"
-      ]
+      ],
+      web: "https://www.google.com",
+      img: "../../public/assets/icons/react.svg"
     }
   ],
   workExperience: [

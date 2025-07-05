@@ -11,7 +11,7 @@ const SectionBlock = ({
   items: string[];
 }) => (
   <div className="w-full">
-    <h4 className="font-[Lilita] text-3xl text-[var(--primary-color)]">
+    <h4 className="font-[Lilita] text-xl text-[var(--primary-color)]">
       {title}
     </h4>
     <p className="font-[Tungsten] text-2xl py-4 tracking-wide font-medium text-[var(--primary-color)]">
@@ -32,11 +32,11 @@ const SectionBlock = ({
 
 export const Skills: React.FC = () => {
   return (
-    <article className="flex flex-col w-full overflow-hidden items-start px-12 py-12 bg-[var(--clear-primary)] sm:px-4">
-      <h3 className="text-[6em] text-white leading-[0.5] stroke-text">
+    <article className="flex flex-col w-full items-start px-12 py-12 bg-[var(--clear-primary)] sm:px-4">
+      <h3 className="text-[3em] md:text-[6em] text-white leading-[0.5] stroke-text">
         SKILLS
       </h3>
-      <div className="grid w-full justify-center grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-4 flex-wrap sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] xs:grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
+      <div className="grid w-full justify-center grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4 flex-wrap sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] xs:grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
         <SectionBlock
           title="Techs"
           description="Technology is the backbone of every impactful web development project, they bring ideas to life, enhance user experiences and drive innovation in every line of code."

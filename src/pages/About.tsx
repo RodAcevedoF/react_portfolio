@@ -19,7 +19,7 @@ const About = () => {
         <Portrait src={portraitD} alt="drawn portrait" />
       </div>
       <ToggleParticles />
-      <div className="flex flex-col overflow-x-hidden">
+      <div className="flex flex-col max-w-full">
         <Resume />
         <Skills />
       </div>

@@ -26,8 +26,7 @@ export const MailForm = () => {
       onSubmit={handleSubmit}
       className="flex w-full h-full min-w-[30vw] flex-col text-[var(--primary-color)] gap-5 
         p-10 px-10 rounded-xl border-2 
-        border-[var(--primary-color)] 
-        bg-[var(--secondary-color)] 
+        border-[var(--primary-color)]  
         get-form:animate-slideIn get-form:z-[15]"
     >
       {/* Contact Name */}
