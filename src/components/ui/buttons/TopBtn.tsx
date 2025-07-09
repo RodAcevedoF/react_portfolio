@@ -9,7 +9,7 @@ export const TopBtn: FC = () => {
   return (
     <button
       onClick={handleScrollTop}
-      className="text-[1.8em] text-[var(--underline)] bg-inherit border-none cursor-pointer font-[Tungsten] transition-all duration-200 ease-in-out hover:font-bold hover:brightness-[1.8]"
+      className="text-[1.8em] text-[var(--underline)] bg-inherit border-none cursor-pointer font-[Tungsten] transition-all duration-200 ease-in-out hover:font-bold hover:text-blue-400"
       style={{ cursor: `url(${arrowTop}), pointer` }}
     >
       Back to Top

@@ -1,10 +1,4 @@
-import {
-  Portrait,
-  Resume,
-  Skills,
-  Title,
-  ToggleParticles
-} from "../components";
+import { Portrait, Resume, Title, ToggleParticles } from "../components";
 import { portraitD } from "../../public";
 
 const About = () => {
@@ -21,7 +15,6 @@ const About = () => {
       <ToggleParticles />
       <div className="flex flex-col max-w-full">
         <Resume />
-        <Skills />
       </div>
     </section>
   );

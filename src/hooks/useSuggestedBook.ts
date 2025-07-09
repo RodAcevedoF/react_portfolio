@@ -1,4 +1,3 @@
-// hooks/useSuggestedBook.ts
 import { useState, useEffect } from "react";
 
 interface Book {

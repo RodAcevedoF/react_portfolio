@@ -5,3 +5,4 @@ export * from "./GithubBtn";
 export * from "./ContactBtn";
 export * from "./TopBtn";
 export * from "./MailBtn";
+export * from "./MiniSkillBtn";

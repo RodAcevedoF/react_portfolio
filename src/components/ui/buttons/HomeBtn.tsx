@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
 import { devLogo } from "../../../../public/assets";
 import { useScrollContext } from "../../../contexts";
-
-type HomeBtnProps = {
-  parentMethod: () => void;
-  text?: string;
-};
+import type { HomeBtnProps } from "../../../types";
 
 const HomeBtn = ({ parentMethod, text = "Rod Acevedo" }: HomeBtnProps) => {
   const { scrolled } = useScrollContext();

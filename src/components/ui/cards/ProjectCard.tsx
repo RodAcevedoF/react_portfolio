@@ -1,20 +1,6 @@
 import { useCardContext, useScrollContext } from "../../../contexts";
 import { PixelTransition } from "../../animations";
-
-type ProjectCardProps = {
-  name: string;
-  logo: string;
-  bgImage: string;
-  color: string;
-  url: string;
-  isFirst: boolean;
-  isHovered: boolean;
-  isDimmed: boolean;
-  hoveredColor: string | null;
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
-  index: number;
-};
+import type { ProjectCardProps } from "../../../types";
 
 export const ProjectCard = ({
   name,
@@ -48,8 +34,7 @@ export const ProjectCard = ({
   }
 
   const handleClick = (e: React.MouseEvent) => {
-    console.log("[card] click en tarjeta", index);
-    e.stopPropagation(); // 🔐 PREVIENE CIERRE GLOBAL
+    e.stopPropagation();
     setActiveIndex(isActive ? null : index);
   };
 
@@ -57,11 +42,11 @@ export const ProjectCard = ({
 
   const firstContent = (
     <div
-      className="relative w-full h-full flex justify-center items-center overflow-hidden"
+      className="relative w-full h-full flex justify-center items-center overflow-hidden rounded-md"
       style={{ backgroundColor: dynamicBg }}
     >
       <div
-        className={`absolute inset-5 bg-cover bg-center opacity-0 z-1 transition-opacity duration-500 overflow-x-hidden ${
+        className={`absolute inset-5 bg-cover bg-center opacity-0 z-1 transition-opacity duration-500 overflow-x-hidden rounded-md ${
           scrolled ? "group-hover:opacity-100" : ""
         }`}
         style={{ backgroundImage: `url(${bgImage})` }}
@@ -82,7 +67,7 @@ export const ProjectCard = ({
   );
 
   const secondContent = (
-    <div className="w-full h-full grid place-items-center bg-black text-white">
+    <div className="w-full h-full grid place-items-center bg-black text-white rounded-md">
       <p className="text-2xl font-bold">Hello 👋</p>
     </div>
   );

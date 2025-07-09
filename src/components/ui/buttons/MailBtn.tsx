@@ -1,8 +1,4 @@
-type MailBtnProps = {
-  text: string;
-  toggleModal: () => void;
-};
-
+import type { MailBtnProps } from "../../../types/HomeTypes";
 export const MailBtn = ({ text, toggleModal }: MailBtnProps) => {
   return (
     <button
@@ -10,7 +6,7 @@ export const MailBtn = ({ text, toggleModal }: MailBtnProps) => {
       onClick={toggleModal}
     >
       {text}
-      <div className="mt-0 h-[0.2em] w-0 opacity-0 bg-[var(--underline)] rounded-xs transition-all duration-300 ease-in-out group-hover:w-[100%] group-hover:opacity-80" />
+      <div className="mt-0 h-[0.2em] w-0 opacity-0 bg-blue-400/80 rounded-xs transition-all duration-300 ease-in-out group-hover:w-[100%] group-hover:opacity-80" />
     </button>
   );
 };

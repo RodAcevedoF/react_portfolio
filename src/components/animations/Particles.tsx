@@ -97,7 +97,8 @@ const ParticlesBackground = memo(() => {
   const { scrolled } = useScrollContext(); // Usamos el context
 
   const bgClasses = scrolled
-    ? "bg-[radial-gradient(circle,_#0a0a0a_60%,_#1a1a2e_100%)]"
+    ? /*? "bg-[radial-gradient(circle,_#0a0a0a_60%,_#1a1a2e_100%)]"*/
+      "bg-[radial-gradient(circle,_#0a0a0a_60%,_#141c26_100%)]"
     : "bg-transparent";
 
   return (

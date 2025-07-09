@@ -22,14 +22,14 @@ export const Modal = ({ children }: ModalProps) => {
     >
       <div
         ref={modalRef}
-        className="p-8 rounded-lg shadow-lg animate-[fade-in_0.3s_ease-out_forwards]"
+        className="p-8 rounded-md shadow-lg animate-[fade-in_0.3s_ease-out_forwards]"
         onClick={(e) => e.stopPropagation()}
         style={{ background: "var(--dark-bg)" }}
       >
         {children}
 
         <button
-          className="absolute top-2 right-4 text-[1rem] font-extrabold text-blue-500 hover:text-white cursor-pointer transition-all duration-75"
+          className="absolute top-2 right-4 text-[1rem] font-extrabold text-blue-500 hover:text-white cursor-pointer transition-all duration-200"
           onClick={closeModal}
           aria-label="Close modal"
         >

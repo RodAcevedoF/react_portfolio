@@ -1,9 +1,4 @@
-type ContactBtnProps = {
-  name: string;
-  url: string;
-  hoverColor: string;
-  pointColor: string;
-};
+import type { ContactBtnProps } from "../../../types/HomeTypes";
 
 export const ContactBtn = ({
   name,

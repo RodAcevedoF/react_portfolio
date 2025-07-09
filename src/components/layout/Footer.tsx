@@ -12,7 +12,7 @@ export const Footer = () => {
     <footer className="flex flex-col p-10 gap-8 h-full w-full bg-white-300 bg-clip-padding backdrop-filter backdrop-blur-[5px] bg-opacity-30 border-t-4 border-[var(--clear-primary)]">
       <article className="flex flex-col w-full flex-wrap text-[var(--primary-color)]">
         <h3 className="text-2xl font-[Tungsten] tracking-[0.5em] pb-10">
-          GET IN TOUCH
+          <span className="text-blue-400 font-black">GET</span> IN TOUCH
         </h3>
         <div className="contact-div flex flex-wrap gap-8 w-4/5 px-6">
           <ContactBtn
@@ -50,7 +50,7 @@ export const Footer = () => {
 
       <article className="mail-article flex justify-between flex-wrap gap-12 px-4 py-2">
         <div className="flex flex-col justify-center items-start">
-          <h3 className="text-md text-[var(--primary-color)] md:text-lg">
+          <h3 className="text-md text-blue-400 md:text-lg">
             Want to move forward?
           </h3>
           <MailBtn text="DROP A LINE" toggleModal={openModal} />

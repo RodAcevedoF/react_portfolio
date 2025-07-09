@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
-const SERVICE_ID = "service_hzpaiyd";
-const TEMPLATE_ID = "template_le1zewq";
-const PUBLIC_KEY = "64s8LY0LFxfWYJTrH";
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
 export const useSendEmail = () => {
   const [isSending, setIsSending] = useState(false);

@@ -7,7 +7,7 @@ const ToggleParticlesBtn = () => {
   return (
     <button
       onClick={toggleParticles}
-      className={`group relative w-24 h-24 rounded-full bg-[#7808d0] text-white overflow-hidden flex items-center justify-center transition-all duration-300 hover:bg-black hover:scale-105 ${
+      className={`group relative w-24 h-24 rounded-full bg-blue-500 text-white overflow-hidden flex items-center justify-center transition-all duration-300 hover:bg-black hover:scale-105 ${
         mode === "particles" ? "ring-2 ring-white" : ""
       }`}
     >
@@ -25,7 +25,7 @@ const ToggleParticlesBtn = () => {
       </div>
 
       {/* Círculo central con doble flecha */}
-      <div className="relative w-10 h-10 bg-neutral-100 text-[#7808d0] rounded-full flex items-center justify-center overflow-hidden">
+      <div className="relative w-10 h-10 bg-neutral-100 text-blue-500 rounded-full flex items-center justify-center overflow-hidden">
         <svg
           viewBox="0 0 14 15"
           fill="currentColor"

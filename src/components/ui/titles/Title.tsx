@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 import { useScrollContext } from "../../../contexts";
-
-type TitleProps = {
-  text: string;
-  width?: string;
-  extraClases?: string;
-};
+import { type TitleProps } from "../../../types/HomeTypes";
 
 export const Title = ({ text, width = "w-full", extraClases }: TitleProps) => {
   const { scrolled } = useScrollContext();

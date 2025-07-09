@@ -25,8 +25,8 @@ export const MailForm = () => {
       onClick={(e) => e.stopPropagation()}
       onSubmit={handleSubmit}
       className="flex w-full h-full min-w-[30vw] flex-col text-[var(--primary-color)] gap-5 
-        p-10 px-10 rounded-xl border-2 
-        border-[var(--primary-color)]  
+        p-10 px-10 rounded-md border-2 
+        border-blue-400/20  
         get-form:animate-slideIn get-form:z-[15]"
     >
       {/* Contact Name */}
@@ -42,7 +42,7 @@ export const MailForm = () => {
           name="from_name"
           id="from_name"
           placeholder="What's your name?"
-          className="w-full p-2 text-[1.2em] font-[Lilita] rounded-md border-2 border-[var(--primary-color)]"
+          className="w-full p-2 text-[1.2em] font-[Lilita] rounded-sm border-3 border-blue-400/50"
           required
         />
       </div>
@@ -60,7 +60,7 @@ export const MailForm = () => {
           id="message"
           rows={4}
           placeholder="Leave me a message"
-          className="w-full h-[5rem] p-2 text-[1.2em] font-[Lilita] border-2 border-[var(--primary-color)] rounded-md resize-none"
+          className="w-full h-[5rem] p-2 text-[1.2em] font-[Lilita] border-3 border-blue-400/50 rounded-sm resize-none"
           required
         />
       </div>
@@ -78,7 +78,7 @@ export const MailForm = () => {
           name="email_id"
           id="email_id"
           placeholder="I'll reply ASAP!"
-          className="w-full p-2 text-[1.2em] font-[Lilita] rounded-md border-2 border-[var(--primary-color)]"
+          className="w-full p-2 text-[1.2em] font-[Lilita] rounded-sm border-2 border-blue-400/50"
           required
         />
       </div>
@@ -88,12 +88,11 @@ export const MailForm = () => {
         id="send-button"
         type="submit"
         value={isSending ? "Sending..." : "Send Email"}
-        className="border-none font-tungsten text-[1.5em] tracking-widest 
-          font-bold w-fit rounded-md pt-2 pb-0.5 px-2.5 cursor-pointer 
-          text-[var(--back-general)] bg-[var(--letter-general)] 
-          shadow-[0.3em_0.3em_0_0_rgb(52,124,226),inset_0.3em_0.3em_0_0_rgb(52,124,226)] 
-          transition-all duration-200 ease-in-out 
-          hover:shadow-[0_0_0_0_blueviolet,inset_6em_3.5em_0_0_blueviolet]"
+        className="border-none font-[Tungsten] text-[1.5em] tracking-widest 
+  font-bold w-fit rounded-2xs pt-2 pb-0.5 px-2.5 cursor-pointer  
+  shadow-[0.25rem_0.25rem_0_0_theme(colors.yellow.300),inset_0.25rem_0.25rem_0_0_theme(colors.yellow.300)] 
+  transition-all duration-200 ease-in-out 
+  hover:shadow-[0_0_0_0_theme(colors.blue.500),inset_6em_3.5em_0_0_theme(colors.blue.600)]"
       />
     </form>
   );

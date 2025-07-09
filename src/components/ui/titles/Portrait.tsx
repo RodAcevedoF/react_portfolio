@@ -1,9 +1,5 @@
 import { useScrollContext } from "../../../contexts";
-
-type PortraitProps = {
-  src: string;
-  alt: string;
-};
+import { type PortraitProps } from "../../../types";
 
 export const Portrait = ({ src, alt }: PortraitProps) => {
   const { scrolled } = useScrollContext();

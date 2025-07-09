@@ -26,11 +26,12 @@ const Home = () => {
               transition={{ duration: 0.3, ease: "easeOut" }}
               className="text-[15vw] leading-[0.5] text-transparent mb-20 mt-30"
               style={{
-                WebkitTextStrokeWidth: "2px",
+                WebkitTextStrokeWidth: "3px",
                 WebkitTextStrokeColor: "var(--primary-color)"
               }}
             >
-              Most recent
+              <span style={{ WebkitTextStrokeColor: "#51A2FF" }}>Most</span>{" "}
+              recent
             </motion.h3>
           )}
         </AnimatePresence>

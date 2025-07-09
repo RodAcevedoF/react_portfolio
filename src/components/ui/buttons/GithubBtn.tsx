@@ -1,27 +1,37 @@
-type GithubLinkProps = {
-  url?: string | undefined;
-};
+import type { FC } from "react";
+import type { GithubProfileButtonProps } from "../../../types";
 
-export const GithubLink = ({ url }: GithubLinkProps) => {
+export const GithubLink: FC<GithubProfileButtonProps> = ({
+  username,
+  frontText = "hover me",
+  hoverText = "visit my github",
+  target = "_blank"
+}) => {
+  const href = `https://github.com/${username}`;
+
   return (
-    <div className="grid place-items-center bg-[#e3edf7] p-1 rounded-[5px] border border-transparent shadow-[-5px_-5px_8px_-1px_rgba(0,0,0,0.15),5px_5px_8px_-1px_rgba(255,255,255,0.7)] transition-transform duration-500 hover:shadow-[inset_-4px_-4px_6px_-1px_rgba(0,0,0,0.2),inset_4px_4px_6px_-1px_rgba(255,255,255,0.7),-0.5px_-0.5px_0px_rgba(255,255,255,1),0.5px_0.5px_0px_rgba(0,0,0,0.15),0px_12px_10px_-10px_rgba(0,0,0,0.05)] hover:border-black/10 hover:translate-y-1 z-5">
-      <a
-        href={url || "https://www.github.com"}
-        target="_blank"
-        rel="noreferrer noopener"
-        aria-label="Ir al repositorio de GitHub"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#0092E4"
-          height={35}
-          width={35}
-          className="transition-transform duration-500 hover:scale-90 hover:rotate-[360deg] hover:fill-[#333333]"
-        >
-          <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z" />
+    <a
+      href={href}
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
+      className="github-button relative group flex w-fit h-fit border-4 border-white hover:border-blue-400/70 cursor-pointer z-10"
+    >
+      <div className="bg-white px-2.5 pt-2.5 pb-1">
+        <svg viewBox="0 0 24 24" className="w-[25px] h-[25px]">
+          <path
+            d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+            fill="#222229"
+          />
         </svg>
-      </a>
-    </div>
+      </div>
+      <div className="cube transition-all duration-500 w-[200px] h-[47px] group-hover:rotate-x-90 preserve-3d relative">
+        <span className="side front absolute bg-[#222229] text-white w-full h-full flex items-center justify-center text-xs font-bold uppercase tracking-wide translate-z-[1em]">
+          {frontText}
+        </span>
+        <span className="side top absolute bg-blue-400 text-white w-full h-full flex items-center justify-center text-md font-bold uppercase tracking-wide rotate-x-[-90deg] translate-y-[13.5px]">
+          {hoverText}
+        </span>
+      </div>
+    </a>
   );
 };
