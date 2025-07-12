@@ -73,7 +73,7 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
 
       delayedCallRef.current = gsap.delayedCall(animationStepDuration, () => {
         activeEl.style.display = activate ? "block" : "none";
-        activeEl.style.pointerEvents = activate ? "none" : "";
+        //        activeEl.style.pointerEvents = activate ? "none" : "";
       });
 
       gsap.to(pixels, {
@@ -125,7 +125,7 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
   }, [active, isControlled, animatePixels]);
 
   const handleClick = (): void => {
-    onClick?.(); // 👈 ejecutar también el onClick externo
+    onClick?.();
 
     if (!isControlled && trigger === "click") {
       const next = !internalActive;
@@ -162,7 +162,7 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
 
       <div
         ref={activeRef}
-        className="absolute inset-0 w-full h-full z-[10]"
+        className="absolute inset-0 w-full h-full z-[20]"
         style={{ display: "none" }}
       >
         {secondContent}
@@ -170,10 +170,11 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
 
       <div
         ref={pixelGridRef}
-        className="absolute inset-0 w-full h-full pointer-events-none z-[3]"
+        className="absolute inset-0 w-full h-full z-[3]"
       />
     </div>
   );
 };
 
 export default PixelTransition;
+//ultimo divo tenia pointer-events-none

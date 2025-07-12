@@ -1,1 +1,1 @@
-export * from "./assets";
+//export * from "../src/assets";

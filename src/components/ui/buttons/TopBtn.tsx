@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { arrowTop } from "../../../../public/assets";
+import { arrowTop } from "../../../assets";
 
 export const TopBtn: FC = () => {
   const handleScrollTop = () => {

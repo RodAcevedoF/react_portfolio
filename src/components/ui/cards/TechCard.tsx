@@ -16,7 +16,7 @@ export const TechCard = ({ item }: TechElement) => {
       <motion.img
         src={item.img}
         alt={`${item.name} logo`}
-        className="w-15 h-auto object-contain absolute"
+        className="w-15 h-auto object-contain absolute mb-1.5"
         animate={{
           opacity: hovered ? 0 : 1,
           filter: hovered ? "invert(1) blur(4px)" : "invert(1) blur(0px)"
@@ -26,7 +26,7 @@ export const TechCard = ({ item }: TechElement) => {
       <motion.img
         src={item.hoverImg}
         alt={`${item.name} hover logo`}
-        className="w-15 h-auto object-contain absolute"
+        className="w-15 h-auto object-contain absolute mb-1.5"
         animate={{
           opacity: hovered ? 1 : 0,
           filter: hovered ? "blur(0px)" : "blur(4px)"

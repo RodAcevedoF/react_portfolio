@@ -20,14 +20,27 @@ export type EducationItem = {
 
 export type WorkExperienceItem = {
   position: string;
-  company: string;
+  organization?: {
+    title: string;
+    website: string;
+    image: string;
+  };
   startDate: string;
   endDate: string;
   location: string;
   description: string;
+  workplaceMode?: string;
+  responsabilities?: string[];
+  skills?: string[];
+  tools?: Tool[];
 };
 
-export interface ExperienceItem {
+type Tool = {
+  name: string;
+  img: string;
+};
+
+/* export interface ExperienceItem {
   organization?: {
     title: string;
     website: string;
@@ -40,7 +53,7 @@ export interface ExperienceItem {
   workplaceMode?: string;
   responsabilities?: string[];
   tools?: string[];
-}
+} */
 
 export interface SideNavProps {
   sectionRefs: {

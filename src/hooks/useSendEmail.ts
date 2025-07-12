@@ -10,7 +10,7 @@ export const useSendEmail = () => {
   const [isSending, setIsSending] = useState(false);
 
   useEffect(() => {
-    emailjs.init(PUBLIC_KEY); // solo se inicializa una vez
+    emailjs.init(PUBLIC_KEY);
   }, []);
 
   const send = async (form: HTMLFormElement) => {

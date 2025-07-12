@@ -20,18 +20,25 @@ export const BioSection = ({ innerRef, extraClass }: BioSectionProps) => {
           <span className="text-blue-400">A</span>BOUT
         </h4>
       </div>
-      <div className="flex w-full justify-center xl:justify-between items-center gap-10 flex-wrap sm:flex-nowrap">
+      <div className="flex w-full justify-center xl:justify-between items-center gap-10 flex-wrap md:flex-nowrap p-3 md:p-0">
         <p className="w-full font-inherit font-[var(--primary-color)] text-[1.2rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.6rem] leading-[1.5]">
           {data.aboutMe}
         </p>
         <RandomBachWork />
       </div>
-      <button className="flex w-auto cursor-pointer justify-center items-center border-none bg-inherit transition-transform duration-300 ease-in-out text-inherit group self-center sm:self-start">
+      <a
+        href="/CV-EN.pdf"
+        download
+        className="flex w-auto cursor-pointer justify-center items-center border-none bg-inherit transition-transform duration-300 ease-in-out text-inherit group self-center sm:self-start"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <span className="font-bold text-[1.2em] tracking-[0.5em] font-[Tungsten] transition-opacity duration-200 ease-in-out">
           DOWNLOAD RESUME
         </span>
         <span className="bg-blue-400/70 h-[0.2em] w-[16em] left-[10] translate-x-[30%] opacity-0 absolute transition-all duration-200 ease-in-out rounded-[0.5em] group-hover:opacity-100 group-hover:translate-x-[-2%]" />
-      </button>
+      </a>
+
       <div className="flex flex-col w-full justify-center items-end pr-10">
         <h4 className="font-[Tungsten] text-[1.5em] font-[400] tracking-[0.5em]">
           <span className="text-blue-400">CON</span>TACT

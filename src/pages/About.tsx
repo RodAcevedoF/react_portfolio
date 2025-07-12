@@ -1,5 +1,5 @@
 import { Portrait, Resume, Title, ToggleParticles } from "../components";
-import { portraitD } from "../../public";
+import { portraitD } from "../assets";
 
 const About = () => {
   return (

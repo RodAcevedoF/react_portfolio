@@ -2,28 +2,26 @@
 
 @font-face {
   font-family: "Tungsten";
-  src: url("../public/assets/fonts/tungsten_font/tungsten-medium.woff2")
+  src: url("/src/assets/fonts/tungsten_font/tungsten-medium.woff2")
       format("woff2"),
-    url("../public/assets/fonts/tungsten_font/tungsten-medium.woff")
-      format("woff");
+    url("/src/assets/fonts/tungsten_font/tungsten-medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Sequel";
-  src: url("../public/assets/fonts/sequel_regular/Sequel-Regular.woff2")
+  src: url("/src/assets/fonts/sequel_regular/Sequel-Regular.woff2")
       format("woff2"),
-    url("../public/assets/fonts/sequel_regular/Sequel-Regular.woff")
-      format("woff");
+    url("/src/assets/fonts/sequel_regular/Sequel-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Lilita";
-  src: url("../public/assets/fonts/LilitaOne/LilitaOne.woff2") format("woff2"),
-    url("../public/assets/fonts/LilitaOne/LilitaOne.woff") format("woff");
+  src: url("/src/assets/fonts/LilitaOne/LilitaOne.woff2") format("woff2"),
+    url("/src/assets/fonts/LilitaOne/LilitaOne.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -113,6 +111,15 @@ body.scrolled {
   }
 }
 
+@keyframes musicSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes popIn {
   0% {
     transform: scale(0);
@@ -198,6 +205,21 @@ body.scrolled {
   }
   to {
     transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 40px rgb(53, 143, 246);
+  }
+  13% {
+    transform: scale(1, 4);
+    box-shadow: 0 0 60px rgb(53, 143, 246);
+  }
+  26% {
+    transform: scale(1);
+    box-shadow: 0 0 40px rgb(53, 143, 246);
   }
 }
 

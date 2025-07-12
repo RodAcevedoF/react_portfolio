@@ -57,20 +57,20 @@ export const EducationCard = ({
             return (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center"
+                className="flex flex-col items-center justify-center py-3 px-4"
               >
                 <div className="flex items-center justify-start w-full gap-3">
                   <Cross width={14} className="text-yellow-200" />
-                  <p className="text-blue-400 text-lg sm:text-xl text-center">
+                  <p className="text-blue-400 text-lg sm:text-xl text-start">
                     {course.name}
                   </p>
                 </div>
-                <p className="">{course.description}</p>
+                <p className="w-full text-start">{course.description}</p>
               </div>
             );
           })}
         </section>
-        <section className="w-full flex flex-wrap gap-1 items-center justify-center p-5">
+        <section className="w-full flex flex-wrap gap-1 items-center justify-center p-2 sm:p-5 mb-5">
           {data.skills?.map((skill, index) => (
             <MiniSkillBtn key={index} text={skill} />
           ))}

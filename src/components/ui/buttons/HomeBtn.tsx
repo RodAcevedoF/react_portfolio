@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { devLogo } from "../../../../public/assets";
+import { devLogo } from "../../../assets";
 import { useScrollContext } from "../../../contexts";
 import type { HomeBtnProps } from "../../../types";
 

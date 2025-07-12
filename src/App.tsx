@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, About, Splash } from "./pages";
+import { Home, About, Splash, NotFound } from "./pages";
 import { Footer, NavBar } from "./components";
 import { MailForm } from "./components";
 import { Modal } from "./components";
@@ -16,6 +16,7 @@ const App = () => {
             <Route path="/" element={<Splash />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

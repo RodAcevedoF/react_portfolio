@@ -1,6 +1,7 @@
 import { useCardContext, useScrollContext } from "../../../contexts";
 import { PixelTransition } from "../../animations";
 import type { ProjectCardProps } from "../../../types";
+import { Globe, Github, MessageCircleCode } from "lucide-react";
 
 export const ProjectCard = ({
   name,
@@ -13,7 +14,12 @@ export const ProjectCard = ({
   hoveredColor,
   onMouseEnter,
   onMouseLeave,
-  index
+  index,
+  url,
+  deploy,
+  backImg,
+  description,
+  tech
 }: ProjectCardProps) => {
   const { activeIndex, setActiveIndex } = useCardContext();
   const { scrolled } = useScrollContext();
@@ -67,8 +73,71 @@ export const ProjectCard = ({
   );
 
   const secondContent = (
-    <div className="w-full h-full grid place-items-center bg-black text-white rounded-md">
-      <p className="text-2xl font-bold">Hello 👋</p>
+    <div
+      className="w-full h-full flex flex-col items-center justify-between bg-black text-white border-3 border-blue-500/50 rounded-md relative overflow-hidden "
+      style={{ background: "var(--dark-bg)" }}
+    >
+      <header
+        className={`relative w-full h-[12rem] flex items-center justify-end rounded-t-sm shadow-3xl group transition-all duration-300 ease-in-out overflow-hidden`}
+      >
+        {/* efecto visual en ::before */}
+        <div
+          className="absolute inset-0 z-10 bg-cover transition-all duration-300 ease-in-out scale-110 brightness-75 group-hover:scale-100 group-hover:brightness-100"
+          style={{
+            backgroundImage: `url(${backImg})`,
+            WebkitMaskImage:
+              "linear-gradient(to bottom, black 0%, black 90%, transparent 100%)",
+            maskImage:
+              "linear-gradient(to bottom, black 0%, black 90%, transparent 100%)"
+          }}
+        />
+
+        {/* contenido no afectado */}
+        <div className="flex flex-col justify-center bg-black/90 items-center gap-4 p-2 rounded-md mr-[3%] border-3 border-blue-500/80 z-10 group">
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="hover:shadow-xl shadow-blue-600/80 bg-transparent transition-all duration-300 ease-in-out hover:translate-y-[-3px] rounded-md"
+          >
+            <Github className="text-[var(--primary-color)] border-2 border-yellow-200/20 rounded-md hover:text-blue-200 transition-colors duration-200 ease-in-out p-2 w-10 h-auto" />
+          </a>
+          <a
+            href={deploy}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="hover:shadow-xl shadow-blue-600/80 bg-transparent transition-all duration-300 ease-in-out hover:translate-y-[-3px] rounded-md"
+          >
+            <Globe className="text-[var(--primary-color)] hover:text-blue-200 transition-colors duration-200 ease-in-out border-2 border-yellow-200/20 rounded-md p-2 w-10 h-auto" />
+          </a>
+        </div>
+      </header>
+
+      <main className="p-2">
+        <p className="text-sm font-[Lilita] italic text-gray-400 px-2">
+          {description}
+        </p>
+        <div className="flex items-center justify-start gap-5 w-full mt-2 border-2 rounded-md p-2 px-4 border-blue-600/50">
+          <div className="flex items-center justify-center gap-2">
+            <MessageCircleCode className="text-yellow-200" />
+            <p className="font-[Lilita]">TECH</p>
+          </div>
+          <div className="flex justify-center items-center gap-2">
+            {tech?.map((t) => {
+              return (
+                <img
+                  key={t.name}
+                  src={t.icon}
+                  alt={t.name}
+                  className="w-11 h-auto hover:translate-y-[-3px] hover:shadow-lg shadow-blue-500 transition-all duration-300 ease-in-out border-2 border-yellow-200/20 rounded-md p-1"
+                ></img>
+              );
+            })}
+          </div>
+        </div>
+      </main>
     </div>
   );
 

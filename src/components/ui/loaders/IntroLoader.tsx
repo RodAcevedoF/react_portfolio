@@ -1,63 +1,19 @@
-export const IntroLoader = () => {
+import type { FC } from "react";
+
+export const IntroLoader: FC = () => {
+  const blocks = Array.from({ length: 24 });
+
   return (
-    <div className="flex justify-center items-center relative animate-[pulse-loader_2s_infinite_ease-in-out]">
-      <div
-        className="absolute top-1/2 left-1/2 w-5 h-5 rounded-full"
-        style={{
-          background: "radial-gradient(circle, #67e8f9, #8f51ea)",
-          transform: "translate(-50%, -50%)",
-          animation: "pulse-nucleus 1s ease-in-out infinite",
-          boxShadow: "0 0 20px #fe53bb, 0 0 40px #8f51ea"
-        }}
-      />
-      <div
-        className="absolute rounded-full w-[190px] h-[190px] border-b-8 border-transparent"
-        style={{
-          borderBottomColor: "#67e8f9",
-          animation: "rotate1 1s ease-in-out infinite",
-          boxShadow: "0 0 4px #8e8e8e"
-        }}
-      />
-      <div
-        className="absolute rounded-full w-[190px] h-[190px] border-b-8 border-transparent"
-        style={{
-          borderBottomColor: "#8f51ea",
-          animation: "rotate2 1s ease-in-out infinite",
-          boxShadow: "0 0 4px #8e8e8e"
-        }}
-      />
-      <div
-        className="absolute rounded-full w-[190px] h-[190px] border-b-8 border-transparent"
-        style={{
-          borderBottomColor: "#0044ff",
-          animation: "rotate3 1s ease-in-out infinite",
-          boxShadow: "0 0 4px #8e8e8e"
-        }}
-      />
-      <div
-        className="absolute rounded-full w-[380px] h-[380px] border-2 border-transparent border-b-[16px]"
-        style={{
-          borderBottomColor: "#67e8f9",
-          animation: "rotate4 1s ease-in-out infinite",
-          boxShadow: "0 0 4px #8e8e8e"
-        }}
-      />
-      <div
-        className="absolute rounded-full w-[380px] h-[380px] border-2 border-transparent border-b-[16px]"
-        style={{
-          borderBottomColor: "#8f51ea",
-          animation: "rotate5 1s ease-in-out infinite",
-          boxShadow: "0 0 4px #8e8e8e"
-        }}
-      />
-      <div
-        className="absolute rounded-full w-[380px] h-[380px] border-2 border-transparent border-b-[16px]"
-        style={{
-          borderBottomColor: "#0044ff",
-          animation: "rotate6 1s ease-in-out infinite",
-          boxShadow: "0 0 4px #8e8e8e"
-        }}
-      />
+    <div className="flex items-center justify-center w-20 h-20 relative">
+      <div className="flex items-center justify-center relative">
+        {blocks.map((_, i) => (
+          <div
+            key={i}
+            className="w-2 h-[10px] mx-[2px] bg-[#358ff6] animate-[loader_5s_infinite] shadow-[0_0_30px_#358ff6]"
+            style={{ animationDelay: `${(i + 1) * 0.2}s` }}
+          />
+        ))}
+      </div>
     </div>
   );
 };

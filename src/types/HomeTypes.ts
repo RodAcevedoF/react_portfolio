@@ -29,7 +29,15 @@ export type ProjectCardProps = {
   onMouseEnter: () => void;
   onMouseLeave: () => void;
   index: number;
+  backImg?: string;
+  tech?: ProjectTech[];
+  deploy?: string;
+  description?: string;
 };
+interface ProjectTech {
+  name: string;
+  icon: string;
+}
 
 export interface GithubProfileButtonProps {
   username: string;
