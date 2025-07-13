@@ -1,10 +1,12 @@
 import { useRef } from "react";
 import { useSendEmail } from "../../../hooks/useSendEmail";
 import { swalHandler } from "../../../utils";
+import { useTranslation } from "react-i18next";
 
 export const MailForm = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const { send, isSending } = useSendEmail();
+  const { t } = useTranslation();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,13 +37,13 @@ export const MailForm = () => {
           htmlFor="from_name"
           className="text-[1.2em] font-[Lilita] text-[var(--primary-color)]"
         >
-          Contact Name
+          {t("mailForm.contact_name")}
         </label>
         <input
           type="text"
           name="from_name"
           id="from_name"
-          placeholder="What's your name?"
+          placeholder={t("mailForm.contact_name_placeholder")}
           className="w-full p-2 text-[1.2em] font-[Lilita] rounded-sm border-3 border-blue-400/50"
           required
         />
@@ -53,13 +55,13 @@ export const MailForm = () => {
           htmlFor="message"
           className="text-[1.2em] font-[Lilita] text-[var(--primary-color)]"
         >
-          Your Message
+          {t("mailForm.your_message")}
         </label>
         <textarea
           name="message"
           id="message"
           rows={4}
-          placeholder="Leave me a message"
+          placeholder={t("mailForm.your_message_placeholder")}
           className="w-full h-[5rem] p-2 text-[1.2em] font-[Lilita] border-3 border-blue-400/50 rounded-sm resize-none"
           required
         />
@@ -71,13 +73,13 @@ export const MailForm = () => {
           htmlFor="email_id"
           className="text-[1.2em] font-[Lilita] text-[var(--primary-color)]"
         >
-          Your Email
+          {t("mailForm.your_email")}
         </label>
         <input
           type="email"
           name="email_id"
           id="email_id"
-          placeholder="I'll reply ASAP!"
+          placeholder={t("mailForm.your_email_placeholder")}
           className="w-full p-2 text-[1.2em] font-[Lilita] rounded-sm border-2 border-blue-400/50"
           required
         />
@@ -87,7 +89,7 @@ export const MailForm = () => {
       <input
         id="send-button"
         type="submit"
-        value={isSending ? "Sending..." : "Send Email"}
+        value={isSending ? t("mailForm.sending") : t("mailForm.send_email")}
         className="border-none font-[Tungsten] text-[1.5em] tracking-widest 
   font-bold w-fit rounded-2xs pt-2 pb-0.5 px-2.5 cursor-pointer  
   shadow-[0.25rem_0.25rem_0_0_theme(colors.yellow.300),inset_0.25rem_0.25rem_0_0_theme(colors.yellow.300)] 

@@ -19,12 +19,12 @@ export type EducationItem = {
 };
 
 export type WorkExperienceItem = {
-  position: string;
   organization?: {
     title: string;
     website: string;
     image: string;
   };
+  position: string;
   startDate: string;
   endDate: string;
   location: string;

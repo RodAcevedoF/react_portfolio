@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import { formatDate } from "../../../utils/formatsDate";
 import type { StickyHeaderProps } from "../../../types";
+import { useTranslation } from "react-i18next";
 
 export const EducationHeader = ({
   data,
   align,
   isActive = false
 }: StickyHeaderProps) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -21,11 +24,11 @@ export const EducationHeader = ({
       <div className="py-2 flex w-full h-full justify-center items-center gap-5">
         <div className="flex flex-col w-full">
           <p className="text-blue-400 text-[0.9rem] sm:text-[1.2rem] mb-1">
-            {data.university}
+            {t(data.university)}
           </p>
           <h3 className="text-[1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.4rem] font-semibold mb-1">
             {" "}
-            {data.degree}
+            {t(data.degree)}
           </h3>
           <p className="text-sm text-gray-400">
             {formatDate(data.startDate)} – {formatDate(data.endDate)}

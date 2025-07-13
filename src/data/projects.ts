@@ -38,8 +38,7 @@ export const projects = [
     url: "https://github.com/RodAcevedoF/project5",
     deploy: "https://getdone.vercel.app",
     backImg: getDoneBackBg,
-    description:
-      "GetDone is a productivity web app combining a todo list with book and video management, user profiles, weather updates, and authentication. It features a custom mini-router and a global state management system, both developed from scratch.",
+    description: "projects.getdone.description",
     tech: [
       { name: "html", icon: hoverHtml },
       { name: "css", icon: hoverCss },
@@ -54,8 +53,7 @@ export const projects = [
     url: "https://github.com/RodAcevedoF/todo_api",
     deploy: "https://getdone.vercel.app",
     backImg: todoApiBackBg,
-    description:
-      "A RESTful API built with Express and PostgreSQL, allowing users to authenticate and manage tasks, books, and videos. Includes JWT authentication with refresh tokens, file uploads (Multer), Swagger documentation, and is Docker-ready",
+    description: "projects.todo_api.description",
     tech: [
       { name: "node", icon: hoverNode },
       { name: "express", icon: hoverExpress },
@@ -70,8 +68,7 @@ export const projects = [
     url: "https://github.com/RodAcevedoF/proyecto1",
     deploy: "https://proyecto1-peach-theta.vercel.app/",
     backImg: fenderBackBg,
-    description:
-      "Visually engaging landing page concept for Fender, crafted solely with HTML, CSS and JS. It emphasizes structured layout — using flex and grid systems and typography hierarchy to evoke the brand’s iconic rock identity.",
+    description: "project.fender.description",
     tech: [
       { name: "html", icon: hoverHtml },
       { name: "css", icon: hoverCss },
@@ -86,8 +83,7 @@ export const projects = [
     url: "https://github.com/RodAcevedoF/entrega_practica_DOM",
     deploy: "https://dom-practice-blue.vercel.app/",
     backImg: angrbodaBackBg,
-    description:
-      "Angrboda is an e-commerce UI prototype built with HTML, CSS, and JavaScript, focused on DOM manipulation. It features interactive product listings and smooth UI transitions — all achieved without external frameworks",
+    description: "project.angrboda.description",
     tech: [
       { name: "html", icon: hoverHtml },
       { name: "css", icon: hoverCss },
@@ -102,8 +98,7 @@ export const projects = [
     url: "https:github.com/RodAcevedoF/ContactsXML",
     deploy: "https://github.com/RodAcevedoF/ContactsXML",
     backImg: contactBackBg,
-    description:
-      "This is a modern web app built with Spring Boot, Thymeleaf, and Bootstrap for managing contacts. It supports XML import/export and integrates Jakarta EE standards for robust backend architecture.",
+    description: "project.contacts_xml.description",
     tech: [
       { name: "spring", icon: hoverSpring },
       { name: "thymeleaf", icon: thymeLeaf },
@@ -120,8 +115,7 @@ export const projects = [
     url: "https://github.com/RodAcevedoF/proyecto3",
     deploy: "https://proyecto3-pinterest.vercel.app/",
     backImg: pinterestBackBg,
-    description:
-      "This is a dynamic image gallery web app inspired by Pinterest, built with HTML, CSS, and JavaScript. It focuses on API consumption to fetch media content and implements client-side pagination for seamless browsing",
+    description: "project.pinterest.description",
     tech: [
       { name: "html", icon: hoverHtml },
       { name: "css", icon: hoverCss },

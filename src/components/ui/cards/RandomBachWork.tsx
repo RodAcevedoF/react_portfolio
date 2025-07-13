@@ -1,11 +1,13 @@
 import { useRandomBachWork } from "../../../hooks";
-import { Music } from "lucide-react";
+import { Music, CircleArrowDown } from "lucide-react";
 import { useEffect, useState } from "react";
 import { MusicSpin } from "../loaders";
+import { useTranslation, Trans } from "react-i18next";
 
 export const RandomBachWork = () => {
   const { work, loading, error, refetch } = useRandomBachWork();
   const [delayedLoading, setDelayedLoading] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (loading) {
@@ -37,10 +39,14 @@ export const RandomBachWork = () => {
         <p>ProTip:</p>
       </div>
       <h2 className="text-[1.5rem]">
-        <span className="text-yellow-200">Bach</span> while coding
-        <span className="text-yellow-200">!</span>
+        <Trans
+          i18nKey={t("bach_card.title")}
+          components={{ yellow: <span className="text-yellow-200" /> }}
+        />
       </h2>
-      <p>Need some examples?</p>
+      <p className="flex gap-2">
+        {t("bach_card.subtitle")} <CircleArrowDown className="text-blue-400" />
+      </p>
 
       <div className="h-full w-full flex flex-col justify-center items-start gap-1">
         {(loading || delayedLoading) && (

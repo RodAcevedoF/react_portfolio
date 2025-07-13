@@ -75,12 +75,11 @@ export const data = {
   address: "Löhrrstrasse 16, Villingen-Schwenningen DE",
   email: "raacevedof@gmail.com",
   avatar: "/images/portrait.png",
-  aboutMe:
-    "Hi! I'm Rodrigo, originally from Chile and educated in Germany, I got a strong background in music, physics, and philosophy with a new focus on web development. Former orchestral musician and research associate at the University of Freiburg, I bring into my work a mix of creativity, discipline, and analytical thinking. I enjoy classical music, reading and I'm always in for something sweet :D",
+  aboutMe: "about_me.about",
   education: [
     {
-      degree: "Full-stack Master Program",
-      university: "thePower - Prometeo School",
+      degree: "education.fullstack_master.degree",
+      university: "education.fullstack_master.university",
       startDate: "2024-09-01",
       endDate: "2026-05-01",
       honors: "",
@@ -89,39 +88,39 @@ export const data = {
       img: thePower,
       relevantCourses: [
         {
-          name: "Full-Stack Architecture",
+          name: "education.fullstack_master.courses.fullstack_architecture.name",
           description:
-            "Covers frontend-backend integration using modern JavaScript frameworks and APIs."
+            "education.fullstack_master.courses.fullstack_architecture.description"
         },
         {
-          name: "Modern Frontend Development",
+          name: "education.fullstack_master.courses.modern_frontend_development.name",
           description:
-            "Advanced component-based UI using React, Angular, and state management tools like Redux or Signals."
+            "education.fullstack_master.courses.modern_frontend_development.description"
         },
         {
-          name: "Advanced Back-End with Node.js",
+          name: "education.fullstack_master.courses.advanced_backend_nodejs.name",
           description:
-            "Builds scalable APIs using Node.js, Express, MongoDB, authentication, authorization, and serverless functions."
+            "education.fullstack_master.courses.advanced_backend_nodejs.description"
         }
       ],
       skills: [
-        "React",
-        "Next.js",
-        "Angular",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "NestJS",
-        "TailwindCSS",
-        "TypeScript",
-        "REST APIs",
-        "JWT Authentication",
-        "Modern Deployment (Vercel/Render)"
+        "education.fullstack_master.skills.react",
+        "education.fullstack_master.skills.nextjs",
+        "education.fullstack_master.skills.angular",
+        "education.fullstack_master.skills.nodejs",
+        "education.fullstack_master.skills.expressjs",
+        "education.fullstack_master.skills.mongodb",
+        "education.fullstack_master.skills.nestjs",
+        "education.fullstack_master.skills.tailwindcss",
+        "education.fullstack_master.skills.typescript",
+        "education.fullstack_master.skills.rest_apis",
+        "education.fullstack_master.skills.jwt_authentication",
+        "education.fullstack_master.skills.modern_deployment"
       ]
     },
     {
-      degree: "Web Development degree",
-      university: "thePower - Prometeo School",
+      degree: "education.web_dev.degree",
+      university: "education.web_dev.university",
       startDate: "2024-09-01",
       endDate: "2026-05-01",
       honors: "",
@@ -130,207 +129,212 @@ export const data = {
       img: thePower,
       relevantCourses: [
         {
-          name: "Client-Server Web Architecture",
+          name: "education.web_dev.courses.client_server_web_architecture.name",
           description:
-            "Introduction to HTTP, web servers, request/response lifecycle, and client-side rendering."
+            "education.web_dev.courses.client_server_web_architecture.description"
         },
         {
-          name: "Databases and SQL",
-          description:
-            "Relational database concepts, schema design, and CRUD operations using SQL."
+          name: "education.web_dev.courses.databases_sql.name",
+          description: "education.web_dev.courses.databases_sql.description"
         },
         {
-          name: "Programming Fundamentals",
+          name: "education.web_dev.courses.programming_fundamentals.name",
           description:
-            "Covers algorithmic logic, data structures, object-oriented programming, and PHP basics."
+            "education.web_dev.courses.programming_fundamentals.description"
         },
         {
-          name: "UML & Software Design",
+          name: "education.web_dev.courses.uml_software_design.name",
           description:
-            "Diagramming techniques for software planning: class diagrams, use cases, and sequence diagrams."
+            "education.web_dev.courses.uml_software_design.description"
         }
       ],
       skills: [
-        "HTML5",
-        "CSS3",
-        "JavaScript (ES6+)",
-        "PHP",
-        "SQL",
-        "MySQL",
-        "OOP",
-        "UML",
-        "Client-Server Architecture",
-        "Basic Git",
-        "Responsive Design",
-        "Linux/Command Line"
+        "education.web_dev.skills.html5",
+        "education.web_dev.skills.css3",
+        "education.web_dev.skills.javascript_es6",
+        "education.web_dev.skills.php",
+        "education.web_dev.skills.sql",
+        "education.web_dev.skills.mysql",
+        "education.web_dev.skills.oop",
+        "education.web_dev.skills.uml",
+        "education.web_dev.skills.client_server_architecture",
+        "education.web_dev.skills.basic_git",
+        "education.web_dev.skills.responsive_design",
+        "education.web_dev.skills.linux_command_line"
       ]
     },
     {
-      degree: "Master-of-Science (M.Sc.) Physics",
-      university: "Freiburg Universität",
+      degree: "education.msc_physics.degree",
+      university: "education.msc_physics.university",
       startDate: "2012-09-01",
       endDate: "2014-06-01",
-      honors: "mit Auszeichnung",
-      score: "1 (Highest grade)",
+      honors: "education.msc_physics.honors",
+      score: "education.msc_physics.score",
       web: "https://www.google.com",
       img: ufr,
       relevantCourses: [
         {
-          name: "Quantum Mechanics II",
+          name: "education.msc_physics.courses.quantum_mechanics.name",
           description:
-            "Advanced principles of wavefunctions, quantum states, and perturbation theory."
+            "education.msc_physics.courses.quantum_mechanics.description"
         },
         {
-          name: "Computational Physics",
+          name: "education.msc_physics.courses.computational_physics.name",
           description:
-            "Focuses on numerical modeling, simulation algorithms, and data visualization."
+            "education.msc_physics.courses.computational_physics.description"
         },
         {
-          name: "Optoelectronics",
+          name: "education.msc_physics.courses.optoelectronics.name",
           description:
-            "Applications of semiconductor physics in photonic devices."
+            "education.msc_physics.courses.optoelectronics.description"
         }
       ],
       skills: [
-        "Scientific Computing",
-        "MATLAB",
-        "Python",
-        "Numerical Methods",
-        "Simulation Tools",
-        "Data Analysis",
-        "Technical Writing",
-        "Experimental Design"
+        "education.msc_physics.skills.scientific_computing",
+        "education.msc_physics.skills.matlab",
+        "education.msc_physics.skills.python",
+        "education.msc_physics.skills.numerical_methods",
+        "education.msc_physics.skills.simulation_tools",
+        "education.msc_physics.skills.data_analysis",
+        "education.msc_physics.skills.technical_writing",
+        "education.msc_physics.skills.experimental_design"
       ]
     },
     {
-      degree: "Bachelor-of-Science (B.Sc.) Physik",
-      university: "Freiburg Universität",
+      degree: "education.bachelor_physics.degree",
+      university: "education.bachelor_physics.university",
       startDate: "2008-09-01",
       endDate: "2012-06-01",
-      honors: "mit Auszeichnung",
-      score: "1 (Highest grade)",
+      honors: "education.bachelor_physics.honors",
+      score: "education.bachelor_physics.score",
       web: "https://www.google.com",
       img: ufr,
       relevantCourses: [
         {
-          name: "Thermodynamics",
-          description: "Studies heat, work, and laws of energy transformation."
+          name: "education.bachelor_physics.courses.thermodynamics.name",
+          description:
+            "education.bachelor_physics.courses.thermodynamics.description"
         },
         {
-          name: "Electrodynamics",
+          name: "education.bachelor_physics.courses.electrodynamics.name",
           description:
-            "Electric and magnetic field theory and Maxwell’s equations."
+            "education.bachelor_physics.courses.electrodynamics.description"
         },
         {
-          name: "Experimental Physics",
+          name: "education.bachelor_physics.courses.experimental_physics.name",
           description:
-            "In-lab experience in measurements, uncertainty, and hypothesis testing."
+            "education.bachelor_physics.courses.experimental_physics.description"
         }
       ],
       skills: [
-        "Classical Mechanics",
-        "Electromagnetism",
-        "Thermodynamics",
-        "LaTeX",
-        "Python (Basics)",
-        "C/C++",
-        "Data Acquisition",
-        "Lab Equipment Handling"
+        "education.bachelor_physics.skills.classical_mechanics",
+        "education.bachelor_physics.skills.electromagnetism",
+        "education.bachelor_physics.skills.thermodynamics",
+        "education.bachelor_physics.skills.latex",
+        "education.bachelor_physics.skills.python_basics",
+        "education.bachelor_physics.skills.c_cpp",
+        "education.bachelor_physics.skills.data_acquisition",
+        "education.bachelor_physics.skills.lab_equipment_handling"
       ]
     },
     {
-      degree: "Bachelor-of-Music (B.Sc.) Musik",
-      university: "Musikhochschule Freiburg",
+      degree: "education.bachelor_music_freiburg.degree",
+      university: "education.bachelor_music_freiburg.university",
       startDate: "2008-01-01",
       endDate: "2010-06-01",
-      honors: "mit Auszeichnung",
-      score: "1 (Highest grade)",
+      honors: "education.bachelor_music_freiburg.honors",
+      score: "education.bachelor_music_freiburg.score",
       web: "https://www.google.com",
       img: hmfm,
       relevantCourses: [
         {
-          name: "Counterpoint and Harmony",
+          name: "education.bachelor_music_freiburg.courses.counterpoint_harmony.name",
           description:
-            "Deep dive into voice leading and harmonic progression techniques."
+            "education.bachelor_music_freiburg.courses.counterpoint_harmony.description"
         },
         {
-          name: "Conducting & Ensemble Leadership",
+          name: "education.bachelor_music_freiburg.courses.conducting_ensemble_leadership.name",
           description:
-            "Practical experience with ensemble rehearsal and cueing."
+            "education.bachelor_music_freiburg.courses.conducting_ensemble_leadership.description"
         },
         {
-          name: "Performance Practice",
+          name: "education.bachelor_music_freiburg.courses.performance_practice.name",
           description:
-            "Focus on historical context and interpretation for solo and group music."
+            "education.bachelor_music_freiburg.courses.performance_practice.description"
         }
       ],
       skills: [
-        "Music Composition",
-        "Score Reading",
-        "Ensemble Performance",
-        "Aural Skills",
-        "Notation Software (Sibelius, Finale)",
-        "Music Analysis",
-        "Orchestration"
+        "education.bachelor_music_freiburg.skills.music_composition",
+        "education.bachelor_music_freiburg.skills.score_reading",
+        "education.bachelor_music_freiburg.skills.ensemble_performance",
+        "education.bachelor_music_freiburg.skills.aural_skills",
+        "education.bachelor_music_freiburg.skills.notation_software",
+        "education.bachelor_music_freiburg.skills.music_analysis",
+        "education.bachelor_music_freiburg.skills.orchestration"
       ]
     },
     {
-      degree: "Bachelor of music",
-      university: "U. Católica de Chile",
+      degree: "education.bachelor_music.degree",
+      university: "education.bachelor_music.degree",
       startDate: "2005-03-01",
       endDate: "2007-12-20",
-      honors: "Matrícula",
-      score: "7 (Highest grade)",
+      honors: "education.bachelor_music.honors",
+      score: "education.bachelor_music.score",
       web: "https://www.google.com",
       img: puc,
       relevantCourses: [
         {
-          name: "Fundamentals of Music Theory",
-          description: "Introduction to scales, intervals, chords, and rhythm."
+          name: "education.bachelor_music.courses.fundamentals_music_theory.name",
+          description:
+            "education.bachelor_music.courses.fundamentals_music_theory.description"
         },
         {
-          name: "Western Music History",
+          name: "education.bachelor_music.courses.western_music_history.name",
           description:
-            "Survey of major styles, composers, and movements from antiquity to the 20th century."
+            "education.bachelor_music.courses.western_music_history.description"
         },
         {
-          name: "Orchestral Training",
+          name: "education.bachelor_music.courses.orchestral_training.name",
           description:
-            "Participation in ensemble work and development of group performance skills."
+            "education.bachelor_music.courses.orchestral_training.description"
         }
       ],
       skills: [
-        "Sight Reading",
+        "education.bachelor_music.skills.sight_reading",
+        "education.bachelor_music.skills.music_theory",
+        "education.bachelor_music.skills.solfege",
         "Music Theory",
-        "Solfege",
-        "Harmony",
-        "Musical Interpretation",
-        "Instrument Technique",
-        "Group Performance"
+        "education.bachelor_music.skills.musical_interpretation",
+        "education.bachelor_music.skills.instrument_technique",
+        "education.bachelor_music.skills.group_performance"
       ]
     }
   ],
   workExperience: [
     {
       organization: {
-        title: "Self-employed",
+        title: "work_experience.freelance_web_dev.org.title",
         website: "https://google.com",
         image: freelance
       },
-      position: "Freelance Web Developer",
-      startDate: "2023",
-      endDate: "present",
-      location: "Remote",
-      description:
-        "As a freelance web developer, I work on custom web solutions for clients ranging from individuals to small businesses. I specialize in building scalable back-end systems and creating intuitive front-end user interfaces.",
-      workPlaceMode: "Remote",
+      position: "work_experience.freelance_web_dev.position",
+      startDate: "work_experience.freelance_web_dev.startDate",
+      endDate: "work_experience.freelance_web_dev.endDate",
+      location: "work_experience.freelance_web_dev.location",
+      description: "work_experience.freelance_web_dev.description",
+      workPlaceMode: "work_experience.freelance_web_dev.description",
       responsabilities: [
-        "Analyze client requirements and provide tailored technical solutions",
-        "Develop scalable RESTful APIs and backend services",
-        "Design responsive and accessible front-end interfaces",
-        "Integrate third-party services and manage deployments"
+        "work_experience.freelance_web_dev.responsabilities.0",
+        "work_experience.freelance_web_dev.responsabilities.1",
+        "work_experience.freelance_web_dev.responsabilities.2",
+        "work_experience.freelance_web_dev.responsabilities.3"
       ],
-      skills: ["CI/CD", "REST APIs", "SOLID", "Agile Development"],
+      skills: [
+        "work_experience.freelance_web_dev.skills.0",
+        "work_experience.freelance_web_dev.skills.1",
+        "work_experience.freelance_web_dev.skills.2",
+        "work_experience.freelance_web_dev.skills.3"
+      ],
       tools: [
         { name: "Figma", img: figma },
         { name: "VSCode", img: vscode },
@@ -340,29 +344,28 @@ export const data = {
     },
     {
       organization: {
-        title: "Basic-Fit",
+        title: "work_experience.basic_fit.org.title",
         website: "https://google.com",
         image: bfit
       },
-      position: "Host",
-      startDate: "2022",
-      endDate: "present",
-      location: "Jerez, ES",
-      description:
-        "As a gym host at Basic-Fit, I provide customer support, maintain a welcoming environment, and assist with operational needs, ensuring a high-quality fitness experience for all members.",
-      workPlaceMode: "On-site",
+      position: "work_experience.basic_fit.position",
+      startDate: "work_experience.basic_fit.startDate",
+      endDate: "work_experience.basic_fit.endDate",
+      location: "work_experience.basic_fit.location",
+      description: "work_experience.basic_fit.description",
+      workPlaceMode: "work_experience.basic_fit.workPlaceMode", // si aplica, sino eliminar
       responsabilities: [
-        "Greet members and provide information about services and memberships",
-        "Provide clients with personalized training programs",
-        "Assist with equipment maintenance and troubleshooting",
-        "Manage client check-ins and handle feedback or issues"
+        "work_experience.basic_fit.responsabilities.0",
+        "work_experience.basic_fit.responsabilities.1",
+        "work_experience.basic_fit.responsabilities.2",
+        "work_experience.basic_fit.responsabilities.3"
       ],
       skills: [
-        "Customer Service",
-        "Teamwork",
-        "Problem Solving",
-        "Time Management",
-        "Responsibility"
+        "work_experience.basic_fit.skills.0",
+        "work_experience.basic_fit.skills.1",
+        "work_experience.basic_fit.skills.2",
+        "work_experience.basic_fit.skills.3",
+        "work_experience.basic_fit.skills.4"
       ],
       tools: [
         { name: "Docs", img: docs },
@@ -373,29 +376,27 @@ export const data = {
     },
     {
       organization: {
-        title: "Tusclasesparticulares",
+        title: "work_experience.tusclasesparticulares.org.title",
         website: "https://google.com",
         image: tc
       },
-      position: "English/German Teacher",
-      startDate: "2018",
-      endDate: "2024",
-      location: "Remote",
-      description:
-        "As a language tutor, I developed personalized lesson plans and provided one-on-one online instruction in English and German. I coached students towards specific exams preparation.",
-      workPlaceMode: "Remote",
+      position: "work_experience.tusclasesparticulares.position",
+      startDate: "work_experience.tusclasesparticulares.startDate",
+      endDate: "work_experience.tusclasesparticulares.endDate",
+      location: "work_experience.tusclasesparticulares.location",
+      description: "work_experience.tusclasesparticulares.description",
       responsabilities: [
-        "Create custom lesson plans tailored according levels and goals",
-        "Deliver engaging virtual lessons and language exercises",
-        "Monitor student progress and adapt methods accordingly",
-        "Prepare students for certifications and interviews"
+        "work_experience.tusclasesparticulares.responsabilities.0",
+        "work_experience.tusclasesparticulares.responsabilities.1",
+        "work_experience.tusclasesparticulares.responsabilities.2",
+        "work_experience.tusclasesparticulares.responsabilities.3"
       ],
       skills: [
-        "Lesson Planning",
-        "Online Teaching",
-        "Communication",
-        "Patience",
-        "Adaptability"
+        "work_experience.tusclasesparticulares.skills.0",
+        "work_experience.tusclasesparticulares.skills.1",
+        "work_experience.tusclasesparticulares.skills.2",
+        "work_experience.tusclasesparticulares.skills.3",
+        "work_experience.tusclasesparticulares.skills.4"
       ],
       tools: [
         { name: "Classroom", img: classroom },
@@ -406,28 +407,26 @@ export const data = {
     },
     {
       organization: {
-        title: "Freiburg University",
+        title: "work_experience.freiburg_university.org.title",
         website: "https://google.com",
         image: ufr
       },
-      position: "Associate Researcher",
-      startDate: "2017",
-      endDate: "2018",
-      location: "Freiburg, DE",
-      description:
-        "I collaborated on an interdisciplinary academic project, focusing on data analysis, publication writing, and software tools for experimental research working closely with a team of professors and researchers.",
-      workPlaceMode: "On-site",
+      position: "work_experience.freiburg_university.position",
+      startDate: "work_experience.freiburg_university.startDate",
+      endDate: "work_experience.freiburg_university.endDate",
+      location: "work_experience.freiburg_university.location",
+      description: "work_experience.freiburg_university.description",
       responsabilities: [
-        "Assist in the design and execution of research experiments",
-        "Collect, clean, and analyze data using statistical tools",
-        "Collaborate in the writing and editing of scientific papers",
-        "Develop and maintain internal research tools and scripts"
+        "work_experience.freiburg_university.responsabilities.0",
+        "work_experience.freiburg_university.responsabilities.1",
+        "work_experience.freiburg_university.responsabilities.2",
+        "work_experience.freiburg_university.responsabilities.3"
       ],
       skills: [
-        "Data Analysis",
-        "Python",
-        "Scientific Research",
-        "Problem Solving"
+        "work_experience.freiburg_university.skills.0",
+        "work_experience.freiburg_university.skills.1",
+        "work_experience.freiburg_university.skills.2",
+        "work_experience.freiburg_university.skills.3"
       ],
       tools: [
         { name: "Jupyter", img: jupyter },
@@ -438,28 +437,26 @@ export const data = {
     },
     {
       organization: {
-        title: "Reutlingen Orchester",
+        title: "work_experience.reutlingen_orchester.org.title",
         website: "https://google.com",
         image: reutlingen
       },
-      position: "Orchestra Member",
-      startDate: "2014",
-      endDate: "2017",
-      location: "Reutlingen, DE",
-      description:
-        "As a member of the Reutlingen Orchestra, I participated in national and international performances, collaborating with conductors and fellow musicians to interpret classical and contemporary compositions.",
-      workPlaceMode: "On-site",
+      position: "work_experience.reutlingen_orchester.position",
+      startDate: "work_experience.reutlingen_orchester.startDate",
+      endDate: "work_experience.reutlingen_orchester.endDate",
+      location: "work_experience.reutlingen_orchester.location",
+      description: "work_experience.reutlingen_orchester.description",
       responsabilities: [
-        "Participate in rehearsals and live performances",
-        "Collaborate closely with section members and conductor",
-        "Maintain high technical performance standards",
-        "Study and prepare new scores independently"
+        "work_experience.reutlingen_orchester.responsabilities.0",
+        "work_experience.reutlingen_orchester.responsabilities.1",
+        "work_experience.reutlingen_orchester.responsabilities.2",
+        "work_experience.reutlingen_orchester.responsabilities.3"
       ],
       skills: [
-        "Team Collaboration",
-        "Musical Interpretation",
-        "Discipline",
-        "Sight Reading"
+        "work_experience.reutlingen_orchester.skills.0",
+        "work_experience.reutlingen_orchester.skills.1",
+        "work_experience.reutlingen_orchester.skills.2",
+        "work_experience.reutlingen_orchester.skills.3"
       ],
       tools: [
         { name: "Sibelius", img: sibelius },
@@ -470,29 +467,27 @@ export const data = {
     },
     {
       organization: {
-        title: "Akademie Villingen",
+        title: "work_experience.akademie_villingen.org.title",
         website: "https://google.com",
         image: villingen
       },
-      position: "Music Teacher",
-      startDate: "2011",
-      endDate: "2018",
-      location: "Villingen, DE",
-      description:
-        "As a music teacher, I provided individual and group lessons in classical instruments, focusing on both technical development and musical expression. I also prepared students for performances and exams.",
-      workPlaceMode: "On-site",
+      position: "work_experience.akademie_villingen.position",
+      startDate: "work_experience.akademie_villingen.startDate",
+      endDate: "work_experience.akademie_villingen.endDate",
+      location: "work_experience.akademie_villingen.location",
+      description: "work_experience.akademie_villingen.description",
       responsabilities: [
-        "Plan and deliver structured lessons to students of all ages",
-        "Adapt teaching methods to individual learning styles",
-        "Prepare students for recitals, exams, and competitions",
-        "Evaluate student progress and provide feedback"
+        "work_experience.akademie_villingen.responsabilities.0",
+        "work_experience.akademie_villingen.responsabilities.1",
+        "work_experience.akademie_villingen.responsabilities.2",
+        "work_experience.akademie_villingen.responsabilities.3"
       ],
       skills: [
-        "Teaching",
-        "Music Theory",
-        "Instrumental Technique",
-        "Patience",
-        "Mentoring"
+        "work_experience.akademie_villingen.skills.0",
+        "work_experience.akademie_villingen.skills.1",
+        "work_experience.akademie_villingen.skills.2",
+        "work_experience.akademie_villingen.skills.3",
+        "work_experience.akademie_villingen.skills.4"
       ],
       tools: [
         { name: "Sibelius", img: sibelius },
@@ -629,6 +624,5 @@ export const data = {
       hoverImg: hoverLinux,
       learning: false
     }
-  ],
-  langs: ["English", "German", "French", "Japanese", "Spanish"]
+  ]
 };

@@ -1,15 +1,18 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Title, ToggleParticles, ExpGrid, AnimContainer } from "../components";
 import { useScrollContext } from "../contexts";
+import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 const Home = () => {
   const { scrolled } = useScrollContext();
+  const { t } = useTranslation();
 
   return (
     <section className="flex flex-col w-full mt-40 bg-inherit justify-center items-center">
       <div className="flex flex-col items-center justify-center w-full gap-8 mb-10">
         <Title
-          text="FROM THE FIRST LINE  OF CODE TO EVERY ASPECT OF SOFTWARE ENGINEERING"
+          text={t("home.hero")}
           extraClases="text-[8vw] sm:text-[7vw] md:text-[3rem] xl:text-[4.5vw]"
         />
         <ToggleParticles />
@@ -30,8 +33,12 @@ const Home = () => {
                 WebkitTextStrokeColor: "var(--primary-color)"
               }}
             >
-              <span style={{ WebkitTextStrokeColor: "#51A2FF" }}>Most</span>{" "}
-              recent
+              <Trans
+                i18nKey="home.most_recent"
+                components={{
+                  blue: <span style={{ WebkitTextStrokeColor: "#51A2FF" }} />
+                }}
+              />
             </motion.h3>
           )}
         </AnimatePresence>

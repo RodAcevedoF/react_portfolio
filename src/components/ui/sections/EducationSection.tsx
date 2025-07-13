@@ -3,9 +3,11 @@ import { EducationCard } from "../cards";
 import { EducationHeader } from "../titles";
 import { data } from "../../../data";
 import type { EduSectionProps } from "../../../types";
+import { useTranslation, Trans } from "react-i18next";
 
 export const EducationSection = ({ innerRef, extraClass }: EduSectionProps) => {
   const [visibleIndex, setVisibleIndex] = useState(0);
+  const { t } = useTranslation();
 
   return (
     <section
@@ -15,7 +17,10 @@ export const EducationSection = ({ innerRef, extraClass }: EduSectionProps) => {
     >
       <div className="flex flex-col w-full text-center">
         <h4 className="font-[Tungsten] text-[10vw] pl-7 xl:pl-0 md:text-[8vw] lg:text-[6vw] font-[400] self-start tracking-[0.5em]">
-          <span className="text-blue-400">EDU</span>CATION
+          <Trans
+            i18nKey={t("about_sections.edu")}
+            components={{ blue: <span className="text-blue-400" /> }}
+          />
         </h4>
       </div>
 

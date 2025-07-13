@@ -3,8 +3,8 @@ import type { GithubProfileButtonProps } from "../../../types";
 
 export const GithubLink: FC<GithubProfileButtonProps> = ({
   username,
-  frontText = "hover me",
-  hoverText = "visit my github",
+  frontText = "Hover me",
+  hoverText = "Visit my Github",
   target = "_blank"
 }) => {
   const href = `https://github.com/${username}`;

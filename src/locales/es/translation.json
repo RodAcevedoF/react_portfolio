@@ -1,0 +1,413 @@
+{
+  "nav": {
+    "about": "SOBRE MI",
+    "projects": "PROYECTOS"
+  },
+  "home": {
+    "hero": "DESDE LA PRIMERA LINEA DE CODIGO HASTA CADA DETALLE DEL SOFTWARE",
+    "most_recent": "<blue>N</blue>UEVO"
+  },
+  "footer": {
+    "get_in_touch": "<blue>CON</blue>TACTO",
+    "want_to_move_forward": "¿Hablamos?",
+    "drop_a_line": "ESCRIBEME",
+    "top_button": "Ir Arriba"
+  },
+  "mailForm": {
+    "contact_name": "Nombre de contacto",
+    "contact_name_placeholder": "¿Cuál es tu nombre?",
+    "your_message": "Tu mensaje",
+    "your_message_placeholder": "Déjame un mensaje",
+    "your_email": "Tu correo",
+    "your_email_placeholder": "Responderé lo antes posible",
+    "send_email": "Enviar correo",
+    "sending": "Enviando..."
+  },
+  "homecard": {
+    "currently": "ACTUALMENTE",
+    "helping": "IMPULSANDO",
+    "brandsWin": "TU MARCA",
+    "button_text": "Ven aqui",
+    "hover_button": "Visita mi Github"
+  },
+  "projects": {
+    "getdone": {
+      "description": "GetDone es una aplicación web de productividad que combina una lista de tareas con gestión de libros y videos, perfiles de usuario, actualizaciones del clima y autenticación. Incluye un mini enrutador personalizado y un sistema de estado global, ambos desarrollados desde cero."
+    },
+    "todo_api": {
+      "description": "Una API RESTful desarrollada con Express y PostgreSQL que permite a los usuarios autenticarse y gestionar tareas, libros y videos. Incluye autenticación JWT con tokens de actualización, carga de archivos (Multer), documentación con Swagger y soporte para Docker."
+    },
+    "fender": {
+      "description": "Concepto visual de landing page para Fender, creado únicamente con HTML, CSS y JS. Destaca el uso de diseño estructurado mediante sistemas de flex y grid, y jerarquía tipográfica para reflejar la identidad icónica de la marca."
+    },
+    "angrboda": {
+      "description": "Angrboda es un prototipo de interfaz para e-commerce desarrollado con HTML, CSS y JavaScript, enfocado en la manipulación del DOM. Ofrece listados de productos interactivos y transiciones suaves de UI, sin utilizar frameworks externos."
+    },
+    "contacts_xml": {
+      "description": "Aplicación web moderna construida con Spring Boot, Thymeleaf y Bootstrap para la gestión de contactos. Soporta importación/exportación en XML e integra estándares de Jakarta EE para una arquitectura backend robusta."
+    },
+    "pinterest": {
+      "description": "Galería de imágenes dinámica inspirada en Pinterest, desarrollada con HTML, CSS y JavaScript. Se enfoca en consumir APIs para obtener contenido multimedia e implementa paginación del lado del cliente para una navegación fluida."
+    }
+  },
+  "about_title": {
+    "title": "COMPROMISMO Y CREATIVIDAD EN CADA PROYECTO"
+  },
+  "about_sections": {
+    "about": "<blue>SOBRE</blue> MI",
+    "tech": "<blue>TEC</blue>NOLOGIAS",
+    "edu": "<blue>EDU</blue>CACION",
+    "exp": "<blue>EXP</blue>ERIENCIA"
+  },
+  "bach_card": {
+    "title": "<yellow>BACH</yellow> y coding<yellow>!</yellow>",
+    "subtitle": "Quieres algún ejemplo?"
+  },
+  "about_me": {
+    "about": "¡Hola! Soy Rodrigo, originario de Chile y formado en Alemania. Tengo una sólida formación en música, física y filosofía, con un nuevo enfoque en el desarrollo web. Como exmúsico de orquesta y exinvestigador en la Universidad de Friburgo, aporto a mi trabajo una mezcla de creatividad, disciplina y pensamiento analítico. Disfruto de la música clásica, la lectura y siempre estoy dispuesto a ir por algo dulce :D",
+    "download_cv": "DESCARGAR CV",
+    "contact": "<blue>CON</blue>TACTO"
+  },
+  "tech_texts": {
+    "learning": "APREN<white>DIENDO</blue>",
+    "working": "TRABAJANDO <white>CON</white>",
+    "fallback": "Nada específico por ahora. Siempre explorando!"
+  },
+  "edu_labels": {
+    "final_grade": "Nota Final",
+    "distinction": "Distinción"
+  },
+  "education": {
+    "msc_physics": {
+      "degree": "Maestría en Ciencias (M.Sc.) Física",
+      "university": "Universidad de Friburgo",
+      "honors": "con honores",
+      "score": "1 (Calificación más alta)",
+      "courses": {
+        "quantum_mechanics": {
+          "name": "Mecánica Cuántica II",
+          "description": "Principios avanzados de funciones de onda, estados cuánticos y teoría de perturbaciones."
+        },
+        "computational_physics": {
+          "name": "Física Computacional",
+          "description": "Enfoque en modelado numérico, algoritmos de simulación y visualización de datos."
+        },
+        "optoelectronics": {
+          "name": "Optoelectrónica",
+          "description": "Aplicaciones de la física de semiconductores en dispositivos fotónicos."
+        }
+      },
+      "skills": {
+        "scientific_computing": "Computación Científica",
+        "matlab": "MATLAB",
+        "python": "Python",
+        "numerical_methods": "Métodos Numéricos",
+        "simulation_tools": "Herramientas de Simulación",
+        "data_analysis": "Análisis de Datos",
+        "technical_writing": "Redacción Técnica",
+        "experimental_design": "Diseño Experimental"
+      }
+    },
+    "bachelor_music": {
+      "degree": "Licenciatura en Música",
+      "university": "Pontificia Universidad Católica de Chile",
+      "honors": "Matrícula de Honor",
+      "score": "7 (Calificación más alta)",
+      "courses": {
+        "fundamentals_music_theory": {
+          "name": "Fundamentos de Teoría Musical",
+          "description": "Introducción a escalas, intervalos, acordes y ritmo."
+        },
+        "western_music_history": {
+          "name": "Historia de la Música Occidental",
+          "description": "Recorrido por los principales estilos, compositores y movimientos desde la antigüedad hasta el siglo XX."
+        },
+        "orchestral_training": {
+          "name": "Entrenamiento Orquestal",
+          "description": "Participación en trabajo de conjunto y desarrollo de habilidades para la interpretación grupal."
+        }
+      },
+      "skills": {
+        "sight_reading": "Lectura a primera vista",
+        "music_theory": "Teoría Musical",
+        "solfege": "Solfeo",
+        "harmony": "Armonía",
+        "musical_interpretation": "Interpretación Musical",
+        "instrument_technique": "Técnica Instrumental",
+        "group_performance": "Interpretación en Grupo"
+      }
+    },
+    "bachelor_music_freiburg": {
+      "degree": "Licenciatura en Música (B.Sc.)",
+      "university": "Musikhochschule Freiburg",
+      "honors": "mit Auszeichnung",
+      "score": "1 (Calificación más alta)",
+      "courses": {
+        "counterpoint_harmony": {
+          "name": "Contrapunto y Armonía",
+          "description": "Profundización en técnicas de conducción de voces y progresión armónica."
+        },
+        "conducting_ensemble_leadership": {
+          "name": "Dirección y Liderazgo de Ensambles",
+          "description": "Experiencia práctica en ensayos de conjunto y señalización gestual."
+        },
+        "performance_practice": {
+          "name": "Práctica de Interpretación",
+          "description": "Enfoque en el contexto histórico e interpretación de música solista y grupal."
+        }
+      },
+      "skills": {
+        "music_composition": "Composición Musical",
+        "score_reading": "Lectura de Partituras",
+        "ensemble_performance": "Interpretación en Ensamble",
+        "aural_skills": "Habilidades Auditivas",
+        "notation_software": "Software de Notación (Sibelius, Finale)",
+        "music_analysis": "Análisis Musical",
+        "orchestration": "Orquestación"
+      }
+    },
+    "bachelor_physics": {
+      "degree": "Licenciatura en Física (B.Sc.)",
+      "university": "Universidad de Friburgo",
+      "honors": "con distinción",
+      "score": "1 (Nota más alta)",
+      "courses": {
+        "thermodynamics": {
+          "name": "Termodinámica",
+          "description": "Estudia el calor, el trabajo y las leyes de transformación de la energía."
+        },
+        "electrodynamics": {
+          "name": "Electrodinámica",
+          "description": "Teoría de los campos eléctricos y magnéticos y las ecuaciones de Maxwell."
+        },
+        "experimental_physics": {
+          "name": "Física Experimental",
+          "description": "Experiencia en laboratorio en mediciones, incertidumbre y prueba de hipótesis."
+        }
+      },
+      "skills": {
+        "classical_mechanics": "Mecánica Clásica",
+        "electromagnetism": "Electromagnetismo",
+        "thermodynamics": "Termodinámica",
+        "latex": "LaTeX",
+        "python_basics": "Python (Básico)",
+        "c_cpp": "C/C++",
+        "data_acquisition": "Adquisición de Datos",
+        "lab_equipment_handling": "Manejo de Equipos de Laboratorio"
+      }
+    },
+    "web_dev": {
+      "degree": "Diplomado en Desarrollo Web",
+      "university": "thePower - Prometeo",
+      "honors": "",
+      "score": "",
+      "courses": {
+        "client_server_web_architecture": {
+          "name": "Arquitectura Web Cliente-Servidor",
+          "description": "Introducción a HTTP, servidores web, ciclo de vida de las solicitudes/respuestas y renderizado en el cliente."
+        },
+        "databases_sql": {
+          "name": "Bases de Datos y SQL",
+          "description": "Conceptos de bases de datos relacionales, diseño de esquemas y operaciones CRUD utilizando SQL."
+        },
+        "programming_fundamentals": {
+          "name": "Fundamentos de Programación",
+          "description": "Lógica algorítmica, estructuras de datos, programación orientada a objetos y fundamentos de PHP."
+        },
+        "uml_software_design": {
+          "name": "UML y Diseño de Software",
+          "description": "Técnicas de diagramación para la planificación de software: diagramas de clases, casos de uso y diagramas de secuencia."
+        }
+      },
+      "skills": {
+        "html5": "HTML5",
+        "css3": "CSS3",
+        "javascript_es6": "JavaScript (ES6+)",
+        "php": "PHP",
+        "sql": "SQL",
+        "mysql": "MySQL",
+        "oop": "Programación Orientada a Objetos (POO)",
+        "uml": "UML",
+        "client_server_architecture": "Arquitectura Cliente-Servidor",
+        "basic_git": "Git Básico",
+        "responsive_design": "Diseño Responsivo",
+        "linux_command_line": "Linux / Línea de Comandos"
+      }
+    },
+    "fullstack_master": {
+      "degree": "Programa Máster en Full-Stack",
+      "university": "thePower - Prometeo",
+      "honors": "",
+      "score": "",
+      "courses": {
+        "fullstack_architecture": {
+          "name": "Arquitectura Full-Stack",
+          "description": "Integra el desarrollo frontend y backend usando frameworks modernos."
+        },
+        "modern_frontend_development": {
+          "name": "Desarrollo Frontend Moderno",
+          "description": "Interfaces avanzadas basadas en componentes con React, Angular y herramientas de gestión de estados como Redux o Signals."
+        },
+        "advanced_backend_nodejs": {
+          "name": "Backend Avanzado con Node.js",
+          "description": "Construcción de APIs escalables con Node.js, Express, MongoDB, autenticación, autorización y funciones serverless."
+        }
+      },
+      "skills": {
+        "react": "React",
+        "nextjs": "Next.js",
+        "angular": "Angular",
+        "nodejs": "Node.js",
+        "expressjs": "Express.js",
+        "mongodb": "MongoDB",
+        "nestjs": "NestJS",
+        "tailwindcss": "TailwindCSS",
+        "typescript": "TypeScript",
+        "rest_apis": "APIs REST",
+        "jwt_authentication": "Autenticación JWT",
+        "modern_deployment": "Despliegue Moderno (Vercel/Render)"
+      }
+    }
+  },
+  "work_experience_labels": {
+    "about_label": "Detalles",
+    "tools_label": "Extra"
+  },
+  "work_experience": {
+    "org": {
+      "title": "Autónomo"
+    },
+    "freelance_web_dev": {
+      "position": "<blue>Desarrollador</blue> Freelance",
+      "startDate": "2023",
+      "endDate": "presente",
+      "location": "Remoto",
+      "description": "Como desarrollador freelance, diseño e implemento soluciones web personalizadas, enfocándome en backends escalables y frontends atractivos. Trabajo con clientes diversos asegurando entregas eficientes y de calidad.",
+      "responsabilities": [
+        "Recopilar requisitos de clientes para ofrecer soluciones a medida",
+        "Construir APIs REST y servicios backend con Node.js y Express",
+        "Desarrollar interfaces front-end responsivas con React y Next.js",
+        "Integrar servicios externos y gestionar despliegues en la nube"
+      ],
+      "skills": ["CI/CD", "APIs REST", "Principios SOLID", "Desarrollo Ágil"]
+    },
+    "basic_fit": {
+      "org": {
+        "title": "Basic-Fit"
+      },
+      "position": "<blue>H</blue>ost",
+      "startDate": "2022",
+      "endDate": "presente",
+      "location": "Jerez, ES",
+      "description": "Como recepcionista en Basic-Fit, brindo atención al cliente, mantengo un ambiente acogedor y apoyo en las necesidades operativas, asegurando una experiencia de fitness de alta calidad para todos los miembros.",
+      "responsabilities": [
+        "Recibir a los miembros y proporcionar información",
+        "Ofrecer programas de entrenamiento personalizados",
+        "Ayudar con el mantenimiento y solución de problemas del equipo",
+        "Gestionar el check-in y atender comentarios o incidencias"
+      ],
+      "skills": [
+        "Atención al Cliente",
+        "Trabajo en Equipo",
+        "Resolución de Problemas",
+        "Gestión del Tiempo",
+        "Responsabilidad"
+      ]
+    },
+    "tusclasesparticulares": {
+      "org": {
+        "title": "Tusclasesparticulares"
+      },
+      "position": "<blue>Profesor</blue> Inglés/Alemán",
+      "startDate": "2018",
+      "endDate": "2024",
+      "location": "Remoto",
+      "description": "Como tutor de idiomas, desarrollé planes de lecciones personalizados y proporcioné enseñanza online individual en inglés y alemán. Guié a los estudiantes en la preparación de exámenes específicos.",
+      "responsabilities": [
+        "Crear planes de lecciones personalizados según niveles y objetivos",
+        "Impartir clases virtuales dinámicas y ejercicios de idiomas",
+        "Monitorear el progreso del estudiante y adaptar métodos",
+        "Preparar estudiantes para certificaciones y entrevistas"
+      ],
+      "skills": [
+        "Planificación de clases",
+        "Enseñanza online",
+        "Comunicación",
+        "Paciencia",
+        "Adaptabilidad"
+      ]
+    },
+    "freiburg_university": {
+      "org": {
+        "title": "Universidad de Friburgo"
+      },
+      "position": "<blue>Investigador</blue> Asociado",
+      "startDate": "2017",
+      "endDate": "2018",
+      "location": "Friburgo, DE",
+      "description": "Colaboré en un proyecto interdisciplinario, centrado en análisis de datos, redacción de publicaciones y herramientas de software simulador, trabajando en estrecha colaboración con un equipo de profesores e investigadores.",
+      "responsabilities": [
+        "Asistir en el diseño y ejecución de experimentos",
+        "Recolectar, limpiar y analizar datos usando herramientas estadísticas",
+        "Colaborar en la redacción y edición de artículos científicos",
+        "Desarrollar y mantener herramientas y scripts internos de investigación"
+      ],
+      "skills": [
+        "Análisis de Datos",
+        "Python",
+        "Investigación Científica",
+        "Resolución de Problemas"
+      ]
+    },
+    "reutlingen_orchester": {
+      "org": {
+        "title": "Orquesta de Reutlingen"
+      },
+      "position": "<blue>Músico</blue> tutti",
+      "startDate": "2014",
+      "endDate": "2017",
+      "location": "Reutlingen, DE",
+      "description": "Como miembro de la Orquesta de Reutlingen, participé en presentaciones nacionales e internacionales, colaborando con directores y compañeros músicos para interpretar composiciones clásicas y contemporáneas.",
+      "responsabilities": [
+        "Participar en ensayos y presentaciones en vivo",
+        "Colaborar estrechamente con los miembros de sección",
+        "Mantener altos estándares técnicos de ejecución",
+        "Estudiar y preparar estrenos contemporáneos"
+      ],
+      "skills": [
+        "Colaboración en Equipo",
+        "Interpretación Musical",
+        "Disciplina",
+        "Lectura a Primera Vista"
+      ]
+    },
+    "akademie_villingen": {
+      "org": {
+        "title": "Akademie Villingen"
+      },
+      "position": "<blue>Profesor</blue> de Música",
+      "startDate": "2011",
+      "endDate": "2018",
+      "location": "Villingen, DE",
+      "description": "Como profesor, impartí clases individuales y grupales de instrumentos clásicos, enfocándome tanto en el desarrollo técnico como en la expresión musical. También preparé a los estudiantes para presentaciones y exámenes.",
+      "responsabilities": [
+        "Planificar y ofrecer clases estructuradas a cada estudiante",
+        "Adaptar los métodos de enseñanza a necesidades individuales",
+        "Preparar a los estudiantes para recitales y concursos",
+        "Evaluar el progreso del estudiante de forma constante"
+      ],
+      "skills": [
+        "Enseñanza",
+        "Teoría Musical",
+        "Técnica Instrumental",
+        "Paciencia",
+        "Mentoría"
+      ]
+    }
+  },
+  "not_found": {
+    "text": "Ups! Esta ruta no existe!",
+    "redirect": "Serás redirigido a <it>Home</it> en un instante...",
+    "button": "Volver"
+  }
+}

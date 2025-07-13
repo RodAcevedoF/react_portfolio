@@ -6,3 +6,4 @@ export * from "./ContactBtn";
 export * from "./TopBtn";
 export * from "./MailBtn";
 export * from "./MiniSkillBtn";
+export * from "./NotFoundBtn";

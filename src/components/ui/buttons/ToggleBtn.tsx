@@ -1,9 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrollContext } from "../../../contexts";
 import type { ToggleBtnProps } from "../../../types";
+import { useTranslation } from "react-i18next";
 
 const ToggleBtn = ({ onToggle, isAboutPage }: ToggleBtnProps) => {
   const { scrolled } = useScrollContext();
+  const { t } = useTranslation();
 
   return (
     <div
@@ -39,7 +41,7 @@ const ToggleBtn = ({ onToggle, isAboutPage }: ToggleBtnProps) => {
               scrolled ? "text-neutral-100" : "text-shadow-900"
             }`}
           >
-            {isAboutPage ? "ABOUT" : "PROJECTS"}
+            {isAboutPage ? t("nav.about") : t("nav.projects")}
           </motion.span>
         </AnimatePresence>
       </motion.div>

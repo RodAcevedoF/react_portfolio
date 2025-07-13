@@ -2,6 +2,7 @@ import { useCardContext, useScrollContext } from "../../../contexts";
 import { PixelTransition } from "../../animations";
 import type { ProjectCardProps } from "../../../types";
 import { Globe, Github, MessageCircleCode } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const ProjectCard = ({
   name,
@@ -18,12 +19,12 @@ export const ProjectCard = ({
   url,
   deploy,
   backImg,
-  description,
   tech
 }: ProjectCardProps) => {
   const { activeIndex, setActiveIndex } = useCardContext();
   const { scrolled } = useScrollContext();
   const isActive = activeIndex === index;
+  const { t } = useTranslation();
 
   let dynamicBg: string | undefined;
 
@@ -117,7 +118,7 @@ export const ProjectCard = ({
 
       <main className="p-2">
         <p className="text-sm font-[Lilita] italic text-gray-400 px-2">
-          {description}
+          {t(`projects.${name}.description`)}
         </p>
         <div className="flex items-center justify-start gap-5 w-full mt-2 border-2 rounded-md p-2 px-4 border-blue-600/50">
           <div className="flex items-center justify-center gap-2">
