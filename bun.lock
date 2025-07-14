@@ -5,6 +5,7 @@
       "name": "portfolio",
       "dependencies": {
         "@emailjs/browser": "^4.4.1",
+        "@rollup/rollup-linux-x64-gnu": "^4.45.0",
         "@tailwindcss/vite": "^4.1.10",
         "framer-motion": "^12.18.1",
         "gsap": "^3.13.0",
