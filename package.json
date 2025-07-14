@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "compile": "bunx tsc -p tsconfig.app.json && bunx tsc -p tsconfig.node.json",
-    "build": "bun run compile && bunx vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
