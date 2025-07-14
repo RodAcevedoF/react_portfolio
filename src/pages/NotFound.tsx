@@ -5,15 +5,15 @@ import { useTranslation, Trans } from "react-i18next";
 
 export const NotFound = () => {
   const { t } = useTranslation();
-  //const navigate = useNavigate();
-  /* 
+  const navigate = useNavigate();
+
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/home");
-    }, 4000); // Redirige después de 4 segundos
+    }, 10000);
 
     return () => clearTimeout(timer); // Limpia el timeout si el componente se desmonta
-  }, [navigate]); */
+  }, [navigate]);
 
   return (
     <div
