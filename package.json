@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "compile": "bunx tsc -p tsconfig.app.json && bunx tsc -p tsconfig.node.json",
+    "build": "bun run compile && bunx vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -13,6 +14,7 @@
     "@emailjs/browser": "^4.4.1",
     "@rollup/rollup-linux-x64-gnu": "^4.45.0",
     "@tailwindcss/vite": "^4.1.10",
+    "@vitejs/plugin-react": "^4.6.0",
     "framer-motion": "^12.18.1",
     "gsap": "^3.13.0",
     "i18next": "^25.3.2",
