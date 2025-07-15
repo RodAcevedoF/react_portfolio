@@ -9,7 +9,7 @@
   },
   "footer": {
     "get_in_touch": "<blue>KONTAKTIERE</blue> MICH",
-    "want_to_move_forward": "Willst du den naechsten Schritt machen?",
+    "want_to_move_forward": "Naechsten Schritt machen?",
     "drop_a_line": "SCHREIB MIR",
     "top_button": "Zurück nach oben"
   },
@@ -25,8 +25,8 @@
   },
   "homecard": {
     "currently": "AKTUELL",
-    "helping": "UNTERSTÜTZE",
-    "brandsWin": "MARKEN ERFOLGREICH MACHEN",
+    "helping": "MARKEN",
+    "brandsWin": "ERFOLGREICH MACHEN",
     "button_text": "Fahr über mich",
     "hover_button": "Besuche mein GitHub"
   },

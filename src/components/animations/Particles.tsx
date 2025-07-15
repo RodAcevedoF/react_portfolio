@@ -94,16 +94,15 @@ const fragment = /* glsl */ `
 `;
 
 const ParticlesBackground = memo(() => {
-  const { scrolled } = useScrollContext(); // Usamos el context
+  const { scrolled } = useScrollContext();
 
   const bgClasses = scrolled
-    ? /*? "bg-[radial-gradient(circle,_#0a0a0a_60%,_#1a1a2e_100%)]"*/
-      "bg-[radial-gradient(circle,_#0a0a0a_60%,_#141c26_100%)]"
+    ? "bg-[radial-gradient(circle,_#0a0a0a_60%,_#141c26_100%)]"
     : "bg-transparent";
 
   return (
     <div
-      className={`absolute inset-0 transition-all duration-300 w-full h-full ${bgClasses}`}
+      className={`absolute inset-0 transition-all duration-300 w-full min-h-full ${bgClasses}`}
     />
   );
 });
@@ -269,7 +268,7 @@ const Particles: React.FC<ParticlesProps> = ({
       <ParticlesBackground />
       <div
         ref={canvasContainerRef}
-        className="absolute inset-0 w-full"
+        className="absolute inset-0 w-full min-h-[110vh]"
         style={{ pointerEvents: moveParticlesOnHover ? "auto" : "none" }}
       />
     </div>

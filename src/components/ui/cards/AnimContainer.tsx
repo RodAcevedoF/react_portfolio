@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { GithubLink } from "../../../components";
-//import Threads from "../../animations/Threads";
+import Threads from "../../animations/Threads";
 
 export const AnimContainer = () => {
   const { t } = useTranslation();
@@ -31,7 +31,7 @@ export const AnimContainer = () => {
         }}
       >
         <div className="absolute w-full h-full inset-0 z-0">
-          {/* <Threads amplitude={5} distance={0} enableMouseInteraction={true} /> */}
+          <Threads amplitude={5} distance={0} enableMouseInteraction={false} />
         </div>
         <p className="text-center font-bold text-[2.5rem] text-[var(--primary-color)] sm:text-[3rem] lg:text-[4rem] z-10 mt-25 mb-10">
           <span className="text-blue-400">{t("homecard.helping")}</span>{" "}
