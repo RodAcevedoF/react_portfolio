@@ -25,10 +25,10 @@ export const GithubLink: FC<GithubProfileButtonProps> = ({
         </svg>
       </div>
       <div className="cube transition-all duration-500 w-[200px] h-[47px] group-hover:rotate-x-90 preserve-3d relative">
-        <span className="side front absolute bg-[#222229] text-white w-full h-full flex items-center justify-center text-xs font-bold uppercase tracking-wide translate-z-[1em]">
+        <span className="font-[Lilita] side front absolute bg-[#222229] text-white w-full h-full flex items-center justify-center text-lg font-bold uppercase tracking-wide translate-z-[1em]">
           {frontText}
         </span>
-        <span className="side top absolute bg-blue-400 text-white w-full h-full flex items-center justify-center text-md font-bold uppercase tracking-wide rotate-x-[-90deg] translate-y-[13.5px]">
+        <span className="font-[Lilita] side top absolute bg-blue-400 text-white w-full h-full flex items-center justify-center text-lgs font-bold uppercase tracking-wide rotate-x-[-90deg] translate-y-[13.5px]">
           {hoverText}
         </span>
       </div>
