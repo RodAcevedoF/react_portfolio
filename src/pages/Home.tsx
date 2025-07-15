@@ -9,11 +9,13 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col w-full mt-40 bg-inherit justify-center items-center">
-      <div className="flex flex-col items-center justify-center w-full gap-8 mb-10">
+    <section className="flex flex-col w-full mt-20 sm:mt-35 xl:mt-38 bg-inherit justify-center items-center">
+      <div className="flex flex-col items-center justify-center w-full gap-8 mb-5 sm:mb-10">
         <Title
           text={t("home.hero")}
-          extraClases="text-[8vw] sm:text-[7vw] md:text-[3rem] xl:text-[4.5vw]"
+          animateWords
+          extraClases="text-[2.4rem] sm:text-[3rem] md:text-[3.5rem] xl:text-[5vw] py-8 px-2"
+          width="w-full"
         />
         <ToggleParticles />
       </div>

@@ -9,8 +9,8 @@ const ToggleBtn = ({ onToggle, isAboutPage }: ToggleBtnProps) => {
 
   return (
     <div
-      onClick={onToggle} // ← Mover aquí
-      className="relative flex items-center justify-center text-center px-2 bg-inherit border-none overflow-hidden group cursor-pointer"
+      onClick={onToggle}
+      className="relative flex items-center justify-center text-center px-2 bg-inherit overflow-hidden group cursor-pointer border-none"
     >
       <motion.div
         whileTap={{ y: 12 }}
@@ -37,7 +37,7 @@ const ToggleBtn = ({ onToggle, isAboutPage }: ToggleBtnProps) => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -30 }}
             transition={{ duration: 0.3 }}
-            className={`font-bold text-[1.5rem] z-10 font-["Tungsten"] tracking-[8px] transition-colors duration-300 ${
+            className={`font-bold text-[1.5rem] z-10 font-["Tungsten"] tracking-[8px] transition-colors pl-2 duration-300 ${
               scrolled ? "text-neutral-100" : "text-shadow-900"
             }`}
           >

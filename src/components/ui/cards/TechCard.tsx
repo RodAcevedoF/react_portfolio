@@ -1,4 +1,3 @@
-// components/TechCard.tsx
 import { motion } from "framer-motion";
 import { useState } from "react";
 import type { TechElement } from "../../../types";
@@ -7,7 +6,7 @@ export const TechCard = ({ item }: TechElement) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <li
+    <div
       key={item.name}
       className="relative w-26 h-26 border-2 rounded-md flex flex-col items-center justify-center font-[Lilita] text-[var(--primary-color)] cursor-pointer border-blue-400/20 group hover:shadow-xl shadow-blue-400/30 transition-shadow duration-250"
       onMouseEnter={() => setHovered(true)}
@@ -36,6 +35,6 @@ export const TechCard = ({ item }: TechElement) => {
       <span className="z-10 mt-20 text-sm opacity-0 transition-all duration-250 group-hover:opacity-100">
         {item.name}
       </span>
-    </li>
+    </div>
   );
 };

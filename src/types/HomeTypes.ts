@@ -2,6 +2,7 @@ export type TitleProps = {
   text: string;
   width?: string;
   extraClases?: string;
+  animateWords?: boolean;
 };
 
 export type ContactBtnProps = {

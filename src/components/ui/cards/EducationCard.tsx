@@ -115,10 +115,10 @@ export const EducationCard = ({
       `}
     >
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.25 }}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="w-full h-fit text-sm text-[var(-primary-color)]"
       >
         {/* Grade and Distinction */}

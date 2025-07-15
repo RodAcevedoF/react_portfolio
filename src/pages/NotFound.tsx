@@ -12,7 +12,7 @@ export const NotFound = () => {
       navigate("/home");
     }, 10000);
 
-    return () => clearTimeout(timer); // Limpia el timeout si el componente se desmonta
+    return () => clearTimeout(timer);
   }, [navigate]);
 
   return (

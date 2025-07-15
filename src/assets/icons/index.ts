@@ -72,7 +72,14 @@ import zoom from "./zoom.svg";
 import salesforce from "./salesforce.svg";
 import sap from "./sap.svg";
 import puc from "./puc.webp";
+import es from "./es.webp";
+import en from "./gb.webp";
+import de from "./de.webp";
+
 export {
+  de,
+  es,
+  en,
   puc,
   sap,
   salesforce,
