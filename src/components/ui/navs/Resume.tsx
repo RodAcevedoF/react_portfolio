@@ -5,7 +5,7 @@ import {
   Tech
 } from "../sections";
 import { SideNav } from "../../../components";
-import { useActiveSectionObserver } from "../../../hooks"; // ruta donde crees el hook
+import { useActiveSectionObserver } from "../../../hooks";
 
 export const Resume = () => {
   const { sectionRefs, observerRefs, activeSection } =
