@@ -61,8 +61,6 @@ body {
   background: var(--light-bg);
   color: var(--secondary-color);
   overflow-x: hidden;
-  width: 100vw;
-  height: auto;
 }
 
 body.scrolled {

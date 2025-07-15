@@ -1,27 +1,21 @@
 import { useTranslation } from "react-i18next";
 import { GithubLink } from "../../../components";
-import Threads from "../../animations/Threads";
+import LetterGlitch from "../../animations/glitchBackground";
 
 export const AnimContainer = () => {
   const { t } = useTranslation();
 
   return (
-    <article className="flex flex-col relative">
-      <h2
-        className="absolute left-[10%] text-transparent font-bold uppercase whitespace-nowrap text-[3rem] sm:text-[4rem] z-5"
-        style={{ WebkitTextStroke: "3px var(--primary-color)" }}
-      >
-        {t("homecard.currently")}
-      </h2>
+    <article className="flex flex-col relative justify-around rounded-md w-[90%] max-w-[60rem] p-6">
       <div
-        className="flex flex-col justify-center items-center relative w-[100vw] md:w-[90vw] lg:w-[70vw] h-[60vh] px-8 bg-[radial-gradient(circle,_#0a0a0a_60%,_#1b2736_100%)]"
+        className="flex flex-col justify-center items-center relative w-full h-[60vh] px-8 bg-[radial-gradient(circle,_#0a0a0a_60%,_#1b2736_100%)]"
         style={{
           WebkitMaskImage: `
-      linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%),
-      linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)`,
+      linear-gradient(to bottom, transparent 0%, black 2%, black 98%, transparent 100%),
+      linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%)`,
           maskImage: `
-      linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%),
-      linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)`,
+      linear-gradient(to bottom, transparent 0%, black 2%, black 98%, transparent 100%),
+      linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%)`,
           WebkitMaskComposite: "intersect",
           maskComposite: "intersect",
           WebkitMaskRepeat: "no-repeat",
@@ -30,10 +24,22 @@ export const AnimContainer = () => {
           maskSize: "100% 100%"
         }}
       >
-        <div className="absolute w-full h-full inset-0 z-0">
-          <Threads amplitude={5} distance={0} enableMouseInteraction={false} />
+        <h2
+          className="text-transparent w-fit self-center sm:self-start font-bold uppercase  text-[3rem] sm:text-[4rem] z-5"
+          style={{ WebkitTextStroke: "3px var(--primary-color)" }}
+        >
+          {t("homecard.currently")}
+        </h2>
+        <div className="absolute w-full h-full inset-0 z-0 opacity-50">
+          <LetterGlitch
+            glitchSpeed={50}
+            centerVignette={true}
+            outerVignette={false}
+            smooth={true}
+          />
+          ;
         </div>
-        <p className="text-center font-bold text-[2.5rem] text-[var(--primary-color)] sm:text-[3rem] lg:text-[4rem] z-10 mt-25 mb-10">
+        <p className="text-center font-bold text-[2.5rem] text-[var(--primary-color)] sm:text-[3rem] lg:text-[4rem] z-10 mb-10">
           <span className="text-blue-400">{t("homecard.helping")}</span>{" "}
           {t("homecard.brandsWin")}
         </p>
