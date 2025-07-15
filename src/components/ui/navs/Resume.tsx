@@ -53,7 +53,7 @@ export const Resume = () => {
       </div>
 
       <div ref={skillsInViewRef} className="max-w-screen overflow-x-hidden">
-        <Tech innerRef={techRef} extraClass="scroll-mt-18" />
+        <Tech innerRef={techRef} extraClass="scroll-mt-25" />
       </div>
 
       <div ref={eduInViewRef} className="max-w-screen p-2">

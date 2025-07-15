@@ -27,7 +27,7 @@ export const Tech = ({ innerRef, extraClass }: TechSectionProps) => {
       transition={{ duration: 0.3, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
       ref={innerRef}
-      className={`flex flex-col w-full items-center py-12 sm:px-4 ${extraClass}`}
+      className={`flex flex-col w-full items-center py-12 sm:px-4 mt-10 ${extraClass}`}
     >
       <div className="flex flex-col w-full text-center justify-center items-center">
         <motion.h4

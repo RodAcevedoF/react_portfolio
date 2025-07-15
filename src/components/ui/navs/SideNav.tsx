@@ -13,7 +13,7 @@ export const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
     <div
       className={`${
         !scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
-      } group transition-opacity duration-300 fixed top-1/2 left-0 -translate-y-1/2 z-50`}
+      } group transition-opacity duration-300 fixed top-1/2 left-0 -translate-y-1/2 z-100`}
     >
       <div
         className={`
