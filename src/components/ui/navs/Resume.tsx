@@ -48,20 +48,20 @@ export const Resume = () => {
     <article className="relative text-[var(--primary-color)] flex flex-col w-full gap-[5rem] font-[Lilita] mt-30">
       <SideNav sectionRefs={sectionRefs} active={activeSection} />
 
-      <div ref={bioInViewRef} className="w-[100vw] overflow-x-hidden">
-        <BioSection innerRef={bioRef} extraClass="scroll-mt-20" />
+      <div ref={bioInViewRef} className="max-w-screen overflow-x-hidden">
+        <BioSection innerRef={bioRef} extraClass="scroll-mt-40" />
       </div>
 
-      <div ref={skillsInViewRef} className="w-[100vw] overflow-x-hidden">
+      <div ref={skillsInViewRef} className="max-w-screen overflow-x-hidden">
         <Tech innerRef={techRef} extraClass="scroll-mt-18" />
       </div>
 
-      <div ref={eduInViewRef} className="w-[100vw]">
+      <div ref={eduInViewRef} className="max-w-screen p-2">
         <EducationSection innerRef={educationRef} extraClass="scroll-mt-30" />
       </div>
 
-      <div ref={expInViewRef} className="w-[100vw] overflow-x-hidden">
-        <ExperienceSection innerRef={experienceRef} extraClass="scroll-mt-25" />
+      <div ref={expInViewRef} className="max-w-screen overflow-x-hidden">
+        <ExperienceSection innerRef={experienceRef} extraClass="scroll-mt-10" />
       </div>
     </article>
   );

@@ -8,10 +8,10 @@ const App = () => {
   return (
     <>
       <Router>
-        <header>
+        <header className="max-w-screen">
           <NavBar />
         </header>
-        <main className="flex flex-col items-center justify-center w-full h-auto bg-inherit">
+        <main className="flex flex-col items-center justify-center max-w-[100vw] h-auto bg-inherit">
           <Routes>
             <Route path="/" element={<Splash />} />
             <Route path="/home" element={<Home />} />

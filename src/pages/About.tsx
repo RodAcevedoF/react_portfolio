@@ -11,7 +11,7 @@ const About = () => {
           animateWords
           text={t("about_title.title")}
           width="w-[100%] md:w-[60%]"
-          extraClases="text-[2.5rem] xl:text-[4.5rem] lg:text-[4rem] md:text-[3.5rem] sm:text-[3rem] z-1"
+          extraClases="text-[2.5rem] xl:text-[4.5rem] lg:text-[4rem] md:text-[3.5rem] sm:text-[3rem] z-1 px-5"
         />
         <Portrait src={portraitD} alt="drawn portrait z-0" />
       </div>

@@ -13,7 +13,7 @@ const particlesDefaultProps = {
   particleCount: 900,
   particleSpread: 7,
   speed: 0.1,
-  className: "fixed w-screen h-screen -z-10"
+  className: "fixed h-screen -z-10 w-screen"
 };
 
 export const ScrollProvider = ({ children }: ScrollProviderProps) => {

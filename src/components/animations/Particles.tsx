@@ -103,7 +103,7 @@ const ParticlesBackground = memo(() => {
 
   return (
     <div
-      className={`absolute inset-0 transition-all duration-300 ${bgClasses}`}
+      className={`absolute inset-0 transition-all duration-300 w-[100vw] ${bgClasses}`}
     />
   );
 });
@@ -263,7 +263,6 @@ const Particles: React.FC<ParticlesProps> = ({
     cameraDistance,
     disableRotation,
     particleColors
-    // IMPORTANTE: scrolled NO está en las dependencias para evitar re-render del WebGL
   ]);
 
   return (
@@ -272,7 +271,7 @@ const Particles: React.FC<ParticlesProps> = ({
       <ParticlesBackground />
       <div
         ref={canvasContainerRef}
-        className="absolute inset-0"
+        className="absolute inset-0 w-[100vw]"
         style={{ pointerEvents: moveParticlesOnHover ? "auto" : "none" }}
       />
     </div>

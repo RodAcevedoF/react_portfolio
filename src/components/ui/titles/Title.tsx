@@ -1,5 +1,3 @@
-// components/typography/Title.tsx
-
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useScrollContext } from "../../../contexts";
