@@ -1,4 +1,3 @@
-import { useRef, useEffect, useState } from "react";
 import {
   ExperienceSection,
   EducationSection,
@@ -6,62 +5,39 @@ import {
   Tech
 } from "../sections";
 import { SideNav } from "../../../components";
-import { useInView } from "react-intersection-observer";
-import { type SectionKey } from "../../../types";
+import { useActiveSectionObserver } from "../../../hooks"; // ruta donde crees el hook
 
 export const Resume = () => {
-  const bioRef = useRef<HTMLElement>(null);
-  const educationRef = useRef<HTMLElement>(null);
-  const experienceRef = useRef<HTMLElement>(null);
-  const techRef = useRef<HTMLElement>(null);
-
-  const { ref: bioInViewRef, inView: bioInView } = useInView({
-    threshold: 0.8
-  });
-  const { ref: eduInViewRef, inView: eduInView } = useInView({
-    threshold: 0.1
-  });
-  const { ref: expInViewRef, inView: expInView } = useInView({
-    threshold: 0.4
-  });
-  const { ref: skillsInViewRef, inView: skillsInView } = useInView({
-    threshold: 0.4
-  });
-
-  const [activeSection, setActiveSection] = useState<SectionKey | null>(null);
-
-  useEffect(() => {
-    if (skillsInView) setActiveSection("tech");
-    else if (expInView) setActiveSection("experience");
-    else if (eduInView) setActiveSection("education");
-    else if (bioInView) setActiveSection("bio");
-  }, [bioInView, eduInView, expInView, skillsInView]);
-
-  const sectionRefs = {
-    bio: bioRef,
-    education: educationRef,
-    experience: experienceRef,
-    tech: techRef
-  };
+  const { sectionRefs, observerRefs, activeSection } =
+    useActiveSectionObserver();
 
   return (
     <article className="relative text-[var(--primary-color)] flex flex-col w-full gap-[5rem] font-[Lilita] mt-30">
       <SideNav sectionRefs={sectionRefs} active={activeSection} />
 
-      <div ref={bioInViewRef} className="max-w-screen overflow-x-hidden">
-        <BioSection innerRef={bioRef} extraClass="scroll-mt-20" />
+      <div ref={observerRefs.bio} className="max-w-screen overflow-x-hidden">
+        <BioSection innerRef={sectionRefs.bio} extraClass="scroll-mt-20" />
       </div>
 
-      <div ref={skillsInViewRef} className="max-w-screen overflow-x-hidden">
-        <Tech innerRef={techRef} extraClass="scroll-mt-25" />
+      <div ref={observerRefs.tech} className="max-w-screen overflow-x-hidden">
+        <Tech innerRef={sectionRefs.tech} extraClass="scroll-mt-25" />
       </div>
 
-      <div ref={eduInViewRef} className="max-w-screen p-2">
-        <EducationSection innerRef={educationRef} extraClass="scroll-mt-30" />
+      <div ref={observerRefs.education} className="max-w-screen p-2">
+        <EducationSection
+          innerRef={sectionRefs.education}
+          extraClass="scroll-mt-30"
+        />
       </div>
 
-      <div ref={expInViewRef} className="max-w-screen overflow-x-hidden">
-        <ExperienceSection innerRef={experienceRef} extraClass="scroll-mt-10" />
+      <div
+        ref={observerRefs.experience}
+        className="max-w-screen overflow-x-hidden"
+      >
+        <ExperienceSection
+          innerRef={sectionRefs.experience}
+          extraClass="scroll-mt-20"
+        />
       </div>
     </article>
   );

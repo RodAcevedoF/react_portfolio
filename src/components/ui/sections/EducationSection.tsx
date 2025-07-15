@@ -13,7 +13,7 @@ export const EducationSection = ({ innerRef, extraClass }: EduSectionProps) => {
     <section
       ref={innerRef}
       id="education"
-      className={`flex flex-col w-full min-h-[100vh] mt-10 md:px-4 ${extraClass}`}
+      className={`flex flex-col w-full min-h-[100vh] mt-18 md:px-4 ${extraClass}`}
     >
       <div className="flex flex-col w-full text-center">
         <h4 className="font-[Tungsten] text-[10vw] pl-7 xl:pl-0 md:text-[8vw] lg:text-[6vw] font-[400] self-start tracking-[0.5em]">
@@ -26,7 +26,7 @@ export const EducationSection = ({ innerRef, extraClass }: EduSectionProps) => {
 
       <main
         className="
-        relative flex flex-col w-full h-full pt-5 pb-10 items-center justify-end gap-10
+        relative flex flex-col w-full h-full pb-10 items-center justify-end gap-10
         before:absolute before:top-0 before:w-[3px] before:h-full before:bg-[var(--clear)] 
         before:left-[0.65rem] md:before:left-[49.86%] 
       "
