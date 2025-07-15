@@ -2,7 +2,7 @@ import { useRef, useEffect, useState, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import type { SectionKey } from "../types";
 
-export function useActiveSectionObserver() {
+export const useActiveSectionObserver = () => {
   const bioRef = useRef<HTMLElement | null>(null);
   const educationRef = useRef<HTMLElement | null>(null);
   const experienceRef = useRef<HTMLElement | null>(null);
@@ -105,4 +105,4 @@ export function useActiveSectionObserver() {
     },
     activeSection
   };
-}
+};
