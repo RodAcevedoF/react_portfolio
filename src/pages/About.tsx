@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const About = () => {
   const { t } = useTranslation();
   return (
-    <section className="flex flex-col justify-center items-center w-full xl:w-[80%] mt-40 bg-inherit relative">
+    <section className="flex flex-col justify-center items-center w-[100vw] xl:w-[80%] mt-40 bg-inherit relative">
       <div className="flex w-fit mb-10 md:mb-20 z-10 mt-50 md:mt-15">
         <Title
           animateWords

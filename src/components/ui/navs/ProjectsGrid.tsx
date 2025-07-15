@@ -21,7 +21,7 @@ export const ExpGrid = () => {
   };
 
   return (
-    <ul className="w-full grid auto-rows-[350px] justify-center items-center grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-8 py-4 px-10 transition-colors duration-500">
+    <ul className="w-full grid auto-rows-[350px] justify-center items-center grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-8 py-4 px-10 transition-colors duration-500">
       {projects.map(
         (
           {

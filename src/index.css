@@ -60,7 +60,6 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
   background: var(--light-bg);
   color: var(--secondary-color);
-  overflow-x: hidden;
   /*color: rgba(95, 61, 232, 0.53);*/
   /*background: radial-gradient(circle, #0a0a0a 60%, #101e18 100%);*/
 }

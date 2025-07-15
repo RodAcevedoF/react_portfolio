@@ -20,7 +20,6 @@ import {
   contactBack,
   contactLogo,
   pinterestBackBg,
-  hoverJava,
   thymeLeaf,
   hoverSpring,
   hoverNode,
@@ -102,7 +101,6 @@ export const projects = [
     tech: [
       { name: "spring", icon: hoverSpring },
       { name: "thymeleaf", icon: thymeLeaf },
-      { name: "java", icon: hoverJava },
       { name: "html", icon: hoverHtml },
       { name: "bootstrapp", icon: hoverBootstrap }
     ]
