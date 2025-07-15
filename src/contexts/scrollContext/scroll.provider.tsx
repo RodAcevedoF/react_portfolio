@@ -13,7 +13,7 @@ const particlesDefaultProps = {
   particleCount: 900,
   particleSpread: 7,
   speed: 0.1,
-  className: "fixed h-screen -z-10 w-screen"
+  className: "fixed min-h-[105vh] min-w-[105vw] -z-10 "
 };
 
 export const ScrollProvider = ({ children }: ScrollProviderProps) => {
@@ -45,7 +45,6 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
     <ScrollContext.Provider
       value={{ scrolled, setScrolled, mode, toggleParticles }}
     >
-      {/* Fondo solo si está en modo partículas */}
       {mode === "particles" && <Particles {...particlesDefaultProps} />}
       {children}
     </ScrollContext.Provider>

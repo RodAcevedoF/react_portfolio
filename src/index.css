@@ -63,7 +63,6 @@ body {
   overflow-x: hidden;
   width: 100vw;
   height: auto;
-  padding-bottom: 1rem;
 }
 
 body.scrolled {

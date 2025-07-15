@@ -25,7 +25,7 @@ export const Tech = ({ innerRef, extraClass }: TechSectionProps) => {
       initial={{ opacity: 0, y: 25 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.2 }}
       ref={innerRef}
       className={`flex flex-col w-full items-center py-12 sm:px-4 mt-10 ${extraClass}`}
     >
@@ -34,7 +34,7 @@ export const Tech = ({ innerRef, extraClass }: TechSectionProps) => {
           className="w-full text-start font-[Tungsten] text-[10vw] pl-7 xl:pl-0 md:text-[8vw] lg:text-[6vw] font-[400] self-start tracking-[0.5em] mb-15"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           viewport={{ once: true }}
         >
           <Trans

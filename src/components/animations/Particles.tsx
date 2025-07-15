@@ -103,7 +103,7 @@ const ParticlesBackground = memo(() => {
 
   return (
     <div
-      className={`absolute inset-0 transition-all duration-300 w-[100vw] ${bgClasses}`}
+      className={`absolute inset-0 transition-all duration-300 w-full h-full ${bgClasses}`}
     />
   );
 });
@@ -128,7 +128,6 @@ const Particles: React.FC<ParticlesProps> = ({
   const canvasContainerRef = useRef<HTMLDivElement>(null);
   const mouseRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
-  // Efecto principal para inicializar WebGL (sin scrolled en dependencias)
   useEffect(() => {
     const canvasContainer = canvasContainerRef.current;
     if (!canvasContainer) return;
@@ -267,11 +266,10 @@ const Particles: React.FC<ParticlesProps> = ({
 
   return (
     <div ref={containerRef} className={className}>
-      {/* Usamos solo el ParticlesBackground memoizado */}
       <ParticlesBackground />
       <div
         ref={canvasContainerRef}
-        className="absolute inset-0 w-[100vw]"
+        className="absolute inset-0 w-full"
         style={{ pointerEvents: moveParticlesOnHover ? "auto" : "none" }}
       />
     </div>
