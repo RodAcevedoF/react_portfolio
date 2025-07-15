@@ -49,7 +49,7 @@ export const Resume = () => {
       <SideNav sectionRefs={sectionRefs} active={activeSection} />
 
       <div ref={bioInViewRef} className="max-w-screen overflow-x-hidden">
-        <BioSection innerRef={bioRef} extraClass="scroll-mt-40" />
+        <BioSection innerRef={bioRef} extraClass="scroll-mt-20" />
       </div>
 
       <div ref={skillsInViewRef} className="max-w-screen overflow-x-hidden">

@@ -12,7 +12,7 @@ export const ExperienceSection = ({
   return (
     <section
       ref={innerRef}
-      className={`flex flex-col justify-center items-center gap-10 w-full h-full min-h-[70vh] py-5 mb-30 ${extraClass}`}
+      className={`flex flex-col justify-center items-center gap-10 w-full h-full min-h-[70vh] py-5 mb-30 mt-18 ${extraClass}`}
     >
       <h4 className="font-[Tungsten] pl-7 xl:pl-0 text-[10vw] md:text-[8vw] lg:text-[6vw] font-[400] self-start tracking-[0.5em]">
         <Trans

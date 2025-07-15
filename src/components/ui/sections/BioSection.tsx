@@ -19,7 +19,7 @@ export const BioSection = ({ innerRef, extraClass }: BioSectionProps) => {
     <section
       ref={innerRef}
       id="bio"
-      className={`w-full font-inherit flex flex-col justify-center items-start gap-10 px-5 md:px-10 ${
+      className={`w-full font-inherit flex flex-col justify-center items-start gap-10 px-5 md:px-10 mt-18 ${
         scrolled ? "opacity-100" : "opacity-0"
       } ${extraClass}`}
     >
