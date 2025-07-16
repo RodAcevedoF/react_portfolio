@@ -6,9 +6,9 @@ export const AnimContainer = () => {
   const { t } = useTranslation();
 
   return (
-    <article className="flex flex-col relative justify-around rounded-md w-[90%] max-w-[60rem] p-6">
+    <article className="flex flex-col relative justify-around rounded-md w-full p-6">
       <div
-        className="flex flex-col justify-center items-center relative w-full h-[60vh] px-8 bg-[radial-gradient(circle,_#0a0a0a_60%,_#1b2736_100%)]"
+        className="flex flex-col justify-center items-center relative w-full h-[60vh] px-8"
         style={{
           WebkitMaskImage: `
       linear-gradient(to bottom, transparent 0%, black 2%, black 98%, transparent 100%),
@@ -25,7 +25,7 @@ export const AnimContainer = () => {
         }}
       >
         <h2
-          className="text-transparent w-fit self-center sm:self-start font-bold uppercase  text-[3rem] sm:text-[4rem] z-5"
+          className="text-transparent pl-0 lg:pl-[20%] w-fit self-center lg:self-start font-bold uppercase  text-[3rem] sm:text-[4rem] z-5"
           style={{ WebkitTextStroke: "3px var(--primary-color)" }}
         >
           {t("homecard.currently")}
