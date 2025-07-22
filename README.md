@@ -1,54 +1,103 @@
-# React + TypeScript + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio built with **React**, **TypeScript**, and **Bun** as the runtime. It showcases smooth animations, responsive design, and full internationalization support.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **[React 19](https://reactjs.org/)** + **TypeScript** – Modern typed frontend.
+- **[Bun](https://bun.sh/)** – Ultra-fast JavaScript runtime.
+- **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS for styling.
+- **[GSAP](https://greensock.com/gsap/)** – Powerful and smooth animations.
+- **[Framer Motion](https://www.framer.com/motion/)** – Declarative animations for React.
+- **[i18next](https://www.i18next.com/)** + **react-i18next** – Multi-language support for English 🇬🇧, Spanish 🇪🇸, and German 🇩🇪.
+- **[EmailJS](https://www.emailjs.com/)** – Serverless email handling.
+- **[SweetAlert2](https://sweetalert2.github.io/)** – Beautiful, responsive alerts.
+- **[React Router v7](https://reactrouter.com/)** – SPA routing.
+- **[Lucide React](https://lucide.dev/)** – Customizable SVG icons.
+- **[OGL](https://github.com/oframe/ogl)** – Lightweight WebGL rendering.
+- **[React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer)** – Visibility tracking for scroll-based effects.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🌍 Internationalization
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Fully translated in three languages:
+
+- **English** (`en`)
+- **Spanish** (`es`)
+- **German** (`de`)
+
+Language is auto-detected or can be manually changed from the UI.
+
+---
+
+## 📁 Project Structure
+
+```
+📦 src
+ ┣ 📂components     → Reusable UI components
+ ┣ 📂pages          → Main page views (Home, About, Projects)
+ ┣ 📂hooks          → Custom React hooks (i18n, scroll visibility, etc.)
+ ┣ 📂animations     → Centralized GSAP + Framer Motion logic
+ ┣ 📂assets         → Images, icons, fonts
+ ┣ 📂i18n           → Translation config and language files
+ ┣ 📂styles         → Tailwind + custom styles
+ ┗ 📜main.tsx       → Main app entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✉️ Contact
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+The contact form uses **EmailJS** to send messages directly from the UI. User feedback is displayed via **SweetAlert2**.
+
+---
+
+## ⚙️ Installation & Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/your-portfolio.git
+   cd your-portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+
+3. Start the development server:
+   ```bash
+   bun run dev
+   ```
+
+---
+
+## 📦 Build for Production
+
+```bash
+bun run build
 ```
+
+---
+
+## 🧪 Key Features
+
+- Smooth section-based animations.
+- Dynamic background with WebGL particles (OGL).
+- Responsive and accessible design.
+- SPA navigation with React Router.
+- Scroll-based interactions using Intersection Observer.
+- Theme effects based on scroll (dark/light transitions).
+
+---
+
+## 📄 License
+
+MIT © Your Name
+
+---
+
+## 🌟 Credits
+
+This portfolio blends creativity, clean UI/UX, and modern frontend development techniques to deliver a performant, animated experience.
