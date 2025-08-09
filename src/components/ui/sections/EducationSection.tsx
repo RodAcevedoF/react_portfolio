@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import { EducationCard } from '../cards';
-import { EducationHeader } from '../titles';
+import { useState, lazy, Suspense } from 'react';
 import { data } from '../../../data';
 import type { EduSectionProps } from '../../../types';
 import { useTranslation, Trans } from 'react-i18next';
+import { MiniLoader } from '../loaders';
+const EducationCard = lazy(() => import('../cards/EducationCard'));
+const EducationHeader = lazy(() => import('../titles/EducationHeader'));
 
 const EducationSection = ({ innerRef, extraClass }: EduSectionProps) => {
   const [visibleIndex, setVisibleIndex] = useState(0);
@@ -49,18 +50,21 @@ const EducationSection = ({ innerRef, extraClass }: EduSectionProps) => {
                 md:flex-row md:justify-between 
                 ${align === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'}
               `}>
-              <EducationHeader
-                data={data}
-                align={align === 'left' ? 'right' : 'left'}
-                isActive={index === visibleIndex}
-              />
-              <EducationCard
-                data={data}
-                isActive={index === visibleIndex}
-                align={align}
-                index={index}
-                onVisible={setVisibleIndex}
-              />
+              <Suspense fallback={<MiniLoader />}>
+                <EducationHeader
+                  data={data}
+                  align={align}
+                  isActive={index === visibleIndex}
+                />
+
+                <EducationCard
+                  data={data}
+                  isActive={index === visibleIndex}
+                  align={align}
+                  index={index}
+                  onVisible={setVisibleIndex}
+                />
+              </Suspense>
             </div>
           );
         })}
