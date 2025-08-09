@@ -18,12 +18,12 @@ const ExperienceSection = ({ innerRef, extraClass }: ExpSectionProps) => {
           components={{ blue: <span className='text-blue-400' /> }}
         />
       </h4>
-      <Suspense fallback={<MiniLoader />}>
         <div className='flex flex-col items-center justify-center w-full h-fit gap-5 px-5'>
           <p className='text-[1.2em] text-center font-[Lilita]'>
             {t('about_sections.exp_desc')}
           </p>
         </div>
+      <Suspense fallback={<MiniLoader />}>
         <ul className='w-full h-[100%] px-5 py-2 flex flex-wrap list-none items-center justify-center gap-10'>
           {data.workExperience.map((job: WorkExperienceItem, index: number) => (
             <ExperienceCard key={index} job={job} />
