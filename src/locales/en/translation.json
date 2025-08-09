@@ -78,36 +78,6 @@
     "distinction": "Distinction"
   },
   "education": {
-    "msc_physics": {
-      "degree": "Master of Science (M.Sc.) Physics",
-      "university": "Freiburg Universität",
-      "honors": "mit Auszeichnung",
-      "score": "1 (Highest grade)",
-      "courses": {
-        "quantum_mechanics": {
-          "name": "Quantum Mechanics II",
-          "description": "Advanced principles of wavefunctions, quantum states, and perturbation theory."
-        },
-        "computational_physics": {
-          "name": "Computational Physics",
-          "description": "Focuses on numerical modeling, simulation algorithms, and data visualization."
-        },
-        "optoelectronics": {
-          "name": "Optoelectronics",
-          "description": "Applications of semiconductor physics in photonic devices."
-        }
-      },
-      "skills": {
-        "scientific_computing": "Scientific Computing",
-        "matlab": "MATLAB",
-        "python": "Python",
-        "numerical_methods": "Numerical Methods",
-        "simulation_tools": "Simulation Tools",
-        "data_analysis": "Data Analysis",
-        "technical_writing": "Technical Writing",
-        "experimental_design": "Experimental Design"
-      }
-    },
     "bachelor_music": {
       "degree": "Bachelor of Music",
       "university": "P. Catholic University of Chile",
@@ -191,7 +161,6 @@
         "thermodynamics": "Thermodynamics",
         "latex": "LaTeX",
         "python_basics": "Python (Basics)",
-        "c_cpp": "C/C++",
         "data_acquisition": "Data Acquisition",
         "lab_equipment_handling": "Lab Equipment Handling"
       }
@@ -335,28 +304,6 @@
         "Communication",
         "Patience",
         "Adaptability"
-      ]
-    },
-    "freiburg_university": {
-      "org": {
-        "title": "Freiburg University"
-      },
-      "position": "<blue>Associate</blue> Researcher",
-      "startDate": "2017",
-      "endDate": "2018",
-      "location": "Freiburg, DE",
-      "description": "I collaborated on an interdisciplinary academic project, focusing on data analysis, publication writing, and software tools for experimental research working closely with a team of professors and researchers.",
-      "responsabilities": [
-        "Assist in the design and execution of research experiments",
-        "Collect, clean, and analyze data using statistical tools",
-        "Collaborate in the writing and editing of scientific papers",
-        "Develop and maintain internal research tools and scripts"
-      ],
-      "skills": [
-        "Data Analysis",
-        "Python",
-        "Scientific Research",
-        "Problem Solving"
       ]
     },
     "reutlingen_orchester": {

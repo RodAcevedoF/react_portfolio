@@ -1,23 +1,29 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, About, Splash, NotFound } from "./pages";
-import { Footer, NavBar } from "./components";
-import { MailForm } from "./components";
-import { Modal } from "./components";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import { MailForm, MiniLoader } from './components';
+import { Modal } from './components';
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Splash = lazy(() => import('./pages/Splash'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+import { Footer, NavBar } from './components';
 
 const App = () => {
   return (
     <>
       <Router>
-        <header className="max-w-screen">
+        <header className='max-w-screen'>
           <NavBar />
         </header>
-        <main className="flex flex-col items-center justify-center max-w-[100vw] h-auto bg-inherit">
-          <Routes>
-            <Route path="/" element={<Splash />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+        <main className='flex flex-col items-center justify-center max-w-[100vw] h-auto bg-inherit'>
+          <Suspense fallback={<MiniLoader />}>
+            <Routes>
+              <Route path='/' element={<Splash />} />
+              <Route path='/home' element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='*' element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </Router>

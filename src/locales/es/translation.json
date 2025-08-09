@@ -78,36 +78,6 @@
     "distinction": "Distinción"
   },
   "education": {
-    "msc_physics": {
-      "degree": "Maestría en Ciencias (M.Sc.) Física",
-      "university": "Universidad de Friburgo",
-      "honors": "con honores",
-      "score": "1 (Calificación más alta)",
-      "courses": {
-        "quantum_mechanics": {
-          "name": "Mecánica Cuántica II",
-          "description": "Principios avanzados de funciones de onda, estados cuánticos y teoría de perturbaciones."
-        },
-        "computational_physics": {
-          "name": "Física Computacional",
-          "description": "Enfoque en modelado numérico, algoritmos de simulación y visualización de datos."
-        },
-        "optoelectronics": {
-          "name": "Optoelectrónica",
-          "description": "Aplicaciones de la física de semiconductores en dispositivos fotónicos."
-        }
-      },
-      "skills": {
-        "scientific_computing": "Computación Científica",
-        "matlab": "MATLAB",
-        "python": "Python",
-        "numerical_methods": "Métodos Numéricos",
-        "simulation_tools": "Herramientas de Simulación",
-        "data_analysis": "Análisis de Datos",
-        "technical_writing": "Redacción Técnica",
-        "experimental_design": "Diseño Experimental"
-      }
-    },
     "bachelor_music": {
       "degree": "Licenciatura en Música",
       "university": "Pontificia Universidad Católica de Chile",
@@ -335,28 +305,6 @@
         "Comunicación",
         "Paciencia",
         "Adaptabilidad"
-      ]
-    },
-    "freiburg_university": {
-      "org": {
-        "title": "Universidad de Friburgo"
-      },
-      "position": "<blue>Investigador</blue> Asociado",
-      "startDate": "2017",
-      "endDate": "2018",
-      "location": "Friburgo, DE",
-      "description": "Colaboré en un proyecto interdisciplinario, centrado en análisis de datos, redacción de publicaciones y herramientas de software simulador, trabajando en estrecha colaboración con un equipo de profesores e investigadores.",
-      "responsabilities": [
-        "Asistir en el diseño y ejecución de experimentos",
-        "Recolectar, limpiar y analizar datos usando herramientas estadísticas",
-        "Colaborar en la redacción y edición de artículos científicos",
-        "Desarrollar y mantener herramientas y scripts internos de investigación"
-      ],
-      "skills": [
-        "Análisis de Datos",
-        "Python",
-        "Investigación Científica",
-        "Resolución de Problemas"
       ]
     },
     "reutlingen_orchester": {

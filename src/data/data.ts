@@ -49,7 +49,6 @@ import {
   tc,
   reutlingen,
   villingen,
-  overleaf,
   freelance,
   jira,
   postman,
@@ -61,568 +60,498 @@ import {
   sibelius,
   musescore,
   dropbox,
-  jupyter,
-  pandas,
-  numpy,
   zoom,
   sap,
   salesforce,
-  puc
-} from "../assets";
+  puc,
+} from '../assets';
 
 export const data = {
-  name: "Rod Acevedo",
-  address: "Löhrrstrasse 16, Villingen-Schwenningen DE",
-  email: "raacevedof@gmail.com",
-  avatar: "/images/portrait.png",
-  aboutMe: "about_me.about",
+  name: 'Rod Acevedo',
+  address: 'Löhrrstrasse 16, Villingen-Schwenningen DE',
+  email: 'raacevedof@gmail.com',
+  avatar: '/images/portrait.png',
+  aboutMe: 'about_me.about',
   education: [
     {
-      degree: "education.fullstack_master.degree",
-      university: "education.fullstack_master.university",
-      startDate: "2024-09-01",
-      endDate: "2026-05-01",
-      honors: "",
-      score: "",
-      web: "https://www.google.com",
+      degree: 'education.fullstack_master.degree',
+      university: 'education.fullstack_master.university',
+      startDate: '2024-09-01',
+      endDate: '2026-05-01',
+      honors: '',
+      score: '',
+      web: 'https://www.google.com',
       img: thePower,
       relevantCourses: [
         {
-          name: "education.fullstack_master.courses.fullstack_architecture.name",
+          name: 'education.fullstack_master.courses.fullstack_architecture.name',
           description:
-            "education.fullstack_master.courses.fullstack_architecture.description"
+            'education.fullstack_master.courses.fullstack_architecture.description',
         },
         {
-          name: "education.fullstack_master.courses.modern_frontend_development.name",
+          name: 'education.fullstack_master.courses.modern_frontend_development.name',
           description:
-            "education.fullstack_master.courses.modern_frontend_development.description"
+            'education.fullstack_master.courses.modern_frontend_development.description',
         },
         {
-          name: "education.fullstack_master.courses.advanced_backend_nodejs.name",
+          name: 'education.fullstack_master.courses.advanced_backend_nodejs.name',
           description:
-            "education.fullstack_master.courses.advanced_backend_nodejs.description"
-        }
+            'education.fullstack_master.courses.advanced_backend_nodejs.description',
+        },
       ],
       skills: [
-        "education.fullstack_master.skills.react",
-        "education.fullstack_master.skills.nextjs",
-        "education.fullstack_master.skills.angular",
-        "education.fullstack_master.skills.nodejs",
-        "education.fullstack_master.skills.expressjs",
-        "education.fullstack_master.skills.mongodb",
-        "education.fullstack_master.skills.nestjs",
-        "education.fullstack_master.skills.tailwindcss",
-        "education.fullstack_master.skills.typescript",
-        "education.fullstack_master.skills.rest_apis",
-        "education.fullstack_master.skills.jwt_authentication",
-        "education.fullstack_master.skills.modern_deployment"
-      ]
+        'education.fullstack_master.skills.react',
+        'education.fullstack_master.skills.nextjs',
+        'education.fullstack_master.skills.angular',
+        'education.fullstack_master.skills.nodejs',
+        'education.fullstack_master.skills.expressjs',
+        'education.fullstack_master.skills.mongodb',
+        'education.fullstack_master.skills.nestjs',
+        'education.fullstack_master.skills.tailwindcss',
+        'education.fullstack_master.skills.typescript',
+        'education.fullstack_master.skills.rest_apis',
+        'education.fullstack_master.skills.jwt_authentication',
+        'education.fullstack_master.skills.modern_deployment',
+      ],
     },
     {
-      degree: "education.web_dev.degree",
-      university: "education.web_dev.university",
-      startDate: "2024-09-01",
-      endDate: "2026-05-01",
-      honors: "",
-      score: "",
-      web: "https://www.google.com",
+      degree: 'education.web_dev.degree',
+      university: 'education.web_dev.university',
+      startDate: '2024-09-01',
+      endDate: '2026-05-01',
+      honors: '',
+      score: '',
+      web: 'https://www.google.com',
       img: thePower,
       relevantCourses: [
         {
-          name: "education.web_dev.courses.client_server_web_architecture.name",
+          name: 'education.web_dev.courses.client_server_web_architecture.name',
           description:
-            "education.web_dev.courses.client_server_web_architecture.description"
+            'education.web_dev.courses.client_server_web_architecture.description',
         },
         {
-          name: "education.web_dev.courses.databases_sql.name",
-          description: "education.web_dev.courses.databases_sql.description"
+          name: 'education.web_dev.courses.databases_sql.name',
+          description: 'education.web_dev.courses.databases_sql.description',
         },
         {
-          name: "education.web_dev.courses.programming_fundamentals.name",
+          name: 'education.web_dev.courses.programming_fundamentals.name',
           description:
-            "education.web_dev.courses.programming_fundamentals.description"
+            'education.web_dev.courses.programming_fundamentals.description',
         },
         {
-          name: "education.web_dev.courses.uml_software_design.name",
+          name: 'education.web_dev.courses.uml_software_design.name',
           description:
-            "education.web_dev.courses.uml_software_design.description"
-        }
+            'education.web_dev.courses.uml_software_design.description',
+        },
       ],
       skills: [
-        "education.web_dev.skills.html5",
-        "education.web_dev.skills.css3",
-        "education.web_dev.skills.javascript_es6",
-        "education.web_dev.skills.php",
-        "education.web_dev.skills.sql",
-        "education.web_dev.skills.mysql",
-        "education.web_dev.skills.oop",
-        "education.web_dev.skills.uml",
-        "education.web_dev.skills.client_server_architecture",
-        "education.web_dev.skills.basic_git",
-        "education.web_dev.skills.responsive_design",
-        "education.web_dev.skills.linux_command_line"
-      ]
+        'education.web_dev.skills.html5',
+        'education.web_dev.skills.css3',
+        'education.web_dev.skills.javascript_es6',
+        'education.web_dev.skills.php',
+        'education.web_dev.skills.sql',
+        'education.web_dev.skills.mysql',
+        'education.web_dev.skills.oop',
+        'education.web_dev.skills.uml',
+        'education.web_dev.skills.client_server_architecture',
+        'education.web_dev.skills.basic_git',
+        'education.web_dev.skills.responsive_design',
+        'education.web_dev.skills.linux_command_line',
+      ],
     },
     {
-      degree: "education.msc_physics.degree",
-      university: "education.msc_physics.university",
-      startDate: "2012-09-01",
-      endDate: "2014-06-01",
-      honors: "education.msc_physics.honors",
-      score: "education.msc_physics.score",
-      web: "https://www.google.com",
+      degree: 'education.bachelor_physics.degree',
+      university: 'education.bachelor_physics.university',
+      startDate: '2008-09-01',
+      endDate: '2012-06-01',
+      honors: 'education.bachelor_physics.honors',
+      score: 'education.bachelor_physics.score',
+      web: 'https://www.google.com',
       img: ufr,
       relevantCourses: [
         {
-          name: "education.msc_physics.courses.quantum_mechanics.name",
+          name: 'education.bachelor_physics.courses.thermodynamics.name',
           description:
-            "education.msc_physics.courses.quantum_mechanics.description"
+            'education.bachelor_physics.courses.thermodynamics.description',
         },
         {
-          name: "education.msc_physics.courses.computational_physics.name",
+          name: 'education.bachelor_physics.courses.electrodynamics.name',
           description:
-            "education.msc_physics.courses.computational_physics.description"
+            'education.bachelor_physics.courses.electrodynamics.description',
         },
         {
-          name: "education.msc_physics.courses.optoelectronics.name",
+          name: 'education.bachelor_physics.courses.experimental_physics.name',
           description:
-            "education.msc_physics.courses.optoelectronics.description"
-        }
+            'education.bachelor_physics.courses.experimental_physics.description',
+        },
       ],
       skills: [
-        "education.msc_physics.skills.scientific_computing",
-        "education.msc_physics.skills.matlab",
-        "education.msc_physics.skills.python",
-        "education.msc_physics.skills.numerical_methods",
-        "education.msc_physics.skills.simulation_tools",
-        "education.msc_physics.skills.data_analysis",
-        "education.msc_physics.skills.technical_writing",
-        "education.msc_physics.skills.experimental_design"
-      ]
-    },
-    {
-      degree: "education.bachelor_physics.degree",
-      university: "education.bachelor_physics.university",
-      startDate: "2008-09-01",
-      endDate: "2012-06-01",
-      honors: "education.bachelor_physics.honors",
-      score: "education.bachelor_physics.score",
-      web: "https://www.google.com",
-      img: ufr,
-      relevantCourses: [
-        {
-          name: "education.bachelor_physics.courses.thermodynamics.name",
-          description:
-            "education.bachelor_physics.courses.thermodynamics.description"
-        },
-        {
-          name: "education.bachelor_physics.courses.electrodynamics.name",
-          description:
-            "education.bachelor_physics.courses.electrodynamics.description"
-        },
-        {
-          name: "education.bachelor_physics.courses.experimental_physics.name",
-          description:
-            "education.bachelor_physics.courses.experimental_physics.description"
-        }
+        'education.bachelor_physics.skills.classical_mechanics',
+        'education.bachelor_physics.skills.electromagnetism',
+        'education.bachelor_physics.skills.thermodynamics',
+        'education.bachelor_physics.skills.latex',
+        'education.bachelor_physics.skills.python_basics',
+        'education.bachelor_physics.skills.c_cpp',
+        'education.bachelor_physics.skills.data_acquisition',
+        'education.bachelor_physics.skills.lab_equipment_handling',
       ],
-      skills: [
-        "education.bachelor_physics.skills.classical_mechanics",
-        "education.bachelor_physics.skills.electromagnetism",
-        "education.bachelor_physics.skills.thermodynamics",
-        "education.bachelor_physics.skills.latex",
-        "education.bachelor_physics.skills.python_basics",
-        "education.bachelor_physics.skills.c_cpp",
-        "education.bachelor_physics.skills.data_acquisition",
-        "education.bachelor_physics.skills.lab_equipment_handling"
-      ]
     },
     {
-      degree: "education.bachelor_music_freiburg.degree",
-      university: "education.bachelor_music_freiburg.university",
-      startDate: "2008-01-01",
-      endDate: "2010-06-01",
-      honors: "education.bachelor_music_freiburg.honors",
-      score: "education.bachelor_music_freiburg.score",
-      web: "https://www.google.com",
+      degree: 'education.bachelor_music_freiburg.degree',
+      university: 'education.bachelor_music_freiburg.university',
+      startDate: '2008-01-01',
+      endDate: '2010-06-01',
+      honors: 'education.bachelor_music_freiburg.honors',
+      score: 'education.bachelor_music_freiburg.score',
+      web: 'https://www.google.com',
       img: hmfm,
       relevantCourses: [
         {
-          name: "education.bachelor_music_freiburg.courses.counterpoint_harmony.name",
+          name: 'education.bachelor_music_freiburg.courses.counterpoint_harmony.name',
           description:
-            "education.bachelor_music_freiburg.courses.counterpoint_harmony.description"
+            'education.bachelor_music_freiburg.courses.counterpoint_harmony.description',
         },
         {
-          name: "education.bachelor_music_freiburg.courses.conducting_ensemble_leadership.name",
+          name: 'education.bachelor_music_freiburg.courses.conducting_ensemble_leadership.name',
           description:
-            "education.bachelor_music_freiburg.courses.conducting_ensemble_leadership.description"
+            'education.bachelor_music_freiburg.courses.conducting_ensemble_leadership.description',
         },
         {
-          name: "education.bachelor_music_freiburg.courses.performance_practice.name",
+          name: 'education.bachelor_music_freiburg.courses.performance_practice.name',
           description:
-            "education.bachelor_music_freiburg.courses.performance_practice.description"
-        }
+            'education.bachelor_music_freiburg.courses.performance_practice.description',
+        },
       ],
       skills: [
-        "education.bachelor_music_freiburg.skills.music_composition",
-        "education.bachelor_music_freiburg.skills.score_reading",
-        "education.bachelor_music_freiburg.skills.ensemble_performance",
-        "education.bachelor_music_freiburg.skills.aural_skills",
-        "education.bachelor_music_freiburg.skills.notation_software",
-        "education.bachelor_music_freiburg.skills.music_analysis",
-        "education.bachelor_music_freiburg.skills.orchestration"
-      ]
+        'education.bachelor_music_freiburg.skills.music_composition',
+        'education.bachelor_music_freiburg.skills.score_reading',
+        'education.bachelor_music_freiburg.skills.ensemble_performance',
+        'education.bachelor_music_freiburg.skills.aural_skills',
+        'education.bachelor_music_freiburg.skills.notation_software',
+        'education.bachelor_music_freiburg.skills.music_analysis',
+        'education.bachelor_music_freiburg.skills.orchestration',
+      ],
     },
     {
-      degree: "education.bachelor_music.degree",
-      university: "education.bachelor_music.degree",
-      startDate: "2005-03-01",
-      endDate: "2007-12-20",
-      honors: "education.bachelor_music.honors",
-      score: "education.bachelor_music.score",
-      web: "https://www.google.com",
+      degree: 'education.bachelor_music.degree',
+      university: 'education.bachelor_music.degree',
+      startDate: '2005-03-01',
+      endDate: '2007-12-20',
+      honors: 'education.bachelor_music.honors',
+      score: 'education.bachelor_music.score',
+      web: 'https://www.google.com',
       img: puc,
       relevantCourses: [
         {
-          name: "education.bachelor_music.courses.fundamentals_music_theory.name",
+          name: 'education.bachelor_music.courses.fundamentals_music_theory.name',
           description:
-            "education.bachelor_music.courses.fundamentals_music_theory.description"
+            'education.bachelor_music.courses.fundamentals_music_theory.description',
         },
         {
-          name: "education.bachelor_music.courses.western_music_history.name",
+          name: 'education.bachelor_music.courses.western_music_history.name',
           description:
-            "education.bachelor_music.courses.western_music_history.description"
+            'education.bachelor_music.courses.western_music_history.description',
         },
         {
-          name: "education.bachelor_music.courses.orchestral_training.name",
+          name: 'education.bachelor_music.courses.orchestral_training.name',
           description:
-            "education.bachelor_music.courses.orchestral_training.description"
-        }
+            'education.bachelor_music.courses.orchestral_training.description',
+        },
       ],
       skills: [
-        "education.bachelor_music.skills.sight_reading",
-        "education.bachelor_music.skills.music_theory",
-        "education.bachelor_music.skills.solfege",
-        "Music Theory",
-        "education.bachelor_music.skills.musical_interpretation",
-        "education.bachelor_music.skills.instrument_technique",
-        "education.bachelor_music.skills.group_performance"
-      ]
-    }
+        'education.bachelor_music.skills.sight_reading',
+        'education.bachelor_music.skills.music_theory',
+        'education.bachelor_music.skills.solfege',
+        'Music Theory',
+        'education.bachelor_music.skills.musical_interpretation',
+        'education.bachelor_music.skills.instrument_technique',
+        'education.bachelor_music.skills.group_performance',
+      ],
+    },
   ],
   workExperience: [
     {
       organization: {
-        title: "work_experience.freelance_web_dev.org.title",
-        website: "https://google.com",
-        image: freelance
+        title: 'work_experience.freelance_web_dev.org.title',
+        website: 'https://google.com',
+        image: freelance,
       },
-      position: "work_experience.freelance_web_dev.position",
-      startDate: "work_experience.freelance_web_dev.startDate",
-      endDate: "work_experience.freelance_web_dev.endDate",
-      location: "work_experience.freelance_web_dev.location",
-      description: "work_experience.freelance_web_dev.description",
-      workPlaceMode: "work_experience.freelance_web_dev.description",
+      position: 'work_experience.freelance_web_dev.position',
+      startDate: 'work_experience.freelance_web_dev.startDate',
+      endDate: 'work_experience.freelance_web_dev.endDate',
+      location: 'work_experience.freelance_web_dev.location',
+      description: 'work_experience.freelance_web_dev.description',
+      workPlaceMode: 'work_experience.freelance_web_dev.description',
       responsabilities: [
-        "work_experience.freelance_web_dev.responsabilities.0",
-        "work_experience.freelance_web_dev.responsabilities.1",
-        "work_experience.freelance_web_dev.responsabilities.2",
-        "work_experience.freelance_web_dev.responsabilities.3"
+        'work_experience.freelance_web_dev.responsabilities.0',
+        'work_experience.freelance_web_dev.responsabilities.1',
+        'work_experience.freelance_web_dev.responsabilities.2',
+        'work_experience.freelance_web_dev.responsabilities.3',
       ],
       skills: [
-        "work_experience.freelance_web_dev.skills.0",
-        "work_experience.freelance_web_dev.skills.1",
-        "work_experience.freelance_web_dev.skills.2",
-        "work_experience.freelance_web_dev.skills.3"
+        'work_experience.freelance_web_dev.skills.0',
+        'work_experience.freelance_web_dev.skills.1',
+        'work_experience.freelance_web_dev.skills.2',
+        'work_experience.freelance_web_dev.skills.3',
       ],
       tools: [
-        { name: "Figma", img: figma },
-        { name: "VSCode", img: vscode },
-        { name: "Postman", img: postman },
-        { name: "Jira", img: jira }
-      ]
+        { name: 'Figma', img: figma },
+        { name: 'VSCode', img: vscode },
+        { name: 'Postman', img: postman },
+        { name: 'Jira', img: jira },
+      ],
     },
     {
       organization: {
-        title: "work_experience.basic_fit.org.title",
-        website: "https://google.com",
-        image: bfit
+        title: 'work_experience.basic_fit.org.title',
+        website: 'https://google.com',
+        image: bfit,
       },
-      position: "work_experience.basic_fit.position",
-      startDate: "work_experience.basic_fit.startDate",
-      endDate: "work_experience.basic_fit.endDate",
-      location: "work_experience.basic_fit.location",
-      description: "work_experience.basic_fit.description",
-      workPlaceMode: "work_experience.basic_fit.workPlaceMode", // si aplica, sino eliminar
+      position: 'work_experience.basic_fit.position',
+      startDate: 'work_experience.basic_fit.startDate',
+      endDate: 'work_experience.basic_fit.endDate',
+      location: 'work_experience.basic_fit.location',
+      description: 'work_experience.basic_fit.description',
+      workPlaceMode: 'work_experience.basic_fit.workPlaceMode', // si aplica, sino eliminar
       responsabilities: [
-        "work_experience.basic_fit.responsabilities.0",
-        "work_experience.basic_fit.responsabilities.1",
-        "work_experience.basic_fit.responsabilities.2",
-        "work_experience.basic_fit.responsabilities.3"
+        'work_experience.basic_fit.responsabilities.0',
+        'work_experience.basic_fit.responsabilities.1',
+        'work_experience.basic_fit.responsabilities.2',
+        'work_experience.basic_fit.responsabilities.3',
       ],
       skills: [
-        "work_experience.basic_fit.skills.0",
-        "work_experience.basic_fit.skills.1",
-        "work_experience.basic_fit.skills.2",
-        "work_experience.basic_fit.skills.3",
-        "work_experience.basic_fit.skills.4"
+        'work_experience.basic_fit.skills.0',
+        'work_experience.basic_fit.skills.1',
+        'work_experience.basic_fit.skills.2',
+        'work_experience.basic_fit.skills.3',
+        'work_experience.basic_fit.skills.4',
       ],
       tools: [
-        { name: "Docs", img: docs },
-        { name: "Sheets", img: sheets },
-        { name: "SAP", img: sap },
-        { name: "Salesforce", img: salesforce }
-      ]
+        { name: 'Docs', img: docs },
+        { name: 'Sheets', img: sheets },
+        { name: 'SAP', img: sap },
+        { name: 'Salesforce', img: salesforce },
+      ],
     },
     {
       organization: {
-        title: "work_experience.tusclasesparticulares.org.title",
-        website: "https://google.com",
-        image: tc
+        title: 'work_experience.tusclasesparticulares.org.title',
+        website: 'https://google.com',
+        image: tc,
       },
-      position: "work_experience.tusclasesparticulares.position",
-      startDate: "work_experience.tusclasesparticulares.startDate",
-      endDate: "work_experience.tusclasesparticulares.endDate",
-      location: "work_experience.tusclasesparticulares.location",
-      description: "work_experience.tusclasesparticulares.description",
+      position: 'work_experience.tusclasesparticulares.position',
+      startDate: 'work_experience.tusclasesparticulares.startDate',
+      endDate: 'work_experience.tusclasesparticulares.endDate',
+      location: 'work_experience.tusclasesparticulares.location',
+      description: 'work_experience.tusclasesparticulares.description',
       responsabilities: [
-        "work_experience.tusclasesparticulares.responsabilities.0",
-        "work_experience.tusclasesparticulares.responsabilities.1",
-        "work_experience.tusclasesparticulares.responsabilities.2",
-        "work_experience.tusclasesparticulares.responsabilities.3"
+        'work_experience.tusclasesparticulares.responsabilities.0',
+        'work_experience.tusclasesparticulares.responsabilities.1',
+        'work_experience.tusclasesparticulares.responsabilities.2',
+        'work_experience.tusclasesparticulares.responsabilities.3',
       ],
       skills: [
-        "work_experience.tusclasesparticulares.skills.0",
-        "work_experience.tusclasesparticulares.skills.1",
-        "work_experience.tusclasesparticulares.skills.2",
-        "work_experience.tusclasesparticulares.skills.3",
-        "work_experience.tusclasesparticulares.skills.4"
+        'work_experience.tusclasesparticulares.skills.0',
+        'work_experience.tusclasesparticulares.skills.1',
+        'work_experience.tusclasesparticulares.skills.2',
+        'work_experience.tusclasesparticulares.skills.3',
+        'work_experience.tusclasesparticulares.skills.4',
       ],
       tools: [
-        { name: "Classroom", img: classroom },
-        { name: "Zoom", img: zoom },
-        { name: "Docs", img: docs },
-        { name: "Slides", img: slides }
-      ]
+        { name: 'Classroom', img: classroom },
+        { name: 'Zoom', img: zoom },
+        { name: 'Docs', img: docs },
+        { name: 'Slides', img: slides },
+      ],
     },
     {
       organization: {
-        title: "work_experience.freiburg_university.org.title",
-        website: "https://google.com",
-        image: ufr
+        title: 'work_experience.reutlingen_orchester.org.title',
+        website: 'https://google.com',
+        image: reutlingen,
       },
-      position: "work_experience.freiburg_university.position",
-      startDate: "work_experience.freiburg_university.startDate",
-      endDate: "work_experience.freiburg_university.endDate",
-      location: "work_experience.freiburg_university.location",
-      description: "work_experience.freiburg_university.description",
+      position: 'work_experience.reutlingen_orchester.position',
+      startDate: 'work_experience.reutlingen_orchester.startDate',
+      endDate: 'work_experience.reutlingen_orchester.endDate',
+      location: 'work_experience.reutlingen_orchester.location',
+      description: 'work_experience.reutlingen_orchester.description',
       responsabilities: [
-        "work_experience.freiburg_university.responsabilities.0",
-        "work_experience.freiburg_university.responsabilities.1",
-        "work_experience.freiburg_university.responsabilities.2",
-        "work_experience.freiburg_university.responsabilities.3"
+        'work_experience.reutlingen_orchester.responsabilities.0',
+        'work_experience.reutlingen_orchester.responsabilities.1',
+        'work_experience.reutlingen_orchester.responsabilities.2',
+        'work_experience.reutlingen_orchester.responsabilities.3',
       ],
       skills: [
-        "work_experience.freiburg_university.skills.0",
-        "work_experience.freiburg_university.skills.1",
-        "work_experience.freiburg_university.skills.2",
-        "work_experience.freiburg_university.skills.3"
+        'work_experience.reutlingen_orchester.skills.0',
+        'work_experience.reutlingen_orchester.skills.1',
+        'work_experience.reutlingen_orchester.skills.2',
+        'work_experience.reutlingen_orchester.skills.3',
       ],
       tools: [
-        { name: "Jupyter", img: jupyter },
-        { name: "Pandas", img: pandas },
-        { name: "Overleaf", img: overleaf },
-        { name: "Numpy", img: numpy }
-      ]
+        { name: 'Sibelius', img: sibelius },
+        { name: 'MuseScore', img: musescore },
+        { name: 'Docs', img: docs },
+        { name: 'Dropbox', img: dropbox },
+      ],
     },
     {
       organization: {
-        title: "work_experience.reutlingen_orchester.org.title",
-        website: "https://google.com",
-        image: reutlingen
+        title: 'work_experience.akademie_villingen.org.title',
+        website: 'https://google.com',
+        image: villingen,
       },
-      position: "work_experience.reutlingen_orchester.position",
-      startDate: "work_experience.reutlingen_orchester.startDate",
-      endDate: "work_experience.reutlingen_orchester.endDate",
-      location: "work_experience.reutlingen_orchester.location",
-      description: "work_experience.reutlingen_orchester.description",
+      position: 'work_experience.akademie_villingen.position',
+      startDate: 'work_experience.akademie_villingen.startDate',
+      endDate: 'work_experience.akademie_villingen.endDate',
+      location: 'work_experience.akademie_villingen.location',
+      description: 'work_experience.akademie_villingen.description',
       responsabilities: [
-        "work_experience.reutlingen_orchester.responsabilities.0",
-        "work_experience.reutlingen_orchester.responsabilities.1",
-        "work_experience.reutlingen_orchester.responsabilities.2",
-        "work_experience.reutlingen_orchester.responsabilities.3"
+        'work_experience.akademie_villingen.responsabilities.0',
+        'work_experience.akademie_villingen.responsabilities.1',
+        'work_experience.akademie_villingen.responsabilities.2',
+        'work_experience.akademie_villingen.responsabilities.3',
       ],
       skills: [
-        "work_experience.reutlingen_orchester.skills.0",
-        "work_experience.reutlingen_orchester.skills.1",
-        "work_experience.reutlingen_orchester.skills.2",
-        "work_experience.reutlingen_orchester.skills.3"
+        'work_experience.akademie_villingen.skills.0',
+        'work_experience.akademie_villingen.skills.1',
+        'work_experience.akademie_villingen.skills.2',
+        'work_experience.akademie_villingen.skills.3',
+        'work_experience.akademie_villingen.skills.4',
       ],
       tools: [
-        { name: "Sibelius", img: sibelius },
-        { name: "MuseScore", img: musescore },
-        { name: "Docs", img: docs },
-        { name: "Dropbox", img: dropbox }
-      ]
+        { name: 'Sibelius', img: sibelius },
+        { name: 'Classroom', img: classroom },
+        { name: 'Docs', img: docs },
+        { name: 'Slides', img: slides },
+      ],
     },
-    {
-      organization: {
-        title: "work_experience.akademie_villingen.org.title",
-        website: "https://google.com",
-        image: villingen
-      },
-      position: "work_experience.akademie_villingen.position",
-      startDate: "work_experience.akademie_villingen.startDate",
-      endDate: "work_experience.akademie_villingen.endDate",
-      location: "work_experience.akademie_villingen.location",
-      description: "work_experience.akademie_villingen.description",
-      responsabilities: [
-        "work_experience.akademie_villingen.responsabilities.0",
-        "work_experience.akademie_villingen.responsabilities.1",
-        "work_experience.akademie_villingen.responsabilities.2",
-        "work_experience.akademie_villingen.responsabilities.3"
-      ],
-      skills: [
-        "work_experience.akademie_villingen.skills.0",
-        "work_experience.akademie_villingen.skills.1",
-        "work_experience.akademie_villingen.skills.2",
-        "work_experience.akademie_villingen.skills.3",
-        "work_experience.akademie_villingen.skills.4"
-      ],
-      tools: [
-        { name: "Sibelius", img: sibelius },
-        { name: "Classroom", img: classroom },
-        { name: "Docs", img: docs },
-        { name: "Slides", img: slides }
-      ]
-    }
   ],
   tech: [
     {
-      name: "HTML5",
+      name: 'HTML5',
       img: html,
       hoverImg: hoverHtml,
-      learning: false
+      learning: false,
     },
     {
-      name: "CSS3",
+      name: 'CSS3',
       img: css,
       hoverImg: hoverCss,
-      learning: false
+      learning: false,
     },
     {
-      name: "JavaScript",
+      name: 'JavaScript',
       img: js,
       hoverImg: hoverJs,
-      learning: false
+      learning: false,
     },
     {
-      name: "React",
+      name: 'React',
       img: react,
       hoverImg: reactLogo,
-      learning: false
+      learning: false,
     },
     {
-      name: "TypeScript",
+      name: 'TypeScript',
       img: ts,
       hoverImg: hoverts,
-      learning: false
+      learning: false,
     },
     {
-      name: "Java",
+      name: 'Java',
       img: java,
       hoverImg: hoverJava,
-      learning: false
+      learning: false,
     },
     {
-      name: "Spring",
+      name: 'Spring',
       img: spring,
       hoverImg: hoverSpring,
-      learning: false
+      learning: false,
     },
     {
-      name: "Node",
+      name: 'Node',
       img: node,
       hoverImg: hoverNode,
-      learning: false
+      learning: false,
     },
     {
-      name: "Vite",
+      name: 'Vite',
       img: vite,
       hoverImg: viteLogo,
-      learning: false
+      learning: false,
     },
     {
-      name: "MongoDB",
+      name: 'MongoDB',
       img: mongo,
       hoverImg: hoverMongo,
-      learning: false
+      learning: false,
     },
     {
-      name: "Postgre",
+      name: 'Postgre',
       img: postgre,
       hoverImg: hoverPostgre,
-      learning: false
+      learning: false,
     },
     {
-      name: "MySql",
+      name: 'MySql',
       img: mysql,
       hoverImg: hoverMysql,
-      learning: false
+      learning: false,
     },
     {
-      name: "Git",
+      name: 'Git',
       img: git,
       hoverImg: hoverGit,
-      learning: false
+      learning: false,
     },
     {
-      name: "Tailwind",
+      name: 'Tailwind',
       img: tailwind,
       hoverImg: hoverTailwind,
-      learning: false
+      learning: false,
     },
     {
-      name: "Angular",
+      name: 'Angular',
       img: angular,
       hoverImg: hoverAngular,
-      learning: true
+      learning: true,
     },
     {
-      name: "Bootstrap",
+      name: 'Bootstrap',
       img: bootstrap,
       hoverImg: hoverBootstrap,
-      learning: true
+      learning: true,
     },
     {
-      name: "Go",
+      name: 'Go',
       img: go,
       hoverImg: hoverGo,
-      learning: true
+      learning: true,
     },
     {
-      name: "Jenkins",
+      name: 'Jenkins',
       img: jenkins,
       hoverImg: hoverJenkins,
-      learning: true
+      learning: true,
     },
     {
-      name: "Docker",
+      name: 'Docker',
       img: docker,
       hoverImg: hoverDocker,
-      learning: false
+      learning: false,
     },
     {
-      name: "express",
+      name: 'express',
       img: express,
       hoverImg: hoverExpress,
-      learning: false
+      learning: false,
     },
     {
-      name: "Linux",
+      name: 'Linux',
       img: linux,
       hoverImg: hoverLinux,
-      learning: false
-    }
-  ]
+      learning: false,
+    },
+  ],
 };

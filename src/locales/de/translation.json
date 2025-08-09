@@ -78,36 +78,6 @@
     "distinction": "Auszeichnung"
   },
   "education": {
-    "msc_physics": {
-      "degree": "Master of Science (M.Sc.) Physik",
-      "university": "Universität Freiburg",
-      "honors": "mit Auszeichnung",
-      "score": "1 (Beste Note)",
-      "courses": {
-        "quantum_mechanics": {
-          "name": "Quantenmechanik II",
-          "description": "Fortgeschrittene Prinzipien von Wellenfunktionen, Quantenzuständen und Störungstheorie."
-        },
-        "computational_physics": {
-          "name": "Computational Physics",
-          "description": "Numerische Modellierung, Simulationsalgorithmen und Datenvisualisierung."
-        },
-        "optoelectronics": {
-          "name": "Optoelektronik",
-          "description": "Anwendungen der Halbleiterphysik in photonischen Geräten."
-        }
-      },
-      "skills": {
-        "scientific_computing": "Wissenschaftliches Rechnen",
-        "matlab": "MATLAB",
-        "python": "Python",
-        "numerical_methods": "Numerische Methoden",
-        "simulation_tools": "Simulationswerkzeuge",
-        "data_analysis": "Datenanalyse",
-        "technical_writing": "Technisches Schreiben",
-        "experimental_design": "Experimentelles Design"
-      }
-    },
     "bachelor_music": {
       "degree": "Bachelor of Music",
       "university": "Päpstliche Katholische Universität Chile",
@@ -335,28 +305,6 @@
         "Kommunikation",
         "Geduld",
         "Anpassungsfähigkeit"
-      ]
-    },
-    "freiburg_university": {
-      "org": {
-        "title": "Universität Freiburg"
-      },
-      "position": "<blue>Wissenschaftlicher</blue> Mitarbeiter",
-      "startDate": "2017",
-      "endDate": "2018",
-      "location": "Freiburg, DE",
-      "description": "Ich arbeitete an einem interdisziplinären Forschungsprojekt mit Fokus auf Datenanalyse, wissenschaftliches Schreiben und Softwaretools im Forschungslabor mit Dozenten und Forschern.",
-      "responsabilities": [
-        "Planung und Durchführung von Experimenten unterstützen",
-        "Daten mit Statistiktools sammeln, bereinigen und analysieren",
-        "Texte und Veröffentlichungen gemeinsam erstellen",
-        "Interne Forschungstools und Skripte entwickeln und pflegen"
-      ],
-      "skills": [
-        "Datenanalyse",
-        "Python",
-        "Wissenschaftliches Arbeiten",
-        "Problemlösung"
       ]
     },
     "reutlingen_orchester": {

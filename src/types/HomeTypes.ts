@@ -40,11 +40,23 @@ interface ProjectTech {
   icon: string;
 }
 
+export interface Project {
+  name: string;
+  logo: string;
+  bgImage: string;
+  color: string;
+  url: string;
+  deploy: string;
+  backImg: string;
+  description: string;
+  tech: ProjectTech[];
+}
+
 export interface GithubProfileButtonProps {
   username: string;
   frontText?: string;
   hoverText?: string;
-  target?: "_blank" | "_self";
+  target?: '_blank' | '_self';
 }
 
 export type HomeBtnProps = {

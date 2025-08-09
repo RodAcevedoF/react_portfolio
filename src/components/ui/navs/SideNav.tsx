@@ -1,18 +1,18 @@
-import { IdCard, GraduationCap, BriefcaseBusiness, Cpu } from "lucide-react";
-import { useRef, useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { type SectionKey, type SideNavWithActiveProps } from "../../../types";
-import { useScrollContext } from "../../../contexts";
-import { useIsMobile } from "../../../hooks";
+import { IdCard, GraduationCap, BriefcaseBusiness, Cpu } from 'lucide-react';
+import { useRef, useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { type SectionKey, type SideNavWithActiveProps } from '../../../types';
+import { useScrollContext } from '../../../contexts';
+import { useIsMobile } from '../../../hooks';
 
-export const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
+const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
   const { scrolled } = useScrollContext();
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
   const isMobile = useIsMobile();
 
   const handleScrollTo = (key: SectionKey) => {
-    sectionRefs[key]?.current?.scrollIntoView({ behavior: "smooth" });
+    sectionRefs[key]?.current?.scrollIntoView({ behavior: 'smooth' });
     if (isMobile) {
       setIsOpen(false);
     }
@@ -29,8 +29,8 @@ export const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isMobile]);
 
   return (
@@ -38,7 +38,7 @@ export const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
       className={`
         fixed top-1/2 left-0 z-100 -translate-y-1/2
         transition-opacity duration-300
-        ${!scrolled ? "opacity-0 pointer-events-none" : "opacity-100"}
+        ${!scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'}
         group sm:group
       `}
       onClick={() => {
@@ -47,11 +47,10 @@ export const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
       animate={isMobile && !isOpen ? { y: [0, 6, 0] } : { y: 0 }}
       transition={
         isMobile && !isOpen
-          ? { duration: 1.5, ease: "easeInOut", repeat: Infinity }
+          ? { duration: 1.5, ease: 'easeInOut', repeat: Infinity }
           : {}
       }
-      aria-label="Section Navigation"
-    >
+      aria-label='Section Navigation'>
       <div
         ref={navRef}
         onClick={(e) => e.stopPropagation()}
@@ -62,17 +61,16 @@ export const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
           backdrop-blur-[2rem] p-5 bg-black/30
 
           -translate-x-[75%] sm:group-hover:translate-x-0
-          ${isOpen ? "translate-x-0" : ""}
-        `}
-      >
-        {(["bio", "tech", "education", "experience"] as SectionKey[]).map(
+          ${isOpen ? 'translate-x-0' : ''}
+        `}>
+        {(['bio', 'tech', 'education', 'experience'] as SectionKey[]).map(
           (key) => {
             const Icon =
-              key === "bio"
+              key === 'bio'
                 ? IdCard
-                : key === "tech"
+                : key === 'tech'
                 ? Cpu
-                : key === "education"
+                : key === 'education'
                 ? GraduationCap
                 : BriefcaseBusiness;
 
@@ -80,13 +78,12 @@ export const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
               <button
                 key={key}
                 onClick={() => handleScrollTo(key)}
-                className="w-fit h-fit"
+                className='w-fit h-fit'
                 aria-label={`Scroll to ${key}`}
-                aria-current={active === key ? "true" : undefined}
-              >
+                aria-current={active === key ? 'true' : undefined}>
                 <Icon
                   className={`w-7 h-auto cursor-pointer transition-transform duration-200 hover:scale-110 hover:text-yellow-200 ${
-                    active === key ? "text-white scale-125" : "text-blue-400"
+                    active === key ? 'text-white scale-125' : 'text-blue-400'
                   }`}
                 />
               </button>
@@ -97,3 +94,5 @@ export const SideNav = ({ sectionRefs, active }: SideNavWithActiveProps) => {
     </motion.nav>
   );
 };
+
+export default SideNav;

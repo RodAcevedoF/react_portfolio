@@ -25,99 +25,100 @@ import {
   hoverNode,
   hoverBootstrap,
   hoverDocker,
-  hoverExpress
-} from "../assets";
+  hoverExpress,
+} from '../assets';
+import type { Project } from '../types';
 
-export const projects = [
+export const projects: Project[] = [
   {
-    name: "getdone",
+    name: 'getdone',
     logo: getDoneLogo,
     bgImage: getDoneBg,
-    color: "#38761d",
-    url: "https://github.com/RodAcevedoF/project5",
-    deploy: "https://getdone.vercel.app",
+    color: '#38761d',
+    url: 'https://github.com/RodAcevedoF/project5',
+    deploy: 'https://getdone.vercel.app',
     backImg: getDoneBackBg,
-    description: "projects.getdone.description",
+    description: 'projects.getdone.description',
     tech: [
-      { name: "html", icon: hoverHtml },
-      { name: "css", icon: hoverCss },
-      { name: "js", icon: hoverJs }
-    ]
+      { name: 'html', icon: hoverHtml },
+      { name: 'css', icon: hoverCss },
+      { name: 'js', icon: hoverJs },
+    ],
   },
   {
-    name: "todo_api",
+    name: 'todo_api',
     logo: todoApiLogo,
     bgImage: todoApiBg,
-    color: "#edbc27",
-    url: "https://github.com/RodAcevedoF/todo_api",
-    deploy: "https://getdone.vercel.app",
+    color: '#edbc27',
+    url: 'https://github.com/RodAcevedoF/todo_api',
+    deploy: 'https://getdone.vercel.app',
     backImg: todoApiBackBg,
-    description: "projects.todo_api.description",
+    description: 'projects.todo_api.description',
     tech: [
-      { name: "node", icon: hoverNode },
-      { name: "express", icon: hoverExpress },
-      { name: "docker", icon: hoverDocker }
-    ]
+      { name: 'node', icon: hoverNode },
+      { name: 'express', icon: hoverExpress },
+      { name: 'docker', icon: hoverDocker },
+    ],
   },
   {
-    name: "fender",
+    name: 'fender',
     logo: fenderLogo,
     bgImage: fenderBg,
-    color: "#af0c00",
-    url: "https://github.com/RodAcevedoF/proyecto1",
-    deploy: "https://proyecto1-peach-theta.vercel.app/",
+    color: '#af0c00',
+    url: 'https://github.com/RodAcevedoF/proyecto1',
+    deploy: 'https://proyecto1-peach-theta.vercel.app/',
     backImg: fenderBackBg,
-    description: "project.fender.description",
+    description: 'project.fender.description',
     tech: [
-      { name: "html", icon: hoverHtml },
-      { name: "css", icon: hoverCss },
-      { name: "js", icon: hoverJs }
-    ]
+      { name: 'html', icon: hoverHtml },
+      { name: 'css', icon: hoverCss },
+      { name: 'js', icon: hoverJs },
+    ],
   },
   {
-    name: "angrboda",
+    name: 'angrboda',
     logo: angrbodaLogo,
     bgImage: angrbodaBg,
-    color: "#009fb0",
-    url: "https://github.com/RodAcevedoF/entrega_practica_DOM",
-    deploy: "https://dom-practice-blue.vercel.app/",
+    color: '#009fb0',
+    url: 'https://github.com/RodAcevedoF/entrega_practica_DOM',
+    deploy: 'https://dom-practice-blue.vercel.app/',
     backImg: angrbodaBackBg,
-    description: "project.angrboda.description",
+    description: 'project.angrboda.description',
     tech: [
-      { name: "html", icon: hoverHtml },
-      { name: "css", icon: hoverCss },
-      { name: "js", icon: hoverJs }
-    ]
+      { name: 'html', icon: hoverHtml },
+      { name: 'css', icon: hoverCss },
+      { name: 'js', icon: hoverJs },
+    ],
   },
   {
-    name: "contacts_xml",
+    name: 'contacts_xml',
     logo: contactLogo,
     bgImage: contactBack,
-    color: "#5a409d",
-    url: "https:github.com/RodAcevedoF/ContactsXML",
-    deploy: "https://github.com/RodAcevedoF/ContactsXML",
+    color: '#5a409d',
+    url: 'https:github.com/RodAcevedoF/ContactsXML',
+    deploy: 'https://github.com/RodAcevedoF/ContactsXML',
     backImg: contactBackBg,
-    description: "project.contacts_xml.description",
+    description: 'project.contacts_xml.description',
     tech: [
-      { name: "spring", icon: hoverSpring },
-      { name: "thymeleaf", icon: thymeLeaf },
-      { name: "html", icon: hoverHtml },
-      { name: "bootstrapp", icon: hoverBootstrap }
-    ]
+      { name: 'spring', icon: hoverSpring },
+      { name: 'thymeleaf', icon: thymeLeaf },
+      { name: 'html', icon: hoverHtml },
+      { name: 'bootstrapp', icon: hoverBootstrap },
+    ],
   },
   {
-    name: "pinterest",
+    name: 'pinterest',
     logo: pinterestLogo,
     bgImage: pinterestBg,
-    color: "#da9393",
-    url: "https://github.com/RodAcevedoF/proyecto3",
-    deploy: "https://proyecto3-pinterest.vercel.app/",
+    color: '#da9393',
+    url: 'https://github.com/RodAcevedoF/proyecto3',
+    deploy: 'https://proyecto3-pinterest.vercel.app/',
     backImg: pinterestBackBg,
-    description: "project.pinterest.description",
+    description: 'project.pinterest.description',
     tech: [
-      { name: "html", icon: hoverHtml },
-      { name: "css", icon: hoverCss },
-      { name: "js", icon: hoverJs }
-    ]
-  }
+      { name: 'html', icon: hoverHtml },
+      { name: 'css', icon: hoverCss },
+      { name: 'js', icon: hoverJs },
+    ],
+  },
 ];
