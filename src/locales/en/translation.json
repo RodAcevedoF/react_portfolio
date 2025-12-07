@@ -31,6 +31,12 @@
 		"hover_button": "Visit my github"
 	},
 	"projects": {
+		"chefify": {
+			"description": "Chefify is a social recipe-sharing app with follows, likes and AI-powered recipe generation. Users can share, save and discover recipes with rich profiles and media uploads."
+		},
+		"chefify_api": {
+			"description": "Backend API powering Chefify — REST endpoints for auth, follows, likes and recipe CRUD. Includes image uploads, AI recipe-generation integration and scalable deployments."
+		},
 		"getdone": {
 			"description": "GetDone is a productivity web app combining a todo list with book and video management, user profiles, weather updates, and authentication. It features a custom mini-router and a global state management system, both developed from scratch."
 		},

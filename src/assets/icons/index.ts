@@ -68,6 +68,7 @@ import zoom from './zoom.svg';
 import salesforce from './salesforce.svg';
 import sap from './sap.svg';
 import bluemedlar from './bluemedlar.webp';
+import mui from './mui.svg';
 import puc from './puc.webp';
 import es from './es.webp';
 import en from './gb.webp';
@@ -148,4 +149,5 @@ export {
 	freelance,
 	jira,
 	bluemedlar,
+	mui,
 };
