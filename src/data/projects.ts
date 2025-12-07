@@ -59,8 +59,8 @@ export const projects: Project[] = [
 		logo: chefifyApiLogo,
 		bgImage: chefifyApiBack,
 		color: '#FF2D95',
-		url: 'https://github.com/RodAcevedoF/project5',
-		deploy: 'https://getdone.vercel.app',
+		url: 'https://github.com/RodAcevedoF/project1-chefify',
+		deploy: 'https://project2-chefify2.vercel.app',
 		backImg: chefifyApiBackBg,
 		description: 'projects.chefify_api.description',
 		tech: [
@@ -75,7 +75,7 @@ export const projects: Project[] = [
 		bgImage: getDoneBg,
 		color: '#38761d',
 		url: 'https://github.com/RodAcevedoF/project5',
-		deploy: 'https://getdone.vercel.app',
+		deploy: 'https://getdoneapp.vercel.app/',
 		backImg: getDoneBackBg,
 		description: 'projects.getdone.description',
 		tech: [
@@ -90,7 +90,7 @@ export const projects: Project[] = [
 		bgImage: todoApiBg,
 		color: '#edbc27',
 		url: 'https://github.com/RodAcevedoF/todo_api',
-		deploy: 'https://getdone.vercel.app',
+		deploy: 'https://getdoneapp.vercel.app/',
 		backImg: todoApiBackBg,
 		description: 'projects.todo_api.description',
 		tech: [
