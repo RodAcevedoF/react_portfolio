@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 import { MailForm, MiniLoader } from './components';
 import { Modal } from './components';
 //const Splash = lazy(() => import('./pages/Splash'));
-import Splash from './pages/Splash';
+const Splash = lazy(() => import('./pages/Splash'));
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const NotFound = lazy(() => import('./pages/NotFound'));
