@@ -1,360 +1,384 @@
 {
-  "nav": {
-    "about": "ABOUT",
-    "projects": "PROJECTS"
-  },
-  "home": {
-    "hero": "FROM THE FIRST LINE OF CODE TO EVERY ASPECT OF SOFTWARE ENGINEERING",
-    "most_recent": "<blue>MOST</blue> RECENT"
-  },
-  "footer": {
-    "get_in_touch": "<blue>GET</blue> IN TOUCH",
-    "want_to_move_forward": "Want to move forward?",
-    "drop_a_line": "DROP A LINE",
-    "top_button": "Back to Top"
-  },
-  "mailForm": {
-    "contact_name": "Contact Name",
-    "contact_name_placeholder": "What's your name?",
-    "your_message": "Your Message",
-    "your_message_placeholder": "Leave me a message",
-    "your_email": "Your Email",
-    "your_email_placeholder": "I'll reply ASAP!",
-    "send_email": "Send Email",
-    "sending": "Sending..."
-  },
-  "homecard": {
-    "currently": "CURRENTLY",
-    "helping": "HELPING",
-    "brandsWin": "BRANDS WIN",
-    "button_text": "Hover me",
-    "hover_button": "Visit my github"
-  },
-  "projects": {
-    "getdone": {
-      "description": "GetDone is a productivity web app combining a todo list with book and video management, user profiles, weather updates, and authentication. It features a custom mini-router and a global state management system, both developed from scratch."
-    },
-    "todo_api": {
-      "description": "A RESTful API built with Express and PostgreSQL, allowing users to authenticate and manage tasks, books, and videos. Includes JWT authentication with refresh tokens, file uploads (Multer), Swagger documentation, and is Docker-ready."
-    },
-    "fender": {
-      "description": "Visually engaging landing page concept for Fender, crafted solely with HTML, CSS and JS. It emphasizes structured layout — using flex and grid systems and typography hierarchy to evoke the brand’s iconic rock identity."
-    },
-    "angrboda": {
-      "description": "Angrboda is an e-commerce UI prototype built with HTML, CSS, and JavaScript, focused on DOM manipulation. It features interactive product listings and smooth UI transitions — all achieved without external frameworks."
-    },
-    "contacts_xml": {
-      "description": "This is a modern web app built with Spring Boot, Thymeleaf, and Bootstrap for managing contacts. It supports XML import/export and integrates Jakarta EE standards for robust backend architecture."
-    },
-    "pinterest": {
-      "description": "This is a dynamic image gallery web app inspired by Pinterest, built with HTML, CSS, and JavaScript. It focuses on API consumption to fetch media content and implements client-side pagination for seamless browsing."
-    }
-  },
-  "about_title": {
-    "title": "COMMITMENT AND CREATIVITY RUN EVERY PROJECT"
-  },
-  "about_sections": {
-    "about": "<blue>A</blue>BOUT",
-    "tech": "<blue>TECH</blue> STACK",
-    "edu": "<blue>EDU</blue>CATION",
-    "exp": "<blue>EXP</blue>ERIENCE"
-  },
-  "bach_card": {
-    "title": "<yellow>BACH</yellow> while coding<yellow>!</yellow>",
-    "subtitle": "Need some examples?"
-  },
-  "about_me": {
-    "about": "Hi! I'm Rodrigo, originally from Chile and educated in Germany, I got a strong background in music, physics, and philosophy with a new focus on web development. Former orchestral musician and research associate at the University of Freiburg, I bring into my work a mix of creativity, discipline, and analytical thinking. I enjoy classical music, reading and I'm always in for something sweet :D",
-    "download_cv": "DOWNLOAD RESUME",
-    "contact": "<blue>CON</blue>TACT"
-  },
-  "tech_texts": {
-    "learning": "CURRENTLY <white>LEARNING</white>",
-    "working": "CURRENTLY <white>WORKING WITH</white>",
-    "fallback": "Nothing specific at the moment. Always exploring!"
-  },
-  "edu_labels": {
-    "final_grade": "Final Grade",
-    "distinction": "Distinction"
-  },
-  "education": {
-    "bachelor_music": {
-      "degree": "Bachelor of Music",
-      "university": "P. Catholic University of Chile",
-      "honors": "Excellence",
-      "score": "7 (Highest grade)",
-      "courses": {
-        "fundamentals_music_theory": {
-          "name": "Fundamentals of Music Theory",
-          "description": "Introduction to scales, intervals, chords, and rhythm."
-        },
-        "western_music_history": {
-          "name": "Western Music History",
-          "description": "Survey of major styles, composers, and movements from antiquity to the 20th century."
-        },
-        "orchestral_training": {
-          "name": "Orchestral Training",
-          "description": "Participation in ensemble work and development of group performance skills."
-        }
-      },
-      "skills": {
-        "sight_reading": "Sight Reading",
-        "music_theory": "Music Theory",
-        "solfege": "Solfege",
-        "harmony": "Harmony",
-        "musical_interpretation": "Musical Interpretation",
-        "instrument_technique": "Instrument Technique",
-        "group_performance": "Group Performance"
-      }
-    },
-    "bachelor_music_freiburg": {
-      "degree": "Bachelor of Music (B.Sc.)",
-      "university": "Musikhochschule Freiburg",
-      "honors": "mit Auszeichnung",
-      "score": "1 (Highest grade)",
-      "courses": {
-        "counterpoint_harmony": {
-          "name": "Counterpoint and Harmony",
-          "description": "Deep dive into voice leading and harmonic progression techniques."
-        },
-        "conducting_ensemble_leadership": {
-          "name": "Conducting & Ensemble Leadership",
-          "description": "Practical experience with ensemble rehearsal and cueing."
-        },
-        "performance_practice": {
-          "name": "Performance Practice",
-          "description": "Focus on historical context and interpretation for solo and group music."
-        }
-      },
-      "skills": {
-        "music_composition": "Music Composition",
-        "score_reading": "Score Reading",
-        "ensemble_performance": "Ensemble Performance",
-        "aural_skills": "Aural Skills",
-        "notation_software": "Notation Software (Sibelius, Finale)",
-        "music_analysis": "Music Analysis",
-        "orchestration": "Orchestration"
-      }
-    },
-    "bachelor_physics": {
-      "degree": "Bachelor of Science (B.Sc.) Physics",
-      "university": "Freiburg Universität",
-      "honors": "with distinction",
-      "score": "1 (Highest grade)",
-      "courses": {
-        "thermodynamics": {
-          "name": "Thermodynamics",
-          "description": "Studies heat, work, and laws of energy transformation."
-        },
-        "electrodynamics": {
-          "name": "Electrodynamics",
-          "description": "Electric and magnetic field theory and Maxwell’s equations."
-        },
-        "experimental_physics": {
-          "name": "Experimental Physics",
-          "description": "In-lab experience in measurements, uncertainty, and hypothesis testing."
-        }
-      },
-      "skills": {
-        "classical_mechanics": "Classical Mechanics",
-        "electromagnetism": "Electromagnetism",
-        "thermodynamics": "Thermodynamics",
-        "latex": "LaTeX",
-        "python_basics": "Python (Basics)",
-        "data_acquisition": "Data Acquisition",
-        "lab_equipment_handling": "Lab Equipment Handling"
-      }
-    },
-    "web_dev": {
-      "degree": "Web Development Degree",
-      "university": "thePower - Prometeo School",
-      "honors": "",
-      "score": "",
-      "courses": {
-        "client_server_web_architecture": {
-          "name": "Client-Server Web Architecture",
-          "description": "Introduction to HTTP, web servers, request/response lifecycle, and client-side rendering."
-        },
-        "databases_sql": {
-          "name": "Databases and SQL",
-          "description": "Relational database concepts, schema design, and CRUD operations using SQL."
-        },
-        "programming_fundamentals": {
-          "name": "Programming Fundamentals",
-          "description": "Covers algorithmic logic, data structures, object-oriented programming, and PHP basics."
-        },
-        "uml_software_design": {
-          "name": "UML & Software Design",
-          "description": "Diagramming techniques for software planning: class diagrams, use cases, and sequence diagrams."
-        }
-      },
-      "skills": {
-        "html5": "HTML5",
-        "css3": "CSS3",
-        "javascript_es6": "JavaScript (ES6+)",
-        "php": "PHP",
-        "sql": "SQL",
-        "mysql": "MySQL",
-        "oop": "Object-Oriented Programming (OOP)",
-        "uml": "UML",
-        "client_server_architecture": "Client-Server Architecture",
-        "basic_git": "Basic Git",
-        "responsive_design": "Responsive Design",
-        "linux_command_line": "Linux/Command Line"
-      }
-    },
-    "fullstack_master": {
-      "degree": "Full-Stack Master Program",
-      "university": "thePower - Prometeo School",
-      "honors": "",
-      "score": "",
-      "courses": {
-        "fullstack_architecture": {
-          "name": "Full-Stack Architecture",
-          "description": "Covers frontend-backend integration using modern frameworks."
-        },
-        "modern_frontend_development": {
-          "name": "Modern Frontend Development",
-          "description": "Advanced component-based UI using React, Angular, and state management tools like Redux or Signals."
-        },
-        "advanced_backend_nodejs": {
-          "name": "Advanced Back-End with Node.js",
-          "description": "Builds scalable APIs using Node.js, Express, MongoDB, authentication, authorization, and serverless functions."
-        }
-      },
-      "skills": {
-        "react": "React",
-        "nextjs": "Next.js",
-        "angular": "Angular",
-        "nodejs": "Node.js",
-        "expressjs": "Express.js",
-        "mongodb": "MongoDB",
-        "nestjs": "NestJS",
-        "tailwindcss": "TailwindCSS",
-        "typescript": "TypeScript",
-        "rest_apis": "REST APIs",
-        "jwt_authentication": "JWT Authentication",
-        "modern_deployment": "Modern Deployment (Vercel/Render)"
-      }
-    }
-  },
-  "work_experience_labels": {
-    "about_label": "About",
-    "tools_label": "Tools"
-  },
-  "work_experience": {
-    "freelance_web_dev": {
-      "org": {
-        "title": "Self-employed"
-      },
-      "position": "<blue>Freelance</blue> Web Developer",
-      "startDate": "2023",
-      "endDate": "present",
-      "location": "Remote",
-      "description": "As a freelance web developer, I design and implement custom web solutions for clients, focusing on scalable backends and engaging frontends. I collaborate with diverse clients and ensure efficient, high-quality deliveries.",
-      "responsabilities": [
-        "Gather client requirements to deliver tailored web solutions",
-        "Build RESTful APIs and backend services with Node.js and Express",
-        "Create responsive front-end interfaces using React and Next.js",
-        "Ensure seamless third-party service integration and cloud deployment"
-      ],
-      "skills": ["CI/CD", "REST APIs", "SOLID Principles", "Agile Development"]
-    },
-    "basic_fit": {
-      "org": {
-        "title": "Basic-Fit"
-      },
-      "position": "<blue>H</blue>ost",
-      "startDate": "2022",
-      "endDate": "present",
-      "location": "Jerez, ES",
-      "description": "As a gym host at Basic-Fit, I provide customer support, maintain a welcoming environment, and assist with operational needs, ensuring a high-quality fitness experience for all members.",
-      "responsabilities": [
-        "Greet members and provide information about services and memberships",
-        "Provide clients with personalized training programs",
-        "Assist with equipment maintenance and troubleshooting",
-        "Manage client check-ins and handle feedback or issues"
-      ],
-      "skills": [
-        "Customer Service",
-        "Teamwork",
-        "Problem Solving",
-        "Time Management",
-        "Responsibility"
-      ]
-    },
-    "tusclasesparticulares": {
-      "org": {
-        "title": "Tusclasesparticulares"
-      },
-      "position": "<blue>English/German</blue> Teacher",
-      "startDate": "2018",
-      "endDate": "2024",
-      "location": "Remote",
-      "description": "As a language tutor, I developed personalized lesson plans and provided one-on-one online instruction in English and German. I coached students towards specific exams preparation.",
-      "responsabilities": [
-        "Create custom lesson plans tailored according levels and goals",
-        "Deliver engaging virtual lessons and language exercises",
-        "Monitor student progress and adapt methods accordingly",
-        "Prepare students for certifications and interviews"
-      ],
-      "skills": [
-        "Lesson Planning",
-        "Online Teaching",
-        "Communication",
-        "Patience",
-        "Adaptability"
-      ]
-    },
-    "reutlingen_orchester": {
-      "org": {
-        "title": "Reutlingen Orchestra"
-      },
-      "position": "<blue>Orchestra</blue> Member",
-      "startDate": "2014",
-      "endDate": "2017",
-      "location": "Reutlingen, DE",
-      "description": "As a member of the Reutlingen Orchestra, I participated in national and international performances, collaborating with conductors and fellow musicians to interpret classical and contemporary compositions.",
-      "responsabilities": [
-        "Participate in rehearsals and live performances",
-        "Collaborate closely with section members and conductor",
-        "Maintain high technical performance standards",
-        "Study and prepare new scores independently"
-      ],
-      "skills": [
-        "Team Collaboration",
-        "Musical Interpretation",
-        "Discipline",
-        "Sight Reading"
-      ]
-    },
-    "akademie_villingen": {
-      "org": {
-        "title": "Akademie Villingen"
-      },
-      "position": "<blue>Music</blue> Teacher",
-      "startDate": "2011",
-      "endDate": "2018",
-      "location": "Villingen, DE",
-      "description": "As a music teacher, I provided individual and group lessons in classical instruments, focusing on both technical development and musical expression. I also prepared students for performances and exams.",
-      "responsabilities": [
-        "Plan and deliver structured lessons to students of all ages",
-        "Adapt teaching methods to individual learning styles",
-        "Prepare students for recitals, exams, and competitions",
-        "Evaluate student progress and provide feedback"
-      ],
-      "skills": [
-        "Teaching",
-        "Music Theory",
-        "Instrumental Technique",
-        "Patience",
-        "Mentoring"
-      ]
-    }
-  },
-  "not_found": {
-    "text": "Oops! this route doesn't exist",
-    "redirect": "You'll be <it>Home</it> in a few seconds...",
-    "button": "Go Back"
-  }
+	"nav": {
+		"about": "ABOUT",
+		"projects": "PROJECTS"
+	},
+	"home": {
+		"hero": "FROM THE FIRST LINE OF CODE TO EVERY ASPECT OF SOFTWARE ENGINEERING",
+		"most_recent": "<blue>MOST</blue> RECENT"
+	},
+	"footer": {
+		"get_in_touch": "<blue>GET</blue> IN TOUCH",
+		"want_to_move_forward": "Want to move forward?",
+		"drop_a_line": "DROP A LINE",
+		"top_button": "Back to Top"
+	},
+	"mailForm": {
+		"contact_name": "Contact Name",
+		"contact_name_placeholder": "What's your name?",
+		"your_message": "Your Message",
+		"your_message_placeholder": "Leave me a message",
+		"your_email": "Your Email",
+		"your_email_placeholder": "I'll reply ASAP!",
+		"send_email": "Send Email",
+		"sending": "Sending..."
+	},
+	"homecard": {
+		"currently": "CURRENTLY",
+		"helping": "HELPING",
+		"brandsWin": "BRANDS WIN",
+		"button_text": "Hover me",
+		"hover_button": "Visit my github"
+	},
+	"projects": {
+		"getdone": {
+			"description": "GetDone is a productivity web app combining a todo list with book and video management, user profiles, weather updates, and authentication. It features a custom mini-router and a global state management system, both developed from scratch."
+		},
+		"todo_api": {
+			"description": "A RESTful API built with Express and PostgreSQL, allowing users to authenticate and manage tasks, books, and videos. Includes JWT authentication with refresh tokens, file uploads (Multer), Swagger documentation, and is Docker-ready."
+		},
+		"fender": {
+			"description": "Visually engaging landing page concept for Fender, crafted solely with HTML, CSS and JS. It emphasizes structured layout — using flex and grid systems and typography hierarchy to evoke the brand’s iconic rock identity."
+		},
+		"angrboda": {
+			"description": "Angrboda is an e-commerce UI prototype built with HTML, CSS, and JavaScript, focused on DOM manipulation. It features interactive product listings and smooth UI transitions — all achieved without external frameworks."
+		},
+		"contacts_xml": {
+			"description": "This is a modern web app built with Spring Boot, Thymeleaf, and Bootstrap for managing contacts. It supports XML import/export and integrates Jakarta EE standards for robust backend architecture."
+		},
+		"pinterest": {
+			"description": "This is a dynamic image gallery web app inspired by Pinterest, built with HTML, CSS, and JavaScript. It focuses on API consumption to fetch media content and implements client-side pagination for seamless browsing."
+		}
+	},
+	"about_title": {
+		"title": "COMMITMENT AND CREATIVITY RUN EVERY PROJECT"
+	},
+	"about_sections": {
+		"about": "<blue>A</blue>BOUT",
+		"tech": "<blue>TECH</blue> STACK",
+		"edu": "<blue>EDU</blue>CATION",
+		"exp": "<blue>EXP</blue>ERIENCE"
+	},
+	"bach_card": {
+		"title": "<yellow>BACH</yellow> while coding<yellow>!</yellow>",
+		"subtitle": "Need some examples?"
+	},
+	"about_me": {
+		"about": "Hi! I'm Rodrigo, originally from Chile and educated in Germany, I got a strong background in music, physics, and philosophy with a new focus on web development. Former orchestral musician and research associate at the University of Freiburg, I bring into my work a mix of creativity, discipline, and analytical thinking. I enjoy classical music, reading and I'm always in for something sweet :D",
+		"download_cv": "DOWNLOAD RESUME",
+		"contact": "<blue>CON</blue>TACT"
+	},
+	"tech_texts": {
+		"learning": "CURRENTLY <white>LEARNING</white>",
+		"working": "CURRENTLY <white>WORKING WITH</white>",
+		"fallback": "Nothing specific at the moment. Always exploring!"
+	},
+	"edu_labels": {
+		"final_grade": "Final Grade",
+		"distinction": "Distinction"
+	},
+	"education": {
+		"bachelor_music": {
+			"degree": "Bachelor of Music",
+			"university": "P. Catholic University of Chile",
+			"honors": "Excellence",
+			"score": "7 (Highest grade)",
+			"courses": {
+				"fundamentals_music_theory": {
+					"name": "Fundamentals of Music Theory",
+					"description": "Introduction to scales, intervals, chords, and rhythm."
+				},
+				"western_music_history": {
+					"name": "Western Music History",
+					"description": "Survey of major styles, composers, and movements from antiquity to the 20th century."
+				},
+				"orchestral_training": {
+					"name": "Orchestral Training",
+					"description": "Participation in ensemble work and development of group performance skills."
+				}
+			},
+			"skills": {
+				"sight_reading": "Sight Reading",
+				"music_theory": "Music Theory",
+				"solfege": "Solfege",
+				"harmony": "Harmony",
+				"musical_interpretation": "Musical Interpretation",
+				"instrument_technique": "Instrument Technique",
+				"group_performance": "Group Performance"
+			}
+		},
+		"bachelor_music_freiburg": {
+			"degree": "Bachelor of Music (B.Sc.)",
+			"university": "Musikhochschule Freiburg",
+			"honors": "mit Auszeichnung",
+			"score": "1 (Highest grade)",
+			"courses": {
+				"counterpoint_harmony": {
+					"name": "Counterpoint and Harmony",
+					"description": "Deep dive into voice leading and harmonic progression techniques."
+				},
+				"conducting_ensemble_leadership": {
+					"name": "Conducting & Ensemble Leadership",
+					"description": "Practical experience with ensemble rehearsal and cueing."
+				},
+				"performance_practice": {
+					"name": "Performance Practice",
+					"description": "Focus on historical context and interpretation for solo and group music."
+				}
+			},
+			"skills": {
+				"music_composition": "Music Composition",
+				"score_reading": "Score Reading",
+				"ensemble_performance": "Ensemble Performance",
+				"aural_skills": "Aural Skills",
+				"notation_software": "Notation Software (Sibelius, Finale)",
+				"music_analysis": "Music Analysis",
+				"orchestration": "Orchestration"
+			}
+		},
+		"bachelor_physics": {
+			"degree": "Bachelor of Science (B.Sc.) Physics",
+			"university": "Freiburg Universität",
+			"honors": "with distinction",
+			"score": "1 (Highest grade)",
+			"courses": {
+				"thermodynamics": {
+					"name": "Thermodynamics",
+					"description": "Studies heat, work, and laws of energy transformation."
+				},
+				"electrodynamics": {
+					"name": "Electrodynamics",
+					"description": "Electric and magnetic field theory and Maxwell’s equations."
+				},
+				"experimental_physics": {
+					"name": "Experimental Physics",
+					"description": "In-lab experience in measurements, uncertainty, and hypothesis testing."
+				}
+			},
+			"skills": {
+				"classical_mechanics": "Classical Mechanics",
+				"electromagnetism": "Electromagnetism",
+				"thermodynamics": "Thermodynamics",
+				"latex": "LaTeX",
+				"python_basics": "Python (Basics)",
+				"data_acquisition": "Data Acquisition",
+				"lab_equipment_handling": "Lab Equipment Handling"
+			}
+		},
+		"web_dev": {
+			"degree": "Web Development Degree",
+			"university": "thePower - Prometeo School",
+			"honors": "",
+			"score": "",
+			"courses": {
+				"client_server_web_architecture": {
+					"name": "Client-Server Web Architecture",
+					"description": "Introduction to HTTP, web servers, request/response lifecycle, and client-side rendering."
+				},
+				"databases_sql": {
+					"name": "Databases and SQL",
+					"description": "Relational database concepts, schema design, and CRUD operations using SQL."
+				},
+				"programming_fundamentals": {
+					"name": "Programming Fundamentals",
+					"description": "Covers algorithmic logic, data structures, object-oriented programming, and PHP basics."
+				},
+				"uml_software_design": {
+					"name": "UML & Software Design",
+					"description": "Diagramming techniques for software planning: class diagrams, use cases, and sequence diagrams."
+				}
+			},
+			"skills": {
+				"html5": "HTML5",
+				"css3": "CSS3",
+				"javascript_es6": "JavaScript (ES6+)",
+				"php": "PHP",
+				"sql": "SQL",
+				"mysql": "MySQL",
+				"oop": "Object-Oriented Programming (OOP)",
+				"uml": "UML",
+				"client_server_architecture": "Client-Server Architecture",
+				"basic_git": "Basic Git",
+				"responsive_design": "Responsive Design",
+				"linux_command_line": "Linux/Command Line"
+			}
+		},
+		"fullstack_master": {
+			"degree": "Full-Stack Master Program",
+			"university": "thePower - Prometeo School",
+			"honors": "",
+			"score": "",
+			"courses": {
+				"fullstack_architecture": {
+					"name": "Full-Stack Architecture",
+					"description": "Covers frontend-backend integration using modern frameworks."
+				},
+				"modern_frontend_development": {
+					"name": "Modern Frontend Development",
+					"description": "Advanced component-based UI using React, Angular, and state management tools like Redux or Signals."
+				},
+				"advanced_backend_nodejs": {
+					"name": "Advanced Back-End with Node.js",
+					"description": "Builds scalable APIs using Node.js, Express, MongoDB, authentication, authorization, and serverless functions."
+				}
+			},
+			"skills": {
+				"react": "React",
+				"nextjs": "Next.js",
+				"angular": "Angular",
+				"nodejs": "Node.js",
+				"expressjs": "Express.js",
+				"mongodb": "MongoDB",
+				"nestjs": "NestJS",
+				"tailwindcss": "TailwindCSS",
+				"typescript": "TypeScript",
+				"rest_apis": "REST APIs",
+				"jwt_authentication": "JWT Authentication",
+				"modern_deployment": "Modern Deployment (Vercel/Render)"
+			}
+		}
+	},
+	"work_experience_labels": {
+		"about_label": "About",
+		"tools_label": "Tools"
+	},
+	"work_experience": {
+		"fullstack_dev": {
+			"org": { "title": "BlueMedlar" },
+			"position": "<blue>Fullstack</blue> Developer",
+			"startDate": "2025",
+			"endDate": "present",
+			"location": "Remote",
+			"description": "Fullstack developer at BlueMedlar building client-facing web apps. I deliver end-to-end solutions—from backend API design to performant, accessible frontends—working closely with product and design to ship high-quality features.",
+			"responsabilities": [
+				"Design and implement scalable REST APIs and backend services",
+				"Build and maintain React + TS frontends with focus on performance and accessibility",
+				"Implement CI/CD, containerization and cloud deployments",
+				"Team collaboration to define and deliver product features"
+			],
+			"skills": [
+				"TypeScript",
+				"React / Next.js",
+				"Node.js / Express",
+				"REST / GraphQL",
+				"Postgres / Prisma",
+				"Docker / CI-CD",
+				"Testing (Jest / Cypress)",
+				"Cloud deployment (Vercel / AWS)"
+			]
+		},
+		"freelance_web_dev": {
+			"org": {
+				"title": "Self-employed"
+			},
+			"position": "<blue>Freelance</blue> Web Developer",
+			"startDate": "2023",
+			"endDate": "present",
+			"location": "Remote",
+			"description": "As a freelance web developer, I design and implement custom web solutions for clients, focusing on scalable backends and engaging frontends. I collaborate with diverse clients and ensure efficient, high-quality deliveries.",
+			"responsabilities": [
+				"Gather client requirements to deliver tailored web solutions",
+				"Build RESTful APIs and backend services with Node.js and Express",
+				"Create responsive front-end interfaces using React and Next.js",
+				"Ensure seamless third-party service integration and cloud deployment"
+			],
+			"skills": ["CI/CD", "REST APIs", "SOLID Principles", "Agile Development"]
+		},
+		"basic_fit": {
+			"org": {
+				"title": "Basic-Fit"
+			},
+			"position": "<blue>H</blue>ost",
+			"startDate": "2022",
+			"endDate": "present",
+			"location": "Jerez, ES",
+			"description": "As a gym host at Basic-Fit, I provide customer support, maintain a welcoming environment, and assist with operational needs, ensuring a high-quality fitness experience for all members.",
+			"responsabilities": [
+				"Greet members and provide information about services and memberships",
+				"Provide clients with personalized training programs",
+				"Assist with equipment maintenance and troubleshooting",
+				"Manage client check-ins and handle feedback or issues"
+			],
+			"skills": [
+				"Customer Service",
+				"Teamwork",
+				"Problem Solving",
+				"Time Management",
+				"Responsibility"
+			]
+		},
+		"tusclasesparticulares": {
+			"org": {
+				"title": "Tusclasesparticulares"
+			},
+			"position": "<blue>English/German</blue> Teacher",
+			"startDate": "2018",
+			"endDate": "2024",
+			"location": "Remote",
+			"description": "As a language tutor, I developed personalized lesson plans and provided one-on-one online instruction in English and German. I coached students towards specific exams preparation.",
+			"responsabilities": [
+				"Create custom lesson plans tailored according levels and goals",
+				"Deliver engaging virtual lessons and language exercises",
+				"Monitor student progress and adapt methods accordingly",
+				"Prepare students for certifications and interviews"
+			],
+			"skills": [
+				"Lesson Planning",
+				"Online Teaching",
+				"Communication",
+				"Patience",
+				"Adaptability"
+			]
+		},
+		"reutlingen_orchester": {
+			"org": {
+				"title": "Reutlingen Orchestra"
+			},
+			"position": "<blue>Orchestra</blue> Member",
+			"startDate": "2014",
+			"endDate": "2017",
+			"location": "Reutlingen, DE",
+			"description": "As a member of the Reutlingen Orchestra, I participated in national and international performances, collaborating with conductors and fellow musicians to interpret classical and contemporary compositions.",
+			"responsabilities": [
+				"Participate in rehearsals and live performances",
+				"Collaborate closely with section members and conductor",
+				"Maintain high technical performance standards",
+				"Study and prepare new scores independently"
+			],
+			"skills": [
+				"Team Collaboration",
+				"Musical Interpretation",
+				"Discipline",
+				"Sight Reading"
+			]
+		},
+		"akademie_villingen": {
+			"org": {
+				"title": "Akademie Villingen"
+			},
+			"position": "<blue>Music</blue> Teacher",
+			"startDate": "2011",
+			"endDate": "2018",
+			"location": "Villingen, DE",
+			"description": "As a music teacher, I provided individual and group lessons in classical instruments, focusing on both technical development and musical expression. I also prepared students for performances and exams.",
+			"responsabilities": [
+				"Plan and deliver structured lessons to students of all ages",
+				"Adapt teaching methods to individual learning styles",
+				"Prepare students for recitals, exams, and competitions",
+				"Evaluate student progress and provide feedback"
+			],
+			"skills": [
+				"Teaching",
+				"Music Theory",
+				"Instrumental Technique",
+				"Patience",
+				"Mentoring"
+			]
+		}
+	},
+	"not_found": {
+		"text": "Oops! this route doesn't exist",
+		"redirect": "You'll be <it>Home</it> in a few seconds...",
+		"button": "Go Back"
+	}
 }
