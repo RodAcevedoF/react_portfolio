@@ -48,12 +48,20 @@ const Home = () => {
 						</motion.h3>
 					)}
 				</AnimatePresence>
-				<Suspense fallback={<MiniLoader />}>
+				<Suspense
+					fallback={
+						<MiniLoader className='min-h-screen items-center justify-center' />
+					}
+				>
 					<ExpGrid />
 				</Suspense>
 			</article>
 			<article className='flex flex-col w-full items-center justify-center overflow-hidden my-32'>
-				<Suspense fallback={<MiniLoader />}>
+				<Suspense
+					fallback={
+						<MiniLoader className='min-h-screen items-center justify-center' />
+					}
+				>
 					<AnimContainer />
 				</Suspense>
 			</article>

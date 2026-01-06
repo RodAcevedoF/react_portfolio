@@ -1,9 +1,14 @@
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+	Outlet,
+} from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { MailForm, MiniLoader } from './components';
 import { Modal } from './components';
 import Splash from './pages/Splash';
-import Home from './pages/Home';
+const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 import { Footer, NavBar } from './components';
@@ -15,7 +20,11 @@ const Layout = () => {
 				<NavBar />
 			</header>
 			<main className='flex flex-col items-center justify-center max-w-[100vw] h-auto bg-inherit'>
-				<Suspense fallback={<MiniLoader />}>
+				<Suspense
+					fallback={
+						<MiniLoader className='min-h-screen items-center justify-center' />
+					}
+				>
 					<Outlet />
 				</Suspense>
 			</main>

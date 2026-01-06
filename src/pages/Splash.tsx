@@ -8,17 +8,19 @@ const Splash = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const minTime = new Promise((resolve) => setTimeout(resolve, 2000));
+    const loadHome = import('./Home');
+
+    Promise.all([minTime, loadHome]).then(() => {
       navigate('/home');
-    }, 1000);
-    return () => clearTimeout(timer);
+    });
   }, [navigate]);
 
   return (
     <motion.div
-      className='w-screen h-screen flex flex-col justify-center items-center absolute top-0 z-50 gap-10'
+      className='w-screen h-screen flex flex-col justify-center items-center absolute top-0 z-[100] gap-10'
       style={{ background: 'var(--dark-bg)' }}
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}>
       <motion.h1
