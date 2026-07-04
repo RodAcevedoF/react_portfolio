@@ -32,7 +32,9 @@ export const TechCard = ({ item }: TechElement) => {
         className="w-15 h-auto object-contain absolute mb-1.5"
         animate={{
           opacity: hovered ? 1 : 0,
-          filter: hovered ? "blur(0px)" : "blur(4px)"
+          filter: hovered
+            ? `blur(0px)${item.whiteGlow ? " drop-shadow(0 0 6px rgba(255,255,255,0.55))" : ""}`
+            : "blur(4px)"
         }}
         transition={{ duration: 0.25, ease: "easeInOut" }}
       />

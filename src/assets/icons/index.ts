@@ -70,6 +70,12 @@ import sap from './sap.svg';
 import bluemedlar from './bluemedlar.webp';
 import mui from './mui.svg';
 import puc from './puc.webp';
+import nestjs from './wnestjs.svg';
+import nextjs from './wnextjs.svg';
+import hoverNestjs from './nestjs.svg';
+import hoverNextjs from './nextjs.svg';
+import hoverRust from './Rust.svg';
+import rust from './wrust.svg';
 import es from './es.webp';
 import en from './gb.webp';
 import de from './de.webp';
@@ -150,4 +156,10 @@ export {
 	jira,
 	bluemedlar,
 	mui,
+	nestjs,
+	nextjs,
+	hoverNestjs,
+	hoverNextjs,
+	hoverRust,
+	rust,
 };

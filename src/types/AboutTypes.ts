@@ -80,6 +80,7 @@ export type TechElement = {
     img?: string;
     hoverImg?: string;
     learning?: boolean;
+    whiteGlow?: boolean;
   };
 };
 

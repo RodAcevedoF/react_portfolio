@@ -22,6 +22,9 @@ import chefifyBackBg from './chefifybackbg.webp';
 import chefifyApiLogo from './chefifyapilogo.webp';
 import chefifyApiBack from './chefifyapiback.webp';
 import chefifyApiBackBg from './chefifyapibackbg.webp';
+import sagepointLogo from './sagepointlogo.webp';
+import sagepointBack from './sagepointback.webp';
+import sagepointBackBg from './sagepointbackbg.webp';
 
 export {
 	fenderLogo,
@@ -48,4 +51,7 @@ export {
 	chefifyApiLogo,
 	chefifyApiBack,
 	chefifyApiBackBg,
+	sagepointLogo,
+	sagepointBack,
+	sagepointBackBg,
 };

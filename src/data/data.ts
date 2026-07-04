@@ -65,6 +65,12 @@ import {
 	salesforce,
 	puc,
 	bluemedlar,
+	hoverNestjs,
+	nestjs,
+	hoverNextjs,
+	nextjs,
+	rust,
+	hoverRust,
 } from '../assets';
 
 export const data = {
@@ -584,6 +590,26 @@ export const data = {
 			img: linux,
 			hoverImg: hoverLinux,
 			learning: false,
+		},
+		{
+			name: 'NestJS',
+			img: nestjs,
+			hoverImg: hoverNestjs,
+			learning: false,
+		},
+		{
+			name: 'NextJS',
+			img: nextjs,
+			hoverImg: hoverNextjs,
+			learning: false,
+			whiteGlow: true,
+		},
+		{
+			name: 'Rust',
+			img: rust,
+			hoverImg: hoverRust,
+			learning: true,
+			whiteGlow: true,
 		},
 	],
 };
