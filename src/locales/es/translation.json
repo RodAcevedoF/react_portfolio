@@ -322,7 +322,7 @@
       "startDate": "2018",
       "endDate": "2024",
       "location": "Remoto",
-      "description": "Como tutor de idiomas, desarrollé planes de lecciones personalizados y proporcioné enseñanza online individual en inglés y alemán. Guié a los estudiantes en la preparación de exámenes específicos.",
+      "description": "Como tutor de idiomas, desarrollé planes de lecciones personalizados y proporcioné enseñanza online individual Guié a los estudiantes en la preparación de exámenes específicos.",
       "responsabilities": [
         "Crear planes de lecciones personalizados según niveles y objetivos",
         "Impartir clases virtuales dinámicas y ejercicios de idiomas",
@@ -335,6 +335,29 @@
         "Comunicación",
         "Paciencia",
         "Adaptabilidad"
+      ]
+    },
+    "ufr_researcher": {
+      "org": {
+        "title": "Freiburg Universität"
+      },
+      "position": "<blue>Asistente</blue> de Investigación",
+      "startDate": "2016",
+      "endDate": "2024",
+      "location": "Friburgo, DE",
+      "description": "Como asistente de investigación en el departamento de Física, apoyé la investigación experimental mediante la adquisición de datos, el análisis y el trabajo de laboratorio. Colaboré con el equipo de investigación para diseñar experimentos, procesar resultados y documentar hallazgos.",
+      "responsabilities": [
+        "Montar y ejecutar experimentos, recopilando datos de medición",
+        "Analizar y procesar conjuntos de datos con Python y herramientas científicas",
+        "Documentar métodos, resultados e incertidumbres en informes técnicos",
+        "Colaborar con investigadores para refinar los procedimientos experimentales"
+      ],
+      "skills": [
+        "Análisis de Datos",
+        "Investigación Científica",
+        "Python",
+        "LaTeX",
+        "Pensamiento Crítico"
       ]
     },
     "reutlingen_orchester": {

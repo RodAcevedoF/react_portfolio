@@ -317,11 +317,11 @@
       "org": {
         "title": "Tusclasesparticulares"
       },
-      "position": "<blue>English/German</blue> Teacher",
+      "position": "<blue>German</blue> Teacher",
       "startDate": "2018",
       "endDate": "2024",
       "location": "Remote",
-      "description": "As a language tutor, I developed personalized lesson plans and provided one-on-one online instruction in English and German. I coached students towards specific exams preparation.",
+      "description": "As a language tutor, I developed personalized lesson plans and provided one-on-one online instruction. I coached students towards specific exams preparation.",
       "responsabilities": [
         "Create custom lesson plans tailored according levels and goals",
         "Deliver engaging virtual lessons and language exercises",
@@ -334,6 +334,29 @@
         "Communication",
         "Patience",
         "Adaptability"
+      ]
+    },
+    "ufr_researcher": {
+      "org": {
+        "title": "Freiburg Universität"
+      },
+      "position": "<blue>Research</blue> Assistant",
+      "startDate": "2016",
+      "endDate": "2024",
+      "location": "Freiburg, DE",
+      "description": "As a research assistant in the Physics department, I supported experimental research through data acquisition, analysis, and lab work. I collaborated with the research team to design experiments, process results, and document findings.",
+      "responsabilities": [
+        "Set up and run experiments, collecting measurement data",
+        "Analyze and process datasets with Python and scientific tooling",
+        "Document methods, results, and uncertainties in technical reports",
+        "Collaborate with researchers to refine experimental procedures"
+      ],
+      "skills": [
+        "Data Analysis",
+        "Scientific Research",
+        "Python",
+        "LaTeX",
+        "Critical Thinking"
       ]
     },
     "reutlingen_orchester": {

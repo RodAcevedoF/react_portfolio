@@ -318,11 +318,11 @@
       "org": {
         "title": "Tusclasesparticulares"
       },
-      "position": "<blue>Englisch/Deutsch</blue> Lehrer",
+      "position": "<blue>Deutsch</blue> Lehrer",
       "startDate": "2018",
       "endDate": "2024",
       "location": "Remote",
-      "description": "Als Sprachlehrer entwickelte ich individuelle Lehrpläne und unterrichtete online in Englisch und Deutsch. Ich bereitete Schüler gezielt auf Prüfungen vor.",
+      "description": "Als Sprachlehrer entwickelte ich individuelle Lehrpläne und unterrichtete online. Ich bereitete Schüler gezielt auf Prüfungen vor.",
       "responsabilities": [
         "Individuelle Lehrpläne je nach Niveau und Ziel erstellen",
         "Virtuellen Unterricht und Sprachübungen gestalten",
@@ -335,6 +335,29 @@
         "Kommunikation",
         "Geduld",
         "Anpassungsfähigkeit"
+      ]
+    },
+    "ufr_researcher": {
+      "org": {
+        "title": "Freiburg Universität"
+      },
+      "position": "<blue>Wissenschaftliche</blue> Hilfskraft",
+      "startDate": "2016",
+      "endDate": "2024",
+      "location": "Freiburg, DE",
+      "description": "Als wissenschaftliche Hilfskraft am Institut für Physik unterstützte ich die experimentelle Forschung durch Datenerfassung, Analyse und Laborarbeit. Ich arbeitete mit dem Forschungsteam zusammen, um Experimente zu entwerfen, Ergebnisse auszuwerten und Erkenntnisse zu dokumentieren.",
+      "responsabilities": [
+        "Experimente aufbauen und durchführen sowie Messdaten erfassen",
+        "Datensätze mit Python und wissenschaftlichen Werkzeugen analysieren",
+        "Methoden, Ergebnisse und Unsicherheiten in technischen Berichten dokumentieren",
+        "Mit Forschenden zusammenarbeiten, um Versuchsabläufe zu verfeinern"
+      ],
+      "skills": [
+        "Datenanalyse",
+        "Wissenschaftliche Forschung",
+        "Python",
+        "LaTeX",
+        "Kritisches Denken"
       ]
     },
     "reutlingen_orchester": {
